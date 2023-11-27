@@ -26,17 +26,13 @@
          url('PPEditorialNew-Ultralight.woff2') format('woff2'),
    
 }
+
 @font-face {
     font-family: "PPNeueMontreal-Regular";
     src: url('PPNeueMontreal-Regular.woff') format('woff'),
          url('PPNeueMontreal-Regular.woff2') format('woff2'),
    
 }
-
-body {
-    font-size: 50px;
-}
-
 
 * {
     margin: 0;
@@ -46,21 +42,7 @@ body {
 
 
 body {
-    padding: 30px;
     margin: 0;
 }
 
-.new--image {
-    width: 300px;
-    height: 300px;
-}
 
-.one {
-    font-family: 'avenue_mono';
-}
-.two {
-    font-family: 'PPEditorialNew-Ultralight' ;
-}
-.three {
-    font-family: 'PPNeueMontreal-Regular';
-}
