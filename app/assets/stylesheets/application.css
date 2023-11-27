@@ -13,6 +13,17 @@
  *= require_tree .
  *= require_self
  */
+@font-face {
+    font-family: "avenue_mono";
+    /* src: url('/assets/avenue.otf') format('opentype'); */
+    src: url('/assets/avenue_mono.woff') format('woff'),
+   
+}
+
+body {
+    font-family: 'avenue_mono';
+    font-size: 50px;
+}
 
 
 * {
