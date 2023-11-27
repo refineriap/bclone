@@ -13,8 +13,21 @@
  *= require_tree .
  *= require_self
  */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     padding: 30px;
     margin: 0;
 }
 
+.new--image {
+    width: 300px;
+    height: 300px;
+}
