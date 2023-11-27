@@ -13,6 +13,8 @@
  *= require_tree .
  *= require_self
  */
+@import url("components/navbar.css");
+
 @font-face {
     font-family: "avenue_mono";
     src: url('avenue_mono.woff') format('woff'),
@@ -60,6 +62,17 @@ section {
 .colombia--image {
     max-width: 315px;
     max-height: 393px;
+}
+
+.boris {
+    margin-top: 90px;
+}
+
+.boris--image {
+    position: fixed;
+    bottom: 30px;
+    max-width: 315px;
+    max-height: 93px;
 }
 
 .plane {
