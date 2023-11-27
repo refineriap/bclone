@@ -15,13 +15,25 @@
  */
 @font-face {
     font-family: "avenue_mono";
-    /* src: url('/assets/avenue.otf') format('opentype'); */
-    src: url('/assets/avenue_mono.woff') format('woff'),
+    src: url('avenue_mono.woff') format('woff'),
+         url('avenue_mono.woff2') format('woff2'),
+   
+}
+
+@font-face {
+    font-family: "PPEditorialNew-Ultralight";
+    src: url('PPEditorialNew-Ultralight.woff') format('woff'),
+         url('PPEditorialNew-Ultralight.woff2') format('woff2'),
+   
+}
+@font-face {
+    font-family: "PPNeueMontreal-Regular";
+    src: url('PPNeueMontreal-Regular.woff') format('woff'),
+         url('PPNeueMontreal-Regular.woff2') format('woff2'),
    
 }
 
 body {
-    font-family: 'avenue_mono';
     font-size: 50px;
 }
 
@@ -41,4 +53,14 @@ body {
 .new--image {
     width: 300px;
     height: 300px;
+}
+
+.one {
+    font-family: 'avenue_mono';
+}
+.two {
+    font-family: 'PPEditorialNew-Ultralight' ;
+}
+.three {
+    font-family: 'PPNeueMontreal-Regular';
 }
