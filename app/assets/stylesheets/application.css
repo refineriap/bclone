@@ -34,6 +34,8 @@
    
 }
 
+/* background: #0D0E0F; */
+
 * {
     margin: 0;
     padding: 0;
@@ -43,6 +45,95 @@
 
 body {
     margin: 0;
+    background-color: #0D0E0F;
 }
 
+section {
+    padding: 0 30px;
+    max-width: 375px; 
+}
+
+.colombia {
+    margin-top: 206px;
+}
+
+.colombia--image {
+    max-width: 315px;
+    max-height: 393px;
+}
+
+.plane {
+    margin-top: 300px;  
+}
+
+.plane--image {
+    max-width: 235px;
+    max-height: 293px;
+    margin-left: 81px;
+}
+
+.burger {
+    margin-top: 300px;  
+}
+
+.burger--image {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.nyc {
+    margin-top: 300px;  
+}
+
+.nyc--image {
+    max-width: 315px;
+    max-height: 393px;
+}
+
+.bike {
+    margin-top: 300px;  
+}
+
+.bike--image {
+    max-width: 235px;
+    max-height: 293px;
+}
+
+.earth {
+    margin-top: 300px;  
+}
+
+.earth--image {
+    max-width: 200px;
+    max-height: 200px;
+    margin-left: 115px;
+}
+
+.mexico {
+    margin-top: 300px;  
+}
+
+.mexico--image {
+    max-width: 315px;
+    max-height: 393px;
+}
+
+.agave {
+    margin-top: 300px;  
+}
+
+.agave--image {
+    max-width: 235px;
+    max-height: 292.79px;
+    margin-left: 80px;
+}
+
+.beats {
+    margin-top: 300px;  
+}
+
+.beats--image {
+    max-width: 195px;
+    max-height: 195px;
+}
 
