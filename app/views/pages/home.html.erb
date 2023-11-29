@@ -1,10 +1,12 @@
-<nav class="dropdown">
-    <button onclick="toggleDropdown()" class="dropbtn" id="dropbtn">MI PUEBLO NATAL</button>
+<%# data-action="click->play#resetGame" %>
+
+<nav class="dropdown" data-controller="navbar_controller" >
+    <button data-action="click->navbar#toggleDropdown" class="dropbtn" id="dropbtn">MI PUEBLO NATAL</button>
     <div id="myDropdown" class="dropdown-content">
         <ul>
-            <li><a href="#section1" onclick="handleDropdownItemClick('#section1')">Section 1</a></li>
-            <li><a href="#section2" onclick="handleDropdownItemClick('#section2')">Section 2</a></li>
-            <li><a href="#section3" onclick="handleDropdownItemClick('#section3')">Section 3</a></li>
+            <li><a href="#section1" data-action="click->navbar#handleDropdownItemClick">Section 1</a></li>
+            <li><a href="#section2" data-action="click->navbar#handleDropdownItemClick">Section 2</a></li>
+            <li><a href="#section3" data-action="click->navbar#handleDropdownItemClick">Section 3</a></li>
         </ul>
     </div>
 </nav>
