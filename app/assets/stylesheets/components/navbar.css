@@ -50,8 +50,14 @@
     text-transform: uppercase;
   }
   
-  ul.custom-bullet {
+  li.blue-bullet {
     list-style-image: url('assets/Ellipse.svg');
+    align-items: center;
+  }
+  
+  li.yellow-bullet {
+    list-style-image: url('assets/yellowellipse.svg');
+    align-items: center;
   }
   /* Change color on hover */
   /* .dropdown-content a:hover {
