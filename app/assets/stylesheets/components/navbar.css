@@ -14,39 +14,49 @@
     letter-spacing: 1.2px;
     text-transform: uppercase;
     border-radius: 40px;
+    cursor: pointer;
 } 
 
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
+
   
   /* Style the dropdown content */
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    font-family: 'PPNeueMontreal-Regular';
+    width: 315px;
+    height: 467px;
+    background-color: #1E1E1E;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
     margin-top: 30px;
+    margin-left: 30px;
+    padding-left: 40px;
+    padding-top: 29px;
+    border-radius: 20px;
   }
   
   /* Style the dropdown links */
   .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+    color: #EEECE3;
+    padding: 0px 15px 30px 15px;
     text-decoration: none;
     display: block;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; /* 100% */
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
   }
   
-  /* Change color on hover */
-  .dropdown-content a:hover {
-    background-color: #ddd;
+  ul.custom-bullet {
+    list-style-image: url('assets/Ellipse.svg');
   }
+  /* Change color on hover */
+  /* .dropdown-content a:hover {
+    background-color: #ddd;
+  } */
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
