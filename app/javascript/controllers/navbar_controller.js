@@ -9,7 +9,7 @@ export default class extends Controller {
 
     function handleDropdownItemClick(sectionId) {
       document.querySelector(sectionId).scrollIntoView({ behavior: 'smooth' });
-      dropdownButton.innerText = document.querySelector(sectionId + " h2").innerText;
+      dropdownButton.innerText = document.querySelector(sectionId).innerText;
       dropdownContent.style.display = 'none';
     }
 
@@ -34,7 +34,5 @@ export default class extends Controller {
         dropdownButton.innerText = currentSection.querySelector("img").innerText;
       }
     };
-
-
   }
 }
