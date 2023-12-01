@@ -1,0 +1,123 @@
+.info--container {
+    background-color: #F6F3B2;
+}
+
+.back--section {
+    min-width: 375px;
+    height: 100px;
+}
+
+.back {
+    background-color: #0D0E0F;
+    padding: 17px;
+    width: 67px;
+    height: 50px;
+    display: inline-block;
+    margin: 30px 0px 30px 248px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #EEECE3;
+    font-family: 'PPNeueMontreal-Regular';
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px; 
+    letter-spacing: 0.45px;
+}
+
+.info--me {
+    min-width: 315px;
+    height: 84px;}
+
+.info--me p {
+    color: #0D0E0F;
+    font-family: 'avenue_mono';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 28px; /* 140% */
+    letter-spacing: -0.4px;
+}
+
+.info--buttons {
+    padding-top: 23px;
+    height: 300px;
+    display: grid;
+    padding-bottom: 60px;
+}
+
+.boris--btn {
+    background-color: #F6F3B2;
+    width: 258px;
+    height: 50px;
+    border-width: 1px;
+    border-radius: 30px;
+    border-color: #0D0E0F;
+    font-family: 'avenue_mono';
+    color: #0D0E0F;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 120% */
+    letter-spacing: -0.4px;
+}
+
+
+.github--btn {
+    background-color: #F6F3B2;
+    width: 130px;
+    height: 50px;
+    border-width: 1px;
+    border-radius: 30px;
+    border-color: #0D0E0F;
+    font-family: 'avenue_mono';
+    color: #0D0E0F;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 120% */
+    letter-spacing: -0.4px;
+}
+
+
+.linkedin--btn {
+    background-color: #F6F3B2;
+    width: 154px;
+    height: 50px;
+    border-width: 1px;
+    border-radius: 30px;
+    border-color: #0D0E0F;
+    font-family: 'avenue_mono';
+    color: #0D0E0F;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 120% */
+    letter-spacing: -0.4px;
+}
+
+hr {
+    margin: 0px 30px;
+}
+
+.info--description {
+    width: 375px;
+    height: 165px;
+}
+
+.info--description p {
+    width: 315px;
+    height: 112px;
+    color: #0D0E0F;
+    padding-top: 20px;
+    font-family: "avenue_mono";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: -0.4px;
+}

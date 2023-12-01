@@ -44,7 +44,7 @@
   padding: 0px 15px 30px 15px;
   text-decoration: none;
   display: block;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-style: normal;
   font-weight: 400;
   line-height: 12px; 
@@ -52,7 +52,7 @@
   text-transform: uppercase;
 }
 
-.info {
+.info--link {
   width: 71px;
   height: 50px;
   padding: 17px 24px;
@@ -61,8 +61,9 @@
   border: none;
   color: #0D0E0F;
   text-align: center;
+  text-decoration: none;
   font-family: 'PPNeueMontreal-Regular';
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-style: normal;
   font-weight: 500;
   line-height: 15px; 
