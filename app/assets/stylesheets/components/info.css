@@ -102,6 +102,7 @@
 
 hr {
     margin: 0px 30px;
+    border-color: black; 
 }
 
 .info--description {
@@ -121,3 +122,44 @@ hr {
     line-height: 28px; 
     letter-spacing: -0.4px;
 }
+
+.info--skills {
+    min-width: 375px;
+    height: 300px;   
+}
+
+.skills {
+    color: #0D0E0F;
+    width: 315px;
+    height: 30px;
+    font-family: 'avenue_mono';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+    letter-spacing: -0.4px;
+}
+
+.info--languages {
+    width: 315px;
+    height: 76px;
+    list-style-type:  none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 22px;
+}
+
+.info--languages li {
+    text-decoration: none;
+    border-bottom: 1px solid #0D0E0F;
+    margin-right: 20px;
+    color: #0D0E0F;
+    font-family: "PPNeueMontreal-Regular";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
