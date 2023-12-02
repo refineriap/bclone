@@ -27,7 +27,7 @@
   position: absolute;
   font-family: 'PPNeueMontreal-Regular';
   width: 315px;
-  height: 467px;
+  min-height: 467px;
   background-color: #1E1E1E;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;

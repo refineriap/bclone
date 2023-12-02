@@ -132,7 +132,8 @@ section {
 }
 
 .beats {
-    margin-top: 300px;  
+    margin-top: 300px; 
+    padding-bottom: 295px; 
 }
 
 .beats--image {
