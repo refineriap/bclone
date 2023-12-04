@@ -11,6 +11,16 @@ eagerLoadControllersFrom("controllers", application)
 // lazyLoadControllersFrom("controllers", application)
 
 
-function getImage() {
-    console.log("i'm on the image")
-}
+// window.getImage = function() {
+//     console.log("test works");
+// }
+
+// window.handleMouseOver = function() {
+// console.log('Mouse over event triggered');
+// // Your mouseover event handling code here
+// }
+
+// window.handleTouchStart = function() {
+// console.log('Touch start event triggered');
+// // Your touchstart event handling code here
+// }
