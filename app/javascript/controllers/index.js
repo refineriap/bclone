@@ -11,6 +11,10 @@ eagerLoadControllersFrom("controllers", application)
 // lazyLoadControllersFrom("controllers", application)
 
 
+// function getImage() {
+//     console.log("it is working!")
+// }
+
 // window.getImage = function() {
 //     console.log("test works");
 // }
