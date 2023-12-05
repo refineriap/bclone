@@ -10,7 +10,7 @@ export default class extends Controller {
   }
 
   newImage() {
-    console.log("sapo triplehpta")
+    console.log("que chimba parce")
   }
 }
 
