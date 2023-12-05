@@ -1,35 +1,35 @@
 <div class="home">
     <nav class="dropdown" data-controller="navbar">
-    <button class="dropbtn" id="dropbtn" data-action="click->navbar#getImage">MI PUEBLO NATAL</button>
-    <div id="myDropdown" class="dropdown-content">
-        <ul>
-            <li class="blue-bullet"><a href="#section1">MI PUEBLO NATAL</a></li>
-            <li class="yellow-bullet"><a href="#section2">TALES OF COLOMBIA</a></li>
-            <li class="brown-bullet"><a href="#section3">BURGER HUNT </a></li>
-            <li class="beige-bullet"><a href="#section4">N.Y STATE OF MIND</a></li>
-            <li class="grey-bullet"><a href="#section5">NEW PAVEMENTS</a></li>
-            <li class="navy-bullet"><a href="#section6">DO ALIENS EXIST</a></li>
-            <li class="pink-bullet"><a href="#section7">MÉXICO LINDO</a></li>
-            <li class="purple-bullet"><a href="#section8">LOOKING FORWARD</a></li>
-            <li class="red-bullet"><a href="#section9">LATEST BEAT</a></li>
-        </ul>
-    </div>
+        <button class="dropbtn" id="dropbtn" data-action="click->navbar#toggleDropdown">MI PUEBLO NATAL</button>
+        <div id="myDropdown" class="dropdown-content">
+            <ul>
+                <li class="blue-bullet"><a href="#section1" data-action="click->navbar#scrollToSection" data-section-id="section1">MI PUEBLO NATAL</a></li>
+                <li class="yellow-bullet"><a href="#section2" data-action="click->navbar#scrollToSection" data-section-id="section2">TALES OF COLOMBIA</a></li>
+                <li class="brown-bullet"><a href="#section3" data-action="click->navbar#scrollToSection" data-section-id="section3">BURGER HUNT </a></li>
+                <li class="beige-bullet"><a>N.Y STATE OF MIND</a></li>
+                <li class="grey-bullet"><a>NEW PAVEMENTS</a></li>
+                <li class="navy-bullet"><a>DO ALIENS EXIST</a></li>
+                <li class="pink-bullet"><a>MÉXICO LINDO</a></li>
+                <li class="purple-bullet"><a>LOOKING FORWARD</a></li>
+                <li class="red-bullet"><a>LATEST BEAT</a></li>
+            </ul>
+        </div>
         <a class="info--link" href="/info">Info</a>
     </nav>
 
-    <section id="section1" class="colombia" data-controller="navbar" data-action="touchstart->navbar#newImage">
+    <section id="section1" data-target="navbar.section" class="colombia">
         <img src="/assets/colombia.png" alt="" class="colombia--image">
     </section>
 
-    <section  class="boris">
+    <section class="boris">
         <img src="/assets/Boris.svg" alt="" class="boris--image">
     </section>
 
-    <section id="section2" class="plane">
+    <section id="section2" data-target="navbar.section"  class="plane">
         <img src="/assets/plane.png" alt="" class="plane--image">
     </section>
 
-    <section id="section3" class="burger">
+    <section id="section3" data-target="navbar.section" class="burger">
         <img src="/assets/burger.png" alt="" class="burger--image">
     </section>
 

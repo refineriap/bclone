@@ -2,6 +2,10 @@
   display: flex;
   min-width: 375px;
   height: 100px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #0D0E0F;
 }
 
 .dropbtn {
@@ -117,10 +121,10 @@ li.red-bullet {
   align-items: center;
 }
   
-.dropdown:hover .dropdown-content {
+/* .dropdown:hover .dropdown-content {
   display: block;
 }
-  
+   */
   
   
 
