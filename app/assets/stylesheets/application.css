@@ -43,11 +43,13 @@ section {
     padding: 0 30px;
     max-width: 375px; 
 }
+
 section #svg {
     position: absolute;
     opacity: 1;
     transition: opacity 1s ease;
-  }
+}
+
 section #png {
     position: relative;
     opacity: 0;
@@ -71,44 +73,39 @@ section #png {
     bottom: 30px;
     max-width: 315px;
     max-height: 93px;
+    z-index: 2;
 }
 
 .plane {
+    position: relative;
     margin-top: 300px;  
-}
-
-.plane--image {
-    max-width: 235px;
-    max-height: 293px;
+    min-width: 235px;
+    height: 293px;
     margin-left: 80px;
 }
 
 .burger {
+    position: relative;
     margin-top: 300px;  
-}
-
-.burger--image {
-    max-width: 200px;
-    max-height: 200px;
+    min-width: 200px;
+    height: 200px;
 }
 
 .nyc {
+    position: relative;
     margin-top: 300px;  
+    min-width: 315px;
+    height: 393px;
 }
 
-.nyc--image {
-    max-width: 315px;
-    max-height: 393px;
-}
 
 .bike {
+    position: relative;
     margin-top: 300px;  
+    min-width: 235px;
+    height: 293px;
 }
 
-.bike--image {
-    max-width: 235px;
-    max-height: 293px;
-}
 
 .earth {
     margin-top: 300px;  
