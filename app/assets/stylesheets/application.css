@@ -43,16 +43,24 @@ section {
     padding: 0 30px;
     max-width: 375px; 
 }
-
+section #svg {
+    position: absolute;
+    opacity: 1;
+    transition: opacity 1s ease;
+  }
+section #png {
+    position: relative;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
 
 .colombia {
+    position: relative;
     margin-top: 126px;
+    min-width: 315px;
+    height: 393px;
 }
 
-.colombia--image {
-    max-width: 315px;
-    max-height: 393px;
-}
 
 .boris {
     margin-top: 90px;
