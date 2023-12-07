@@ -98,7 +98,6 @@ section #png {
     height: 393px;
 }
 
-
 .bike {
     position: relative;
     margin-top: 300px;  
@@ -106,35 +105,30 @@ section #png {
     height: 293px;
 }
 
-
 .earth {
+    position: relative;
     margin-top: 300px;  
-}
-
-.earth--image {
-    max-width: 200px;
-    max-height: 200px;
+    min-width: 200px;
+    height: 200px;
     margin-left: 115px;
 }
 
 .mexico {
+    position: relative;
     margin-top: 300px;  
-}
-
-.mexico--image {
-    max-width: 315px;
-    max-height: 393px;
+    min-width: 315px;
+    height: 393px;
 }
 
 .agave {
+    position: relative;
     margin-top: 300px;  
+    margin-left: 80px;
+    min-width: 235px;
+    height: 292.79px;
 }
 
-.agave--image {
-    max-width: 235px;
-    max-height: 292.79px;
-    margin-left: 80px;
-}
+
 
 .beats {
     margin-top: 300px; 
@@ -142,7 +136,7 @@ section #png {
 }
 
 .beats--image {
-    max-width: 195px;
-    max-height: 195px;
+    min-width: 200px;
+    height: 200px;
 }
 

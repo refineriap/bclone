@@ -37,38 +37,7 @@ export default class extends Controller {
         inline: "nearest",
       });
     }
-  }
-  
-
-  // scrollToSection(event) {
-  //   event.preventDefault();
-    
-  //   this.toggleDropdown();
-
-  //   const sectionId = event.currentTarget.getAttribute("href").substring(1); 
-  //   const section = document.getElementById(sectionId);
-
-  //     if (section) {
-  //     const sectionName = event.currentTarget.innerText;
-  //     document.getElementById('dropbtn').innerText = sectionName;
-
-  //     this.element.querySelectorAll("a").forEach((link) => {
-  //       link.classList.remove("active");
-  //     });
-
-      
-  //     event.currentTarget.classList.add("active");
-
-      
-  //     section.scrollIntoView({
-  //       behavior: "smooth",
-  //       block: "center",
-  //       inline: "nearest",
-  //     });
-  //   }
-  // }
-
-  
+  }  
 }
 
   
