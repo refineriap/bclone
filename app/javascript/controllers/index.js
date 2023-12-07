@@ -11,13 +11,13 @@ eagerLoadControllersFrom("controllers", application)
 // lazyLoadControllersFrom("controllers", application)
 
 function addEventListeners() {
-    const divElem = document.querySelectorAll("section");
+    const divElem = document.querySelectorAll("#scroller");
     const svgElem = document.querySelectorAll("#svg");
     const pngElem = document.querySelectorAll("#png");
     const scrollAmount = -400;
 
     window.addEventListener("scroll", (event) => {
-        const elements = document.querySelectorAll("section");
+        const elements = document.querySelectorAll("#scroller");
         for (let i = 0; i < elements.length; i++) {
         const rect = elements[i].getBoundingClientRect();
         var { top } = elements[i].getBoundingClientRect();
