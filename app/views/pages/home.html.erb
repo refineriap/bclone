@@ -1,6 +1,6 @@
 <div class="home">
     <nav class="dropdown" data-controller="navbar">
-        <button class="dropbtn" id="dropbtn" data-action="click->navbar#toggleDropdown">MI PUEBLO NATAL</button>
+        <button class="dropbtn" id="dropbtn" data-action="click->navbar#toggleDropdown"> ⚆ SPIN THE VINYL ⚆</button>
         <div id="myDropdown" class="dropdown-content">
             <ul>
                 <li style="list-style-image: url('assets/blue.svg');"><a href="#section1" data-action="click->navbar#scrollToSection" data-section-class="section1">MI PUEBLO NATAL</a></li>
@@ -20,16 +20,29 @@
     <section id="scroller" data-target="navbar.section" class="colombia section1">
         <%= image_tag("/assets/blue-rect.png", alt: "blue image", id: "svg", class: "colombia--svg") %>
         <%= image_tag("colombia.png", alt: "image of colombia", id: "png", class: "colombia--image") %>
+        <div class="colombia-overlay">
+            <div class="colombia-paragraph">
+                <p>A lo lejos se ve, mi pueblo natal</p>
+                <p>se vienen a mi mente bellos recuerdos</p>
+                <p>infancia alegre que yo nunca olvidaré</p>
+                <p class="artist">Grupo Niche</p>
+            </div>
+        </div>
     </section>
 
     <section class="boris">
         <%= image_tag("/assets/Boris.svg", alt: "Boris svg", class: "boris--image") %>
     </section>
 
-    <section id="scroller" data-target="navbar.section"  class="plane section2">
-        <%= image_tag("/assets/green-rect.png", alt: "green image", id: "svg", class: "plane--svg") %>
-        <%= image_tag("plane.png", alt: "image of plane", id: "png", class: "plane--image") %>
+    <section id="scroller" data-target="navbar.section"  class="plane section2" data-controller="popup" data-action="click->popup#toggle" >
+        <%= image_tag("/assets/green-rect.png", alt: "green image", id: "svg", class: "plane--svg")  %>
+        <%= image_tag("plane.png", alt: "image of plane", id: "png", class: "plane--image")%>
+        <div class="popup" id="fullScreenPopup" data-popup-target="popup">
+            <span class="close" data-action="click->popup#close">&times;</span>
+            <h1 class="">Hola como estas</h1>
+        </div>
     </section>
+
 
     <section id="scroller" data-target="navbar.section" class="burger section3">
         <%= image_tag("/assets/brown-rect.png", alt: "brown image", id: "svg", class: "burger--svg") %>   
@@ -66,3 +79,4 @@
         <%= image_tag("beats.png", alt:"image of beat machine", id:"png", class:"beats--image")%>
     </section>
 </div>
+
