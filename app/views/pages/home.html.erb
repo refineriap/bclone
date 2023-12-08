@@ -34,14 +34,15 @@
         <%= image_tag("/assets/Boris.svg", alt: "Boris svg", class: "boris--image") %>
     </section>
 
-    <section id="scroller" data-target="navbar.section"  class="plane section2" data-controller="popup" data-action="click->popup#toggle" >
-        <%= image_tag("/assets/green-rect.png", alt: "green image", id: "svg", class: "plane--svg")  %>
-        <%= image_tag("plane.png", alt: "image of plane", id: "png", class: "plane--image")%>
+    <section id="scroller" data-target="navbar.section" class="plane section2" data-controller="popup" data-action="click->popup#toggle">
+        <%= image_tag("/assets/green-rect.png", alt: "green image", id: "svg", class: "plane--svg") %>
+        <%= image_tag("plane.png", alt: "image of plane", id: "png", class: "plane--image") %>
         <div class="popup" id="fullScreenPopup" data-popup-target="popup">
-            <span class="close" data-action="click->popup#close">&times;</span>
+            <span class="close" data-action="click->popup#closePopup">&times;</span>
             <h1 class="">Hola como estas</h1>
         </div>
     </section>
+
 
 
     <section id="scroller" data-target="navbar.section" class="burger section3">

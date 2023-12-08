@@ -119,7 +119,7 @@ section #png {
     bottom: 30px;
     max-width: 315px;
     max-height: 93px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .plane {

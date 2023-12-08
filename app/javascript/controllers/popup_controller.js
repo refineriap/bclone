@@ -1,23 +1,44 @@
 import { Controller } from "@hotwired/stimulus"
 
-// Connects to data-controller="popup"
-export default class extends Controller {
-  connect() {
-  }
 
+export default class extends Controller {
   static targets = ["popup"];
 
-  toggle() {
-    this.popupTarget.style.display = "block";
-    setTimeout(() => {
-      this.popupTarget.style.bottom = "0";
-    }, 0);
+  connect() {
+    this.state = {
+      isOpen: false,
+      isTransitioning: false,
+    };
   }
 
-  close() {
-    this.popupTarget.style.bottom = "-100%";
-    setTimeout(() => {
-      this.popupTarget.style.display = "none";
-    }, 500);
+  toggle() {
+    if (this.state.isTransitioning) {
+      return;
+    }
+
+    this.state.isOpen ? this.closePopup() : this.openPopup();
   }
+
+  openPopup() {
+    this.state.isOpen = true;
+    this.state.isTransitioning = true;
+
+    this.popupTarget.classList.add("active");
+
+    this.popupTarget.addEventListener("transitionend", this.transitionEndHandler);
+  }
+
+  closePopup() {
+    this.state.isOpen = false;
+    this.state.isTransitioning = true;
+
+    this.popupTarget.classList.remove("active");
+
+    this.popupTarget.addEventListener("transitionend", this.transitionEndHandler);
+  }
+
+  transitionEndHandler = () => {
+    this.popupTarget.removeEventListener("transitionend", this.transitionEndHandler);
+    this.state.isTransitioning = false;
+  };
 }
