@@ -1,4 +1,4 @@
-.popup {
+.popup1 {
     opacity: 0; 
     visibility: hidden; 
     position: fixed;
@@ -15,20 +15,20 @@
     font-family: "avenue_mono";
 }
 
-.popup.active {
+.popup1.active {
     opacity: 1; 
     visibility: visible;
     bottom: 0;
 }
 
-.popup--container {
+.popup1--container {
     font-family: "avenue_mono";
     min-width: 297px;
     height: 130px;
     padding: 30px 48px 0px 30px;   
 }
 
-.popup--chapter {
+.popup1--chapter {
     color: #0D0E0F;
     font-size: 30px;
     font-style: normal;
@@ -37,14 +37,14 @@
     letter-spacing: -0.6px;
 }
 
-.popup--paragraph {    
+.popup1--paragraph {    
     width: 315px;
     height: 310px;
     margin-left: 30px;
-    margin-top: 146px;
+    margin-top: 100px;
 }
 
-.popup--text {
+.popup1--text {
     color: #0D0E0F;
     font-family: "PPNeueMontreal-Regular";
     font-size: 15px;
@@ -54,7 +54,7 @@
     letter-spacing: 0.15px;
 }
 
-.popup--text2 {
+.popup1--text2 {
     margin-top: 10px;
     color: #0D0E0F;
     font-family: "PPNeueMontreal-Regular";
@@ -65,7 +65,7 @@
     letter-spacing: 0.15px; 
 }
 
-.close {
+.close1 {
     position: absolute;
     top: 618px;
     left: 30px;
@@ -83,5 +83,5 @@
     letter-spacing: 0.45px;
     cursor: pointer;
     transition: bottom 0.5s ease; 
-    padding-top: 8px;
+    padding-top: 9px;
 }
