@@ -64,24 +64,27 @@ section #png {
     margin-top: 126px;
     min-width: 315px;
     height: 393px;
+    cursor: pointer;
 }
 
 .colombia-overlay {
+    display: none;
     position: absolute;
     margin-left: 30px;
     top: 0;
     left: 0;
     width: 316px;
     height: 394px;
-    background-color:#0D0E0F;
+    background-color: #0D0E0F;
     opacity: 0;
-    transition: opacity 0.75s;
+    transition: opacity 0.75s ease-in-out;
 }
 
-.colombia-overlay:hover {
-    cursor: pointer;
+.colombia-overlay.visible {
+    display: block;
     opacity: 1;
 }
+
 
 .colombia-paragraph {
     padding-top: 30px;
@@ -92,7 +95,7 @@ section #png {
     font-size: 30px;
     font-style: normal;
     font-weight: 200;
-    line-height: 40px; /* 133.333% */
+    line-height: 40px; 
     letter-spacing: 0.6px;
     pointer-events: none;
 }

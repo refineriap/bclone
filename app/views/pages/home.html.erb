@@ -1,6 +1,6 @@
 <div class="home">
     <nav class="dropdown" data-controller="navbar">
-        <button class="dropbtn" id="dropbtn" data-action="click->navbar#toggleDropdown">MI PUEBLO NATAL</button>
+        <button class="dropbtn" id="dropbtn" data-action="click->navbar#toggleDropdown">SECTIONS OF ME ON VYNIL</button>
         <div id="myDropdown" class="dropdown-content">
             <ul>
                 <li style="list-style-image: url('assets/blue.svg');"><a href="#section1" data-action="click->navbar#scrollToSection" data-section-class="section1">MI PUEBLO NATAL</a></li>
@@ -17,10 +17,10 @@
         <a class="info--link" href="/info">Info</a>
     </nav>
 
-    <section id="scroller" data-target="navbar.section" class="colombia section1">
+    <section id="scroller" data-target="navbar.section" class="colombia section1" data-controller="overlay" data-target="overlay.scroller" data-action="click->overlay#showOverlay">    
         <%= image_tag("/assets/blue-rect.png", alt: "blue image", id: "svg", class: "colombia--svg") %>
         <%= image_tag("colombia.png", alt: "image of colombia", id: "png", class: "colombia--image") %>
-        <div class="colombia-overlay">
+        <div class="colombia-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay">
             <div class="colombia-paragraph">
                 <p>A lo lejos se ve, mi pueblo natal</p>
                 <p>se vienen a mi mente bellos recuerdos</p>
