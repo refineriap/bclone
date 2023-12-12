@@ -88,9 +88,15 @@
         <%= image_tag("earth.png", alt:"image of the earth", id:"png", class:"earth--image")%> 
     </section>
 
-    <section id="scroller" data-target="navbar.section" class="mexico section7">
+    <section id="scroller" data-target="navbar.section" class="mexico section7" data-controller="overlay" data-target="overlay.scroller" data-action="click->overlay#showOverlay">
         <%= image_tag("/assets/beige-rect.png", alt:"beige image", id:"svg", class:"mexico--svg")%>  
         <%= image_tag("mexico.png", alt:"image of mexico", id:"png", class:"mexico--image")%>
+        <div class="mexico-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay">
+            <div class="mexico-paragraph">
+                <p>México lindo y querido, si muero lejos de ti</p> <p>Que digan que estoy dormido y que me traigan a ti</p> 
+                <p class="artist">Vicente Fernandez</p>
+            </div>
+        </div>
     </section>
 
     <section id="scroller" data-target="navbar.section" class="agave section8" data-controller="popup" data-action="click->popup#toggle">

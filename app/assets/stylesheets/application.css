@@ -85,7 +85,6 @@ section #png {
     opacity: 1;
 }
 
-
 .colombia-paragraph {
     padding-top: 30px;
     width: 259px;
@@ -97,12 +96,10 @@ section #png {
     font-weight: 200;
     line-height: 40px; 
     letter-spacing: 0.6px;
-    pointer-events: none;
 }
 
 .artist {
     margin-top: 40px;
-    font-size: 20px;
     color: #EEECE3;
     font-family: "PPNeueMontreal-Regular";
     font-size: 12px;
@@ -165,10 +162,11 @@ section #png {
     opacity: 1;
 }
 
+
 .nyc-paragraph {
     padding-top: 30px;
-    width: 259px;
-    height: 392px;
+    width: 314px;
+    height: 393px;
     color: #EEECE3;
     font-family: "PPEditorialNew-Ultralight";
     font-size: 30px;
@@ -177,19 +175,6 @@ section #png {
     line-height: 40px; 
     letter-spacing: 0.6px;
     pointer-events: none;
-}
-
-.artist {
-    margin-top: 40px;
-    font-size: 20px;
-    color: #EEECE3;
-    font-family: "PPNeueMontreal-Regular";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 40px;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
 }
 
 .bike {
@@ -212,6 +197,39 @@ section #png {
     margin-top: 300px;  
     min-width: 315px;
     height: 393px;
+}
+
+.mexico-overlay {
+    display: none;
+    position: absolute;
+    margin-left: 30px;
+    top: 0;
+    left: 0;
+    width: 316px;
+    height: 394px;
+    background-color: #0D0E0F;
+    opacity: 0;
+    transition: opacity 0.75s ease-in-out;
+}
+
+.mexico-overlay.visible {
+    display: block;
+    opacity: 1;
+}
+
+
+.mexico-paragraph {
+    padding-top: 30px;
+    width: 299px;
+    height: 393px;
+    color: #EEECE3;
+    font-family: "PPEditorialNew-Ultralight";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 40px; 
+    letter-spacing: 0.6px;
+    pointer-events: none;
 }
 
 .agave {
