@@ -147,6 +147,51 @@ section #png {
     height: 393px;
 }
 
+.nyc-overlay {
+    display: none;
+    position: absolute;
+    margin-left: 30px;
+    top: 0;
+    left: 0;
+    width: 316px;
+    height: 394px;
+    background-color: #0D0E0F;
+    opacity: 0;
+    transition: opacity 0.75s ease-in-out;
+}
+
+.nyc-overlay.visible {
+    display: block;
+    opacity: 1;
+}
+
+.nyc-paragraph {
+    padding-top: 30px;
+    width: 259px;
+    height: 392px;
+    color: #EEECE3;
+    font-family: "PPEditorialNew-Ultralight";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 40px; 
+    letter-spacing: 0.6px;
+    pointer-events: none;
+}
+
+.artist {
+    margin-top: 40px;
+    font-size: 20px;
+    color: #EEECE3;
+    font-family: "PPNeueMontreal-Regular";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
 .bike {
     position: relative;
     margin-top: 300px;  

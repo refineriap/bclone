@@ -56,9 +56,15 @@
         <%= image_tag("burger.png", alt: "image of a restaurant", id: "png", class: "burger--image") %>   
     </section>
 
-    <section id="scroller" data-target="navbar.section" class="nyc section4">
+    <section id="scroller" data-target="navbar.section" class="nyc section4" data-controller="overlay" data-target="overlay.scroller" data-action="click->overlay#showOverlay">
         <%= image_tag("/assets/beige-rect.png", alt:"beige image", id:"svg", class:"nyc--svg") %>  
-        <%= image_tag("nyc.png", alt:"image of nyc", id:"png", class:"nyc--image") %> 
+        <%= image_tag("nyc.png", alt:"image of nyc", id:"png", class:"nyc--image") %>
+        <div class="nyc-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay">
+            <div class="nyc-paragraph">
+                <p>I never sleep, 'cause sleep is the cousin of death</p> <p>I lay puzzled as I backtrack to earlier times</p> <p>Nothing's equivalent to the New York state of mind</p>
+                <p class="artist">Nas</p>
+            </div>
+        </div>
     </section>
 
     <section id="scroller" data-target="navbar.section" class="bike section5" data-controller="popup" data-action="click->popup#toggle">
