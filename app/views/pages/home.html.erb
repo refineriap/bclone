@@ -52,8 +52,10 @@
     </section>
 
     <section id="scroller" data-target="navbar.section" class="burger section3">
-        <%= image_tag("/assets/brown-rect.png", alt: "brown image", id: "svg", class: "burger--svg") %>   
-        <%= image_tag("burger.png", alt: "image of a restaurant", id: "png", class: "burger--image") %>   
+        <a href="/burger" class="">
+            <%= image_tag("/assets/brown-rect.png", alt: "brown image", id: "svg", class: "burger--svg") %>   
+            <%= image_tag("burger.png", alt: "image of a restaurant", id: "png", class: "burger--image") %> 
+        </a>  
     </section>
 
     <section id="scroller" data-target="navbar.section" class="nyc section4" data-controller="overlay" data-target="overlay.scroller" data-action="click->overlay#showOverlay">
@@ -84,8 +86,10 @@
     </section>
 
     <section id="scroller" data-target="navbar.section" class="earth section6">
-        <%= image_tag("/assets/navy-rect.png", alt:"color navy image", id:"svg", class:"earth--svg")%>   
-        <%= image_tag("earth.png", alt:"image of the earth", id:"png", class:"earth--image")%> 
+        <a href="/poll" class="">
+            <%= image_tag("/assets/navy-rect.png", alt:"color navy image", id:"svg", class:"earth--svg")%>   
+            <%= image_tag("earth.png", alt:"image of the earth", id:"png", class:"earth--image")%> 
+        </a>
     </section>
 
     <section id="scroller" data-target="navbar.section" class="mexico section7" data-controller="overlay" data-target="overlay.scroller" data-action="click->overlay#showOverlay">
