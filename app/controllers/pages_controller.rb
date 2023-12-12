@@ -4,4 +4,10 @@ class PagesController < ApplicationController
 
     def info
     end
+
+    def burger
+    end
+
+    def poll
+    end
 end
