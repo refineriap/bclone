@@ -73,6 +73,7 @@
 .burger--view {
     width: 375px;
     height: 84px;
+    display: flex;
 }
 
 .view--all {
@@ -84,10 +85,6 @@
     font-family: "PPNeueMontreal-Regular";
     display: inline-flex;
     padding: 7px 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -97,4 +94,40 @@
     margin-top: 24px;
     border-radius: 30px;
     border: 1px solid #EEECE3;
+}
+
+.view--best {
+    width: 127px;
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid #EEECE3;
+    margin: 24px 10px 0px 10px;
+    background-color: #0D0E0F;
+    color: #EEECE3;
+    text-align: center;
+    font-family: "PPNeueMontreal-Regular";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px; /* 100% */
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.view--under {
+    width: 91px;
+    height: 30px;
+    background-color: #0D0E0F;
+    margin-top: 24px;
+    border-radius: 30px;
+    border: 1px solid #EEECE3;
+    color: #EEECE3;
+    text-align: center;
+    font-family: "PPNeueMontreal-Regular";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px; /* 100% */
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
 }
