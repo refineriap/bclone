@@ -1,0 +1,100 @@
+/* background: #0D0E0F; */
+/* font-family: "avenue_mono"; */
+/* font-family: "PPEditorialNew-Ultralight"; */
+/* font-family: "PPNeueMontreal-Regular"; */
+
+.burger--container {
+    background-color: #0D0E0F;
+    width: 375px;
+    height: 812px;
+}
+
+.burger--buttons {
+    display: flex;
+    width: 375px;
+    height: 100px;
+}
+
+.burger--back {
+    background-color: #0D0E0F;
+    border: #EEECE3 1px solid;
+    padding: 15px;
+    width: 71px;
+    height: 50px;
+    display: inline-block;
+    margin: 30px 0px 30px 0px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #EEECE3;
+    font-family: 'PPNeueMontreal-Regular';
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px; 
+    letter-spacing: 0.45px;
+}
+
+.burger--info {
+    width: 71px;
+    height: 50px;
+    padding: 17px 24px;
+    margin: 30px 0px 0px 172px;
+    background-color: #F6F3B2;
+    border: none;
+    color: #0D0E0F;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'PPNeueMontreal-Regular';
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px; 
+    letter-spacing: 0.3px;
+    border-radius: 30px;
+}
+
+.burger--hero {
+    width: 185px;
+    height: 136px;
+}
+
+.burger--hero p {
+    color: #EEECE3;
+    margin-top: 20px;
+    font-family: "avenue_mono";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px; /* 113.333% */
+    letter-spacing: 0.6px;
+}
+
+.burger--view {
+    width: 375px;
+    height: 84px;
+}
+
+.view--all {
+    width: 44px;
+    height: 30px;
+    background-color: #FFF;
+    color: #0D0E0F;
+    text-align: center;
+    font-family: "PPNeueMontreal-Regular";
+    display: inline-flex;
+    padding: 7px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px; /* 100% */
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-top: 24px;
+    border-radius: 30px;
+    border: 1px solid #EEECE3;
+}
