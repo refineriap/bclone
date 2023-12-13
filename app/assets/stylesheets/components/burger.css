@@ -11,7 +11,7 @@
 
 .burger--buttons {
     display: flex;
-    width: 375px;
+    width: 315px;
     height: 100px;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .burger--view {
-    width: 375px;
+    width: 315px;
     height: 84px;
     display: flex;
 }
@@ -132,6 +132,24 @@
     text-transform: uppercase;
 }
 
-.burger--container {
-    color:#EEECE3;
+.burger--load {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
 }
+
+.burger--item {
+    color:#EEECE3;
+    width: 153px;
+    height: 196px;
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.burger-item:nth-child(2n) {
+    margin-right: 5px; /* Reset margin for every second item to create rows */
+  }
+
+
+
+

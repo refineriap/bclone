@@ -1,7 +1,7 @@
 import { Controller } from "@hotwired/stimulus"
 
 import burgersData from '../data';
-// Connects to data-controller="burger"
+
 export default class extends Controller {
   connect() {
     this.renderBurgers();
@@ -12,6 +12,7 @@ export default class extends Controller {
 
     burgersData.forEach(burger => {
       const burgerElement = document.createElement('div');
+      burgerElement.classList.add('burger--item');
       burgerElement.innerHTML = `
         <span>${burger.rating}</span>
         <p>${burger.location}</p>

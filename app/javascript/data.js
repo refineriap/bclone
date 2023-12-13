@@ -27,7 +27,33 @@ const burgersData = [
     //   image: 'https://example.com/veggieburger.jpg',
       price: 9.99,
     },
-    // Add more burger objects as needed
+    {
+      name: 'Michelle Burger',
+      rating: 4.2,
+      location: 'San Jose',
+      country: 'USA',
+      year: '2000',
+    //   image: 'https://example.com/veggieburger.jpg',
+      price: 9.99,
+    },  
+    {
+      name: 'Michelle Burger',
+      rating: 4.2,
+      location: 'San Jose',
+      country: 'USA',
+      year: '2000',
+    //   image: 'https://example.com/veggieburger.jpg',
+      price: 9.99,
+    },  
+    {
+      name: 'Michelle Burger',
+      rating: 4.2,
+      location: 'San Jose',
+      country: 'USA',
+      year: '2000',
+    //   image: 'https://example.com/veggieburger.jpg',
+      price: 9.99,
+    },  
   ];
   
   export default burgersData;
