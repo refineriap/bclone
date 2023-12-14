@@ -16,8 +16,9 @@ export default class extends Controller {
       burgerElement.style.backgroundImage = `url('${burger.image}')`;
       burgerElement.style.backgroundPosition = 'center';
       burgerElement.style.backgroundSize = 'cover';
+      const formattedRating = burger.rating.toFixed(1);
       burgerElement.innerHTML = `
-        <p class="burger-rating">${burger.rating}</p>
+        <p class="burger-rating">${formattedRating}</p>
         <p class="burger-location">${burger.location}</p>
         <p class="burger-name">${burger.name}</p> 
         <p class="burger-country">${burger.country}, ${burger.year}</p>

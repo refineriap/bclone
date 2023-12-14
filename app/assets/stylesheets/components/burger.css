@@ -6,7 +6,7 @@
 .burger--container {
     background-color: #0D0E0F;
     width: 375px;
-    height: auto;
+    height: fit-content;
 }
 
 .burger--buttons {
@@ -159,9 +159,16 @@
     width: 30px;
     height: 30px;
     background-color: #CAFA6D;
+    font-family: "PPNeueMontreal-Regular";
     margin: 10px 10px 0px 113px;
-    padding: 6px 5px;
+    padding: 9px 6px;
     border-radius: 20px;
+    color: #0D0E0F;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px; 
 }
 
 .burger-location {
@@ -212,5 +219,38 @@
     text-transform: uppercase;
 }
 
+.burger--journal {
+    position: relative;
+    background-color: #0D0E0F;
+    width: 315px;
+    height: 91px;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+}
+
+.burger--hr {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    border: 1px solid #EEECE3;
+    width: 315px;
+    margin-left: 0px;
+}
+
+.burger--text {
+    position: absolute;
+    top: 32px;
+    width: 269px;
+    height: 36px;
+    color: #EEECE3;
+    font-family: "PPNeueMontreal-Regular";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
 
 
