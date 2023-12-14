@@ -6,7 +6,7 @@
 .burger--container {
     background-color: #0D0E0F;
     width: 375px;
-    height: 812px;
+    height: auto;
 }
 
 .burger--buttons {
@@ -133,23 +133,83 @@
 }
 
 .burger--load {
+    width: 315px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
+    margin: 0; 
+    padding: 0;
 }
 
 .burger--item {
-    color:#EEECE3;
+    /* color:#EEECE3;
+    font-family: "PPNeueMontreal-Regular"; */
     width: 153px;
     height: 196px;
     background-color: #1E1E1E;
     border-radius: 10px;
-    box-sizing: border-box;
+    margin-bottom: 5px;
+    margin-right: 4.5px;
 }
-.burger-item:nth-child(2n) {
-    margin-right: 5px; /* Reset margin for every second item to create rows */
-  }
 
+.burger-item:nth-child(2n) {
+    margin-right: 5px; 
+}
+
+.burger-rating {
+    width: 30px;
+    height: 30px;
+    background-color: #CAFA6D;
+    margin: 10px 10px 0px 113px;
+    padding: 6px 5px;
+    border-radius: 20px;
+}
+
+.burger-location {
+    color: #EEECE3;
+    text-align: center;
+    font-family: "PPNeueMontreal-Regular";
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 10px; /* 125% */
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-top: 106px;
+}
+.burger-name {
+    color: #EEECE3;
+    text-align: center;
+    font-family: "PPNeueMontreal-Regular";
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 10px; /* 125% */
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.burger-country {
+    color: #EEECE3;
+    text-align: center;
+    font-family: "PPNeueMontreal-Regular";
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 10px; /* 125% */
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+.burger-price {
+    color: #EEECE3;
+    text-align: center;
+    font-family: "PPNeueMontreal-Regular";
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 10px; /* 125% */
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
 
 
 

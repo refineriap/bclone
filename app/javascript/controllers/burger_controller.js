@@ -14,11 +14,11 @@ export default class extends Controller {
       const burgerElement = document.createElement('div');
       burgerElement.classList.add('burger--item');
       burgerElement.innerHTML = `
-        <span>${burger.rating}</span>
-        <p>${burger.location}</p>
-        <p>${burger.name}</p> 
-        <p>${burger.country}, ${burger.year}</p>
-        <p>$${burger.price.toFixed(2)}</p>
+        <p class="burger-rating">${burger.rating}</p>
+        <p class="burger-location">${burger.location}</p>
+        <p class="burger-name">${burger.name}</p> 
+        <p class="burger-country">${burger.country}, ${burger.year}</p>
+        <p class="burger-price">$${burger.price.toFixed(2)}</p>
       `;
       burgerContainer.appendChild(burgerElement);
     });
