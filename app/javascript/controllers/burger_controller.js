@@ -17,6 +17,7 @@ export default class extends Controller {
       burgerElement.style.backgroundPosition = 'center';
       burgerElement.style.backgroundSize = 'cover';
       const formattedRating = burger.rating.toFixed(1);
+    
       burgerElement.innerHTML = `
         <p class="burger-rating">${formattedRating}</p>
         <p class="burger-location">${burger.location}</p>
@@ -24,7 +25,15 @@ export default class extends Controller {
         <p class="burger-country">${burger.country}, ${burger.year}</p>
         <p class="burger-price">$${burger.price.toFixed(2)}</p>
       `;
+
+      const ratingElement = burgerElement.querySelector('.burger-rating');
+      if (ratingElement && parseFloat(formattedRating) <= 5.0) {
+        ratingElement.style.backgroundColor = 'red';
+      }
+
       burgerContainer.appendChild(burgerElement);
     });
   }
 }
+
+  
