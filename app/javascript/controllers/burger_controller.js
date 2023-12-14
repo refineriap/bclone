@@ -13,6 +13,9 @@ export default class extends Controller {
     burgersData.forEach(burger => {
       const burgerElement = document.createElement('div');
       burgerElement.classList.add('burger--item');
+      burgerElement.style.backgroundImage = `url('${burger.image}')`;
+      burgerElement.style.backgroundPosition = 'center';
+      burgerElement.style.backgroundSize = 'cover';
       burgerElement.innerHTML = `
         <p class="burger-rating">${burger.rating}</p>
         <p class="burger-location">${burger.location}</p>
@@ -24,5 +27,3 @@ export default class extends Controller {
     });
   }
 }
-
-{/* <img src="${burger.image}" alt="${burger.name} Image"></img> */}
