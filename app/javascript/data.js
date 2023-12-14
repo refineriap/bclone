@@ -24,7 +24,7 @@ const burgersData = [
       location: "Wendy's",
       country: 'USA',
       year: '2018',
-      image: '/assets/chad-montano--GFCYhoRe48-unsplash.jpg',
+      image: '/assets/vitor-monthay-WCyh_uJU4Wk-unsplash.jpg',
       price: 5.99,
     },
     {
@@ -33,7 +33,7 @@ const burgersData = [
       location: 'Burger Brothers',
       country: 'Nashville',
       year: '2021',
-      image: '/assets/quin-engle-PnCuMQITM3c-unsplash.jpg',
+      image: '/assets/delfina-cocciardi-NDPBK-d-03M-unsplash.jpg',
       price: 7.99,
     },
     {
@@ -42,7 +42,7 @@ const burgersData = [
       location: 'Mercado Vegetal',
       country: 'Oaxaca',
       year: '2023',
-      image: '/assets/quin-engle-PnCuMQITM3c-unsplash.jpg',
+      image: '/assets/eiliv-aceron-5nvt9BrLaAc-unsplash.jpg',
       price: 11.99,
     },
 ]  
