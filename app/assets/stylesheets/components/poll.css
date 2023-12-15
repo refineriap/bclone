@@ -1,0 +1,9 @@
+.poll--container {
+    width: 375px;
+    height: 812px;
+}
+
+.poll--container img {
+    width: 100%;
+    height: 100%;
+}
