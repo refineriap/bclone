@@ -132,6 +132,8 @@
     text-transform: uppercase;
 }
 
+/****************************************************/
+
 .burger--load {
     width: 315px;
     display: flex;
@@ -148,11 +150,10 @@
     background-color: #1E1E1E;
     border-radius: 10px;
     margin-bottom: 5px;
-    margin-right: 4.5px;
 }
 
-.burger-item:nth-child(2n) {
-    margin-right: 5px; 
+.burger--item:nth-child(2n) {
+    margin-right:4.5px; 
 }
 
 .burger-rating {
