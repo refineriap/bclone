@@ -3,6 +3,8 @@ import { Controller } from "@hotwired/stimulus"
 import burgersData from '../data';
 
 export default class extends Controller {
+  static targerts = ["create"]
+  
   connect() {
     this.renderBurgers();
   }

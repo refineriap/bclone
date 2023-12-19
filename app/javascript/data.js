@@ -1,15 +1,6 @@
 // app/assets/javascripts/data.js
 const burgersData = [
     {
-      name: 'The Classic',
-      rating: 8.5,
-      location: 'We love Burgers',
-      country: 'Mexico city',
-      year: '2022',
-      image: '/assets/quin-engle-PnCuMQITM3c-unsplash.jpg',
-      price: 12.99,
-    },
-    {
       name: 'Double Cheeseburger',
       rating: 5.0,
       location: 'Shake Shack',
@@ -56,13 +47,23 @@ const burgersData = [
     },
     {
       name: 'Turkey Burger',
-      rating: 2.5,
+      rating: 6.5,
       location: 'Burger Brothers',
       country: 'Nashville',
       year: '2021',
       image: '/assets/delfina-cocciardi-NDPBK-d-03M-unsplash.jpg',
       price: 7.99,
     },
+    {
+      name: 'Turkey Burger',
+      rating: 3.5,
+      location: 'Burger Brothers',
+      country: 'Nashville',
+      year: '2021',
+      image: '/assets/delfina-cocciardi-NDPBK-d-03M-unsplash.jpg',
+      price: 7.99,
+    },
+    
 ]  
   
   export default burgersData;

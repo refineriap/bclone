@@ -8,16 +8,16 @@
         <p>The Ultimate Burger Hunt</p>
     </div>
 
-    <div class="burger--view">
-        <button class="view--all">ALL</button>
-        <button class="view--best">BEST TO WORST</button>
-        <button class="view--under">UNDER $15</button>
+    <div class="burger--load" data-controller="burger">
+        <div class="burger--view">
+            <button class="view--all">ALL</button>
+            <button class="view--best">BEST TO WORST</button>
+            <button class="view--under">UNDER $15</button>
+        </div>
+        <section class="burger--menu"  data-burger-target="create">
+            <div id="burger--load"></div>      
+        </section>
     </div>
-
-    <section class="burger--load" data-controller="burger">
-        <div id="burger--load"></div>      
-    </section>
-    
     <div class="burger--journal">
         <hr class="burger--hr">
         <p class="burger--text">a visual journal in pursuit of finding the perfect burger</p>
