@@ -3,27 +3,32 @@ import { Controller } from "@hotwired/stimulus"
 import burgersData from '../data';
 
 export default class extends Controller {
-  static targerts = ["create"]
+  static targets = ["create", "allButton", "bestToWorstButton", "under15Button"];
 
   connect() {
     this.renderBurgers();
+
+    this.allButtonTarget.addEventListener('click', () => this.sortBurgers());
+    this.bestToWorstButtonTarget.addEventListener('click', () => this.sortBurgersByRating());
+    this.under15ButtonTarget.addEventListener('click', () => this.filterBurgersUnder15());
   }
 
-  renderBurgers() {
-    const burgerContainer = this.element;
+  renderBurgers(burgers = burgersData) {
+    const burgerContainer = this.createTarget;
+    burgerContainer.innerHTML = ''; // Clear existing content
 
-    burgersData.forEach(burger => {
+    burgers.forEach(burger => {
       const burgerElement = document.createElement('div');
       burgerElement.classList.add('burger--item');
       burgerElement.style.backgroundImage = `url('${burger.image}')`;
       burgerElement.style.backgroundPosition = 'center';
       burgerElement.style.backgroundSize = 'cover';
       const formattedRating = burger.rating.toFixed(1);
-    
+
       burgerElement.innerHTML = `
         <p class="burger-rating">${formattedRating}</p>
         <p class="burger-location">${burger.location}</p>
-        <p class="burger-name">${burger.name}</p> 
+        <p class="burger-name">${burger.name}</p>
         <p class="burger-country">${burger.country}, ${burger.year}</p>
         <p class="burger-price">$${burger.price.toFixed(2)}</p>
       `;
@@ -38,9 +43,19 @@ export default class extends Controller {
   }
 
   sortBurgers() {
-    console.log("it is working!!!")
+    const sortedBurgers = [...burgersData].sort((a, b) => b.year - a.year);
+    this.renderBurgers(sortedBurgers);
   }
-  
+
+  sortBurgersByRating() {
+    const sortedBurgers = [...burgersData].sort((a, b) => b.rating - a.rating);
+    this.renderBurgers(sortedBurgers);
+  }
+
+  filterBurgersUnder15() {
+    const filteredBurgers = burgersData.filter(burger => burger.price < 15);
+    this.renderBurgers(filteredBurgers);
+  }
 }
 
   

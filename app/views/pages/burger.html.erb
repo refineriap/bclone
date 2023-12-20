@@ -10,9 +10,9 @@
 
     <section class="burger--load" data-controller="burger">
         <div class="burger--view">
-            <button data-action="click->burger#sortBurgers" class="view--all">ALL</button>
-            <button class="view--best">BEST TO WORST</button>
-            <button class="view--under">UNDER $15</button>
+            <button data-action="click->burger#sortBurgers" data-burger-target="allButton" class="view--all">ALL</button>
+            <button data-action="click->burger#sortBurgersByRating" data-burger-target="bestToWorstButton" class="view--best">BEST TO WORST</button>
+            <button data-action="click->burger#filterBurgersUnder15" data-burger-target="under15Button" class="view--under">UNDER $15</button>
         </div>
         <div class="burger--menu" data-burger-target="create">
             <div id="burger--load"></div>      

@@ -20,7 +20,7 @@ const burgersData = [
     },
     {
       name: 'Turkey Burger',
-      rating: 6.5,
+      rating: 1.5,
       location: 'Burger Brothers',
       country: 'Nashville',
       year: '2021',
@@ -43,9 +43,26 @@ const burgersData = [
       country: 'Nashville',
       year: '2021',
       image: '/assets/delfina-cocciardi-NDPBK-d-03M-unsplash.jpg',
-      price: 7.99,
+      price: 16.99,
     },
-    
+    {
+      name: 'Turkey Burger',
+      rating: 9.5,
+      location: 'Burger Brothers',
+      country: 'Nashville',
+      year: '2023',
+      image: '/assets/delfina-cocciardi-NDPBK-d-03M-unsplash.jpg',
+      price: 19.99,
+    },    
+    {
+      name: 'Turkey Burger',
+      rating: 7.5,
+      location: 'Burger Brothers',
+      country: 'Nashville',
+      year: '2022',
+      image: '/assets/delfina-cocciardi-NDPBK-d-03M-unsplash.jpg',
+      price: 20.99,
+    },    
 ]  
   
   export default burgersData;
