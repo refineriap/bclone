@@ -4,7 +4,7 @@ import burgersData from '../data';
 
 export default class extends Controller {
   static targerts = ["create"]
-  
+
   connect() {
     this.renderBurgers();
   }
@@ -36,6 +36,11 @@ export default class extends Controller {
       burgerContainer.appendChild(burgerElement);
     });
   }
+
+  sortBurgers() {
+    console.log("it is working!!!")
+  }
+  
 }
 
   
