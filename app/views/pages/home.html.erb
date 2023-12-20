@@ -5,13 +5,13 @@
             <ul>
                 <li style="list-style-image: url('assets/blue.svg');"><a href="#section1" data-action="click->navbar#scrollToSection" data-section-class="section1">MI PUEBLO NATAL</a></li>
                 <li style="list-style-image: url('assets/green.svg');"><a href="#section2" data-action="click->navbar#scrollToSection" data-section-class="section2">TALES OF COLOMBIA</a></li>
-                <li style="list-style-image: url('assets/brown.svg');"><a href="#section3" data-action="click->navbar#scrollToSection" data-section-class="section3">BURGER HUNT </a></li>
+                <li style="list-style-image: url('assets/red.svg');"><a href="#section3" data-action="click->navbar#scrollToSection" data-section-class="section3">LATEST BEAT</a></li>
                 <li style="list-style-image: url('assets/beige.svg');"><a href="#section4" data-action="click->navbar#scrollToSection" data-section-class="section4">N.Y STATE OF MIND</a></li>
                 <li style="list-style-image: url('assets/grey.svg');"><a href="#section5" data-action="click->navbar#scrollToSection" data-section-class="section5">NEW PAVEMENTS</a></li>
                 <li style="list-style-image: url('assets/navy.svg');"><a href="#section6" data-action="click->navbar#scrollToSection" data-section-class="section6">DO ALIENS EXIST</a></li>
                 <li style="list-style-image: url('assets/pink.svg');"><a href="#section7" data-action="click->navbar#scrollToSection" data-section-class="section7">MÉXICO LINDO</a></li>
                 <li style="list-style-image: url('assets/purple.svg');"><a href="#section8" data-action="click->navbar#scrollToSection" data-section-class="section8">LOOKING FORWARD</a></li>
-                <li style="list-style-image: url('assets/red.svg');"><a href="#section9" data-action="click->navbar#scrollToSection" data-section-class="section9">LATEST BEAT</a></li>
+                <li style="list-style-image: url('assets/brown.svg');"><a href="#section9" data-action="click->navbar#scrollToSection" data-section-class="section9">BURGER HUNT </a></li>
             </ul>
         </div>
         <a class="info--link" href="/info">Info</a>
@@ -51,11 +51,11 @@
         </div>
     </section>
 
-    <section id="scroller" data-target="navbar.section" class="burger section3">
-        <a href="/burger" class="">
-            <%= image_tag("/assets/brown-rect.png", alt: "brown image", id: "svg", class: "burger--svg") %>   
-            <%= image_tag("burger.png", alt: "image of a restaurant", id: "png", class: "burger--image") %> 
-        </a>  
+    <section id="scroller" data-target="navbar.section" class="beats section3">
+        <%= image_tag("/assets/red-rect.png", alt:"red image", id:"svg", class:"beats--svg")%>  
+        <%= image_tag("beats.png", alt:"image of beat machine", id:"png", class:"beats--image")%>
+        <button class="listen">PLAY</button>
+        <audio id="audioPlayer" src="/audio/lofi.mp3"></audio>
     </section>
 
     <section id="scroller" data-target="navbar.section" class="nyc section4" data-controller="overlay" data-target="overlay.scroller" data-action="click->overlay#showOverlay">
@@ -119,9 +119,12 @@
         </div>
     </section>
 
-    <section id="scroller" data-target="navbar.section" class="beats section9">
-        <%= image_tag("/assets/red-rect.png", alt:"red image", id:"svg", class:"beats--svg")%>  
-        <%= image_tag("beats.png", alt:"image of beat machine", id:"png", class:"beats--image")%>
+    <section id="scroller" data-target="navbar.section" class="burger section9">
+        <a href="/burger" class="">
+            <%= image_tag("/assets/brown-rect.png", alt: "brown image", id: "svg", class: "burger--svg") %>   
+            <%= image_tag("burger.png", alt: "image of a restaurant", id: "png", class: "burger--image") %> 
+        </a>  
     </section>
+    
 </div>
 

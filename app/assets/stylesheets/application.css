@@ -132,11 +132,34 @@ section #png {
     margin-left: 80px;
 }
 
-.burger {
+.beats {
     position: relative;
     margin-top: 300px;  
     min-width: 200px;
     height: 200px;
+}
+
+.beats--image {
+    min-width: 200px;
+    height: 200px;
+}
+
+.listen {
+    position: absolute;
+    top: 55px;
+    left: 90px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background-color: #C5ACA6;
+    font-family: "PPNeueMontreal-Regular";
+    display: inline-block;
+    font-size: 12px;
+    color: #0D0E0F;
+    padding: 20px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
 }
 
 .nyc {
@@ -242,14 +265,12 @@ section #png {
     height: 292.79px;
 }
 
-
-
-.beats {
+.burger {
     margin-top: 300px; 
     padding-bottom: 295px; 
 }
 
-.beats--image {
+.burger--image {
     min-width: 200px;
     height: 200px;
 }

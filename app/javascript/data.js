@@ -43,7 +43,7 @@ const burgersData = [
       country: 'Nashville',
       year: '2021',
       image: '/assets/delfina-cocciardi-NDPBK-d-03M-unsplash.jpg',
-      price: 16.99,
+      price: 5,
     },
     {
       name: 'Turkey Burger',
