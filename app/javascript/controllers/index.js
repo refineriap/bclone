@@ -59,3 +59,6 @@ addEventListeners();
 window.addEventListener("turbo:load", function () {
   addEventListeners();
 });
+
+
+    
