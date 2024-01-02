@@ -16,115 +16,115 @@
         </div>
         <a class="info--link" href="/info">Info</a>
     </nav>
-
-    <section id="scroller" data-target="navbar.section" class="colombia section1" data-controller="overlay" data-target="overlay.scroller" data-action="click->overlay#showOverlay">    
-        <%= image_tag("/assets/blue-rect.png", alt: "blue image", id: "svg", class: "colombia--svg") %>
-        <%= image_tag("colombia.png", alt: "image of colombia", id: "png", class: "colombia--image") %>
-        <div class="colombia-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay">
-            <div class="colombia-paragraph">
-                <p>A lo lejos se ve, mi pueblo natal</p>
-                <p>se vienen a mi mente bellos recuerdos</p>
-                <p>infancia alegre que yo nunca olvidaré</p>
-                <p class="artist">Grupo Niche</p>
+    <div class="" data-controller="scroller">
+        <section id="scroller" data-target="navbar.section" class="colombia section1" data-controller="overlay" data-target="overlay.scroller" data-action="click->overlay#showOverlay">    
+            <%= image_tag("/assets/blue-rect.png", alt: "blue image", id: "svg", class: "colombia--svg") %>
+            <%= image_tag("colombia.png", alt: "image of colombia", id: "png", class: "colombia--image") %>
+            <div class="colombia-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay">
+                <div class="colombia-paragraph">
+                    <p>A lo lejos se ve, mi pueblo natal</p>
+                    <p>se vienen a mi mente bellos recuerdos</p>
+                    <p>infancia alegre que yo nunca olvidaré</p>
+                    <p class="artist">Grupo Niche</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="boris">
-        <%= image_tag("/assets/Boris.svg", alt: "Boris svg", class: "boris--image") %>
-    </section>
+        <section class="boris">
+            <%= image_tag("/assets/Boris.svg", alt: "Boris svg", class: "boris--image") %>
+        </section>
 
-    <section id="scroller" data-target="navbar.section" class="plane section2" data-controller="popup" data-action="click->popup#toggle">
-        <%= image_tag("/assets/green-rect.png", alt: "green image", id: "svg", class: "plane--svg") %>
-        <%= image_tag("plane.png", alt: "image of plane", id: "png", class: "plane--image") %>
-        <div class="popup1" id="fullScreenPopup" data-popup-target="popup">
-            <div class="popup1--container">
-                <p class="popup1--chapter">Chapter 1.</p>
-                <p class="popup1--chapter">Tales of Colombia</p>
-                <p class="popup1--chapter">1981-1995</p>
+        <section id="scroller" data-target="navbar.section" class="plane section2" data-controller="popup" data-action="click->popup#toggle">
+            <%= image_tag("/assets/green-rect.png", alt: "green image", id: "svg", class: "plane--svg") %>
+            <%= image_tag("plane.png", alt: "image of plane", id: "png", class: "plane--image") %>
+            <div class="popup1" id="fullScreenPopup" data-popup-target="popup">
+                <div class="popup1--container">
+                    <p class="popup1--chapter">Chapter 1.</p>
+                    <p class="popup1--chapter">Tales of Colombia</p>
+                    <p class="popup1--chapter">1981-1995</p>
+                </div>
+                <div class="popup1--paragraph">
+                    <p class="popup1--text">I was born in Cali, Colombia — the second son to a seamstress and a mechanic. Our family owned a local bakery and lived a very humble life. During the height of the Cali cartel’s reign, my family (like many others) was subject to it’s corruption.</p>
+                    <p class="popup1--text2">In turn, my mother and I sought a new life in the United States. I landed in a new country with only a handful of English I had learned from school. But, there I stood on the streets of Jackson Heights, Queens — an immigrant at age 14.</p>
+                </div>
+                <div class="close1" data-action="click->popup#closePopup">Close</div>
             </div>
-            <div class="popup1--paragraph">
-                <p class="popup1--text">I was born in Cali, Colombia — the second son to a seamstress and a mechanic. Our family owned a local bakery and lived a very humble life. During the height of the Cali cartel’s reign, my family (like many others) was subject to it’s corruption.</p>
-                <p class="popup1--text2">In turn, my mother and I sought a new life in the United States. I landed in a new country with only a handful of English I had learned from school. But, there I stood on the streets of Jackson Heights, Queens — an immigrant at age 14.</p>
-            </div>
-            <div class="close1" data-action="click->popup#closePopup">Close</div>
-        </div>
-    </section>
+        </section>
 
-    <section id="scroller" data-target="navbar.section" class="beats section3">
-        <%= image_tag("/assets/red-rect.png", alt:"red image", id:"svg", class:"beats--svg")%>  
-        <%= image_tag("beats.png", alt:"image of beat machine", id:"png", class:"beats--image")%>
-        <button class="listen">PLAY</button>
-        <audio id="audioPlayer" src="/audio/fesliyan.mp3"></audio>
-    </section>
+        <section id="scroller" data-target="navbar.section" class="beats section3" data-controller="audio">
+            <%= image_tag("/assets/red-rect.png", alt:"red image", id:"svg", class:"beats--svg")%>  
+            <%= image_tag("beats.png", alt:"image of beat machine", id:"png", class:"beats--image")%>
+            <button class="listen">PLAY</button>
+            <audio id="audioPlayer" src="/audio/fesliyan.mp3"></audio>
+        </section>
 
-    <section id="scroller" data-target="navbar.section" class="nyc section4" data-controller="overlay" data-target="overlay.scroller" data-action="click->overlay#showOverlay">
-        <%= image_tag("/assets/beige-rect.png", alt:"beige image", id:"svg", class:"nyc--svg") %>  
-        <%= image_tag("nyc.png", alt:"image of nyc", id:"png", class:"nyc--image") %>
-        <div class="nyc-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay">
-            <div class="nyc-paragraph">
-                <p>I never sleep, 'cause sleep is the cousin of death</p> <p>I lay puzzled as I backtrack to earlier times</p> <p>Nothing's equivalent to the New York state of mind</p>
-                <p class="artist">Nas</p>
+        <section id="scroller" data-target="navbar.section" class="nyc section4" data-controller="overlay" data-target="overlay.scroller" data-action="click->overlay#showOverlay">
+            <%= image_tag("/assets/beige-rect.png", alt:"beige image", id:"svg", class:"nyc--svg") %>  
+            <%= image_tag("nyc.png", alt:"image of nyc", id:"png", class:"nyc--image") %>
+            <div class="nyc-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay">
+                <div class="nyc-paragraph">
+                    <p>I never sleep, 'cause sleep is the cousin of death</p> <p>I lay puzzled as I backtrack to earlier times</p> <p>Nothing's equivalent to the New York state of mind</p>
+                    <p class="artist">Nas</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="scroller" data-target="navbar.section" class="bike section5" data-controller="popup" data-action="click->popup#toggle">
-        <%= image_tag("/assets/grey-rect.png", alt:"gray image", id:"svg", class:"bike--svg") %> 
-        <%= image_tag("bike.png", alt:"image of a bike", id:"png", class:"bike--image") %>
-        <div class="popup2" id="fullScreenPopup" data-popup-target="popup">
-            <div class="popup2--container">
-                <p class="popup2--chapter">Chapter 2.</p>
-                <p class="popup2--chapter">New Pavements</p>
-                <p class="popup2--chapter">1996-2021</p>
+        <section id="scroller" data-target="navbar.section" class="bike section5" data-controller="popup" data-action="click->popup#toggle">
+            <%= image_tag("/assets/grey-rect.png", alt:"gray image", id:"svg", class:"bike--svg") %> 
+            <%= image_tag("bike.png", alt:"image of a bike", id:"png", class:"bike--image") %>
+            <div class="popup2" id="fullScreenPopup" data-popup-target="popup">
+                <div class="popup2--container">
+                    <p class="popup2--chapter">Chapter 2.</p>
+                    <p class="popup2--chapter">New Pavements</p>
+                    <p class="popup2--chapter">1996-2021</p>
+                </div>
+                <div class="popup2--paragraph">
+                    <p class="popup2--text">For many first-generation immigrants, life in New York City is a grind. From the age of 18, I worked any job I could find, ultimately spending over 15 years in the car industry, doing everything from deliveries, driving limousines, to managing parking garages.</p>   
+                </div>
+                <div class="close2" data-action="click->popup#closePopup">Close</div>
             </div>
-            <div class="popup2--paragraph">
-                <p class="popup2--text">For many first-generation immigrants, life in New York City is a grind. From the age of 18, I worked any job I could find, ultimately spending over 15 years in the car industry, doing everything from deliveries, driving limousines, to managing parking garages.</p>   
-            </div>
-            <div class="close2" data-action="click->popup#closePopup">Close</div>
-        </div>
-    </section>
+        </section>
 
-    <section id="scroller" data-target="navbar.section" class="earth section6">
-        <a href="/poll" class="">
-            <%= image_tag("/assets/navy-rect.png", alt:"color navy image", id:"svg", class:"earth--svg")%>   
-            <%= image_tag("earth.png", alt:"image of the earth", id:"png", class:"earth--image")%> 
-        </a>
-    </section>
+        <section id="scroller" data-target="navbar.section" class="earth section6">
+            <a href="/poll" class="">
+                <%= image_tag("/assets/navy-rect.png", alt:"color navy image", id:"svg", class:"earth--svg")%>   
+                <%= image_tag("earth.png", alt:"image of the earth", id:"png", class:"earth--image")%> 
+            </a>
+        </section>
 
-    <section id="scroller" data-target="navbar.section" class="mexico section7" data-controller="overlay" data-target="overlay.scroller" data-action="click->overlay#showOverlay">
-        <%= image_tag("/assets/beige-rect.png", alt:"beige image", id:"svg", class:"mexico--svg")%>  
-        <%= image_tag("mexico.png", alt:"image of mexico", id:"png", class:"mexico--image")%>
-        <div class="mexico-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay">
-            <div class="mexico-paragraph">
-                <p>México lindo y querido, si muero lejos de ti</p> <p>Que digan que estoy dormido y que me traigan a ti</p> 
-                <p class="artist">Vicente Fernandez</p>
+        <section id="scroller" data-target="navbar.section" class="mexico section7" data-controller="overlay" data-target="overlay.scroller" data-action="click->overlay#showOverlay">
+            <%= image_tag("/assets/beige-rect.png", alt:"beige image", id:"svg", class:"mexico--svg")%>  
+            <%= image_tag("mexico.png", alt:"image of mexico", id:"png", class:"mexico--image")%>
+            <div class="mexico-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay">
+                <div class="mexico-paragraph">
+                    <p>México lindo y querido, si muero lejos de ti</p> <p>Que digan que estoy dormido y que me traigan a ti</p> 
+                    <p class="artist">Vicente Fernandez</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="scroller" data-target="navbar.section" class="agave section8" data-controller="popup" data-action="click->popup#toggle">
-        <%= image_tag("/assets/purple-rect.png", alt:"purple image", id:"svg", class:"agave--svg")%>    
-        <%= image_tag("agave.png", alt:"image of agave plant", id:"png", class:"agave--image") %>
-        <div class="popup3" id="fullScreenPopup" data-popup-target="popup">
-            <div class="popup3--container">
-                <p class="popup3--chapter">Chapter 3.</p>
-                <p class="popup3--chapter">Looking Forward</p>
-                <p class="popup3--chapter">2022-Present</p>
+        <section id="scroller" data-target="navbar.section" class="agave section8" data-controller="popup" data-action="click->popup#toggle">
+            <%= image_tag("/assets/purple-rect.png", alt:"purple image", id:"svg", class:"agave--svg")%>    
+            <%= image_tag("agave.png", alt:"image of agave plant", id:"png", class:"agave--image") %>
+            <div class="popup3" id="fullScreenPopup" data-popup-target="popup">
+                <div class="popup3--container">
+                    <p class="popup3--chapter">Chapter 3.</p>
+                    <p class="popup3--chapter">Looking Forward</p>
+                    <p class="popup3--chapter">2022-Present</p>
+                </div>
+                <div class="popup3--paragraph">
+                    <p class="popup3--text">When the pandemic hit, my job was affected, as with countless others around the world. However, I chose to see it as an opportunity — one to pursue a new career in web development. I started to study on my off-hours and eventually completed a bootcamp in Mexico City.</p>   
+                </div>
+                <div class="close3" data-action="click->popup#closePopup">Close</div>
             </div>
-            <div class="popup3--paragraph">
-                <p class="popup3--text">When the pandemic hit, my job was affected, as with countless others around the world. However, I chose to see it as an opportunity — one to pursue a new career in web development. I started to study on my off-hours and eventually completed a bootcamp in Mexico City.</p>   
-            </div>
-            <div class="close3" data-action="click->popup#closePopup">Close</div>
-        </div>
-    </section>
+        </section>
 
-    <section id="scroller" data-target="navbar.section" class="burger section9">
-        <a href="/burger" class="">
-            <%= image_tag("/assets/brown-rect.png", alt: "brown image", id: "svg", class: "burger--svg") %>   
-            <%= image_tag("burger.png", alt: "image of a restaurant", id: "png", class: "burger--image") %> 
-        </a>  
-    </section>
-    
+        <section id="scroller" data-target="navbar.section" class="burger section9">
+            <a href="/burger" class="">
+                <%= image_tag("/assets/brown-rect.png", alt: "brown image", id: "svg", class: "burger--svg") %>   
+                <%= image_tag("burger.png", alt: "image of a restaurant", id: "png", class: "burger--image") %> 
+            </a>  
+        </section>
+    </div>
 </div>
 
