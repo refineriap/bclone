@@ -1,23 +1,21 @@
 import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="overlay"
-  export default class extends Controller {
-    static targets = ["overlay"];
+export default class extends Controller {
+  static targets = ["overlay"];
 
-    connect() {
-    }
+  connect() {
+  }
+  showOverlay() {
+    this.overlayTarget.style.opacity = 1;
+    this.overlayTarget.classList.add("visible");
+  }
 
-    showOverlay() {
-      this.overlayTarget.style.opacity = 1;
-      this.overlayTarget.classList.add("visible");
-    }
-    
-    hideOverlay() {
-      this.overlayTarget.style.opacity = 0;
-      setTimeout(() => {
-        this.overlayTarget.classList.remove("visible");
-      }, 150);
-    }
-    
+  hideOverlay() {
+    this.overlayTarget.style.opacity = 0;
+    setTimeout(() => {
+      this.overlayTarget.classList.remove("visible");
+    }, 500);
+  }
 
-}
+}    

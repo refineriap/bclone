@@ -70,7 +70,6 @@ section #png {
 }
 
 .colombia-overlay {
-    display: none;
     position: absolute;
     margin-left: 30px;
     top: 0;
@@ -78,14 +77,14 @@ section #png {
     width: 316px;
     height: 394px;
     background-color: #0D0E0F;
-    opacity: 0;
+    opacity: 0; 
     transition: opacity 0.75s ease-in-out;
 }
 
-.colombia-overlay.visible {
-    display: block;
+.visible {
     opacity: 1;
 }
+
 
 .colombia-paragraph {
     padding-top: 30px;

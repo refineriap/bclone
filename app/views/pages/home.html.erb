@@ -20,8 +20,8 @@
         <section id="scroller" data-target="navbar.section" class="colombia section1" data-controller="overlay" data-target="overlay.scroller" data-action="click->overlay#showOverlay">    
             <%= image_tag("/assets/blue-rect.png", alt: "blue image", id: "svg", class: "colombia--svg") %>
             <%= image_tag("colombia.png", alt: "image of colombia", id: "png", class: "colombia--image") %>
-            <div class="colombia-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay">
-                <div class="colombia-paragraph">
+            <div class="colombia-overlay" data-overlay-target="overlay" >
+                <div class="colombia-paragraph" data-action="click->overlay#hideOverlay">
                     <p>A lo lejos se ve, mi pueblo natal</p>
                     <p>se vienen a mi mente bellos recuerdos</p>
                     <p>infancia alegre que yo nunca olvidaré</p>
@@ -29,6 +29,7 @@
                 </div>
             </div>
         </section>
+
 
         <section class="boris">
             <%= image_tag("/assets/Boris.svg", alt: "Boris svg", class: "boris--image") %>
