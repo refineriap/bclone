@@ -78,7 +78,7 @@ section #png {
     height: 394px;
     background-color: #0D0E0F;
     opacity: 0; 
-    transition: opacity 0.75s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
 .visible {
@@ -169,7 +169,6 @@ section #png {
 }
 
 .nyc-overlay {
-    display: none;
     position: absolute;
     margin-left: 30px;
     top: 0;
@@ -180,12 +179,6 @@ section #png {
     opacity: 0;
     transition: opacity 0.75s ease-in-out;
 }
-
-.nyc-overlay.visible {
-    display: block;
-    opacity: 1;
-}
-
 
 .nyc-paragraph {
     padding-top: 30px;
@@ -224,7 +217,6 @@ section #png {
 }
 
 .mexico-overlay {
-    display: none;
     position: absolute;
     margin-left: 30px;
     top: 0;
@@ -235,12 +227,6 @@ section #png {
     opacity: 0;
     transition: opacity 0.75s ease-in-out;
 }
-
-.mexico-overlay.visible {
-    display: block;
-    opacity: 1;
-}
-
 
 .mexico-paragraph {
     padding-top: 30px;

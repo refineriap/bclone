@@ -17,7 +17,8 @@
         <a class="info--link" href="/info">Info</a>
     </nav>
     <div class="" data-controller="scroller">
-        <section id="scroller" data-target="navbar.section" class="colombia section1" data-controller="overlay" data-target="overlay.scroller" data-action="click->overlay#showOverlay">    
+
+        <section id="scroller" data-target="navbar.section.overlay" class="colombia section1" data-controller="overlay" data-action="click->overlay#showOverlay">    
             <%= image_tag("/assets/blue-rect.png", alt: "blue image", id: "svg", class: "colombia--svg") %>
             <%= image_tag("colombia.png", alt: "image of colombia", id: "png", class: "colombia--image") %>
             <div class="colombia-overlay" data-overlay-target="overlay" >
@@ -29,7 +30,6 @@
                 </div>
             </div>
         </section>
-
 
         <section class="boris">
             <%= image_tag("/assets/Boris.svg", alt: "Boris svg", class: "boris--image") %>

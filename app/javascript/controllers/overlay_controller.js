@@ -10,12 +10,13 @@ export default class extends Controller {
     this.overlayTarget.style.opacity = 1;
     this.overlayTarget.classList.add("visible");
   }
-
+  
   hideOverlay() {
-    this.overlayTarget.style.opacity = 0;
     setTimeout(() => {
+      this.overlayTarget.style.opacity = 0;
       this.overlayTarget.classList.remove("visible");
-    }, 500);
+    }, 3800); 
   }
+  
 
 }    
