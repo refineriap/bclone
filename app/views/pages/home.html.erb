@@ -17,7 +17,6 @@
         <a class="info--link" href="/info">Info</a>
     </nav>
     <div class="" data-controller="scroller">
-
         <section id="scroller" data-target="navbar.section.overlay" class="colombia section1" data-controller="overlay" data-action="click->overlay#showOverlay">    
             <%= image_tag("/assets/blue-rect.png", alt: "blue image", id: "svg", class: "colombia--svg") %>
             <%= image_tag("colombia.png", alt: "image of colombia", id: "png", class: "colombia--image") %>
@@ -25,7 +24,7 @@
                 <div class="colombia-paragraph" data-action="click->overlay#hideOverlay">
                     <p>A lo lejos se ve, mi pueblo natal</p>
                     <p>se vienen a mi mente bellos recuerdos</p>
-                    <p>infancia alegre que yo nunca olvidaré</p>
+                    <p>infancia alegre que yo nunca olvidaré.</p>
                     <p class="artist">Grupo Niche</p>
                 </div>
             </div>
@@ -59,12 +58,14 @@
             <audio id="audioPlayer" src="/audio/fesliyan.mp3"></audio>
         </section>
 
-        <section id="scroller" data-target="navbar.section" class="nyc section4" data-controller="overlay" data-target="overlay.scroller" data-action="click->overlay#showOverlay">
+        <section id="scroller" data-target="navbar.section.overlay" class="nyc section4" data-controller="overlay" data-action="click->overlay#showOverlay">
             <%= image_tag("/assets/beige-rect.png", alt:"beige image", id:"svg", class:"nyc--svg") %>  
             <%= image_tag("nyc.png", alt:"image of nyc", id:"png", class:"nyc--image") %>
             <div class="nyc-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay">
                 <div class="nyc-paragraph">
-                    <p>I never sleep, 'cause sleep is the cousin of death</p> <p>I lay puzzled as I backtrack to earlier times</p> <p>Nothing's equivalent to the New York state of mind</p>
+                    <p>I never sleep, 'cause sleep is the cousin of death</p> 
+                    <p>I lay puzzled as I backtrack to earlier times</p> 
+                    <p>Nothing's equivalent to the New York state of mind.</p>
                     <p class="artist">Nas</p>
                 </div>
             </div>
@@ -93,12 +94,13 @@
             </a>
         </section>
 
-        <section id="scroller" data-target="navbar.section" class="mexico section7" data-controller="overlay" data-target="overlay.scroller" data-action="click->overlay#showOverlay">
+        <section id="scroller" data-target="navbar.section.overlay" class="mexico section7" data-controller="overlay"  data-action="click->overlay#showOverlay">
             <%= image_tag("/assets/beige-rect.png", alt:"beige image", id:"svg", class:"mexico--svg")%>  
             <%= image_tag("mexico.png", alt:"image of mexico", id:"png", class:"mexico--image")%>
             <div class="mexico-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay">
                 <div class="mexico-paragraph">
-                    <p>México lindo y querido, si muero lejos de ti</p> <p>Que digan que estoy dormido y que me traigan a ti</p> 
+                    <p>México lindo y querido, si muero lejos de ti.</p> 
+                    <p>Que digan que estoy dormido y que me traigan a ti.</p> 
                     <p class="artist">Vicente Fernandez</p>
                 </div>
             </div>
