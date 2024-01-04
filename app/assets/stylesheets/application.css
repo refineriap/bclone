@@ -5,9 +5,6 @@
 @import url("components/burger.css");
 @import url("components/poll.css");
 
-
-
-
 @font-face {
     font-family: "avenue_mono";
     src: url('avenue_mono.woff') format('woff'),
@@ -62,4 +59,6 @@ section #png {
     transition: opacity 1s ease;
 }
 
-
+.visible {
+    opacity: 1;
+}

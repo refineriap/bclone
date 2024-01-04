@@ -18,11 +18,6 @@
     transition: opacity 1s ease-in-out;
 }
 
-.visible {
-    opacity: 1;
-}
-
-
 .colombia-paragraph {
     padding-top: 30px;
     width: 259px;
