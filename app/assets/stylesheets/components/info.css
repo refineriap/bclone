@@ -3,7 +3,7 @@
 }
 
 .back--section {
-    min-width: 375px;
+    max-width: 375px;
     height: 100px;
 }
 
@@ -27,13 +27,13 @@
 }
 
 .info--me {
-    min-width: 315px;
+    max-width: 375px;
     height: 84px;}
 
 .info--me p {
     color: #0D0E0F;
     font-family: 'avenue_mono';
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 100;
     line-height: 28px; /* 140% */
@@ -42,6 +42,7 @@
 
 .info--buttons {
     padding-top: 23px;
+    max-width: 375px;
     height: 300px;
     display: grid;
     padding-bottom: 60px;
@@ -58,7 +59,7 @@
     color: #0D0E0F;
     text-decoration: none;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 120% */
@@ -78,7 +79,7 @@
     color: #0D0E0F;
     text-decoration: none;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 120% */
@@ -98,7 +99,7 @@
     color: #0D0E0F;
     text-decoration: none;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 120% */
@@ -112,7 +113,7 @@ hr {
 }
 
 .info--description {
-    width: 375px;
+    max-width: 375px;
     height: 165px;
 }
 
