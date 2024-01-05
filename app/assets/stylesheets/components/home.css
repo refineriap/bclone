@@ -1,7 +1,7 @@
 .colombia {
     position: relative;
     margin-top: 126px;
-    width: 315px;
+    width: 375px;
     height: 393px;
 }
 
@@ -49,36 +49,36 @@
 .boris--image {
     position: fixed;
     bottom: 30px;
-    max-width: 315px;
-    max-height: 93px;
+    width: 315px;
+    height: 93px;
     z-index: 3;
 }
 
 .plane {
     position: relative;
     margin-top: 300px;  
-    max-width: 235px;
+    width: 375px;
     height: 293px;
     margin-left: 80px;
 }
 
-.beats {
+.beats {  
     position: relative;
     margin-top: 300px;  
-    max-width: 200px;
+    width: 200px;
     height: 200px;
 }
 
 .beats--image {
-    max-width: 200px;
+    width: 200px;
     height: 200px;
 }
 
 .listen {
     position: absolute;
-    top: 55px;
+    top: 60px;
     left: 90px;
-    width: 80px;
+    width: 80px;  
     height: 80px;
     border-radius: 50%;
     border: none;
@@ -94,7 +94,7 @@
 .nyc {
     position: relative;
     margin-top: 300px;  
-    max-width: 315px;
+    width: 375px;
     height: 393px;
 }
 
@@ -126,22 +126,23 @@
 .bike {
     position: relative;
     margin-top: 300px;  
-    max-width: 235px;
+    width: 235px;
     height: 293px;
 }
 
 .earth {
     position: relative;
     margin-top: 300px;  
-    max-width: 200px;
+    width: 375px;
     height: 200px;
     margin-left: 115px;
 }
 
+
 .mexico {
     position: relative;
     margin-top: 300px;  
-    max-width: 315px;
+    width: 315px;
     height: 393px;
 }
 
@@ -174,7 +175,7 @@
     position: relative;
     margin-top: 300px;  
     margin-left: 80px;
-    max-width: 235px;
+    width: 235px;
     height: 292.79px;
 }
 
@@ -184,6 +185,167 @@
 }
 
 .burger--image {
-    max-width: 200px;
+    width: 200px;
     height: 200px;
+}
+
+
+/*********************************************/
+
+@media screen and (min-width: 1024px) {
+    .colombia {
+        margin-left: 563px;
+    }
+
+    .colombia-overlay {
+        margin-left: 0;
+    }
+
+    .boris--image {
+        width: 399px;
+        height: 118px;
+        margin-left: 60px;
+    }
+
+    .plane {
+        width: 250px;
+        height: 311.53px;
+        margin-left: 1046px;
+    }
+
+    .plane--svg {
+        width: 250px;
+        height: 311.53px;
+    }
+
+    .plane--image {
+        width: 250px;
+        height: 311.53px;
+    }
+
+    .beats {
+        width: 231px;
+        height: 231px;
+        margin-left: 311px;
+    }
+
+    .beats--image {
+        width: 231px;
+        height: 231px;  
+    }
+
+    .beats--svg {
+        width: 231px;
+        height: 231px;
+    }
+
+    .listen {
+        top: 60px;
+        left: 70px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .nyc {
+        width: 315px;
+        height: 393px;
+        margin-left: 814px;
+    }
+    .nyc--image {
+        width: 315px;
+        height: 393px;   
+    }
+    .nyc--svg {
+        width: 315px;
+        height: 393px;   
+    }
+
+    .nyc-overlay {
+        margin-left: 0;
+    }
+
+    .bike {
+        width: 250px;
+        height: 311.53px;
+        margin-left: 144px;
+    }
+
+    .bike--image {
+        width: 250px;
+        height: 311.53px;
+    }
+
+    .bike--svg {
+        width: 250px;
+        height: 311.53px;
+    }
+
+    .earth {
+        width: 231px;
+        height: 231px;
+        margin-left: 1149px;
+    }
+
+    .earth--image {
+        width: 231px;
+        height: 231px;
+    }
+
+    .earth--svg {
+        width: 231px;
+        height: 231px;
+    }
+
+    .mexico {
+        width: 315px;
+        height: 393px;
+        margin-left: 479px;
+    }
+
+    .mexico--image {
+        width: 315px;
+        height: 393px;
+    }
+
+    .mexico--svg {
+        width: 315px;
+        height: 393px;
+    }
+
+    .mexico-overlay {
+        margin-left: 0;
+    }
+
+    .agave {
+        width: 250px;
+        height: 311.48px;
+        margin-left: 961px;
+    }
+
+    .agave--image {
+        width: 250px;
+        height: 311.48px;
+    }
+
+    .agave--svg {
+        width: 250px;
+        height: 311.48px;
+    }
+
+    .burger {
+        width: 231px;
+        height: 526px;
+        margin-left: 228px;
+        padding-bottom: 295px;
+    }
+
+    .burger--image {
+        width: 231px;
+        height: 231px;
+    }
+
+    .burger--svg {
+        width: 231px;
+        height: 231px;
+    }
 }

@@ -36,6 +36,7 @@
 
 body {
     margin: 0;
+    height: auto;
 }
 
 .home {
@@ -45,6 +46,12 @@ body {
 section {
     padding: 0 30px;
     max-width: 375px;
+}
+
+@media screen and (min-width: 1024px) {
+    section {
+        padding: 0px;
+    }
 }
 
 section #svg {
