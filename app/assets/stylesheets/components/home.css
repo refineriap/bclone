@@ -203,8 +203,10 @@
 
     .boris--image {
         width: 399px;
+        bottom: 0;
         height: 118px;
         margin-left: 60px;
+        margin-bottom: 60px;
     }
 
     .plane {
