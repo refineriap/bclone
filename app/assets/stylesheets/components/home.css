@@ -30,6 +30,11 @@
     letter-spacing: 0.6px;
 }
 
+.hidden {
+    display: none;
+    transition: ease;
+}
+
 .arrow {
     position: absolute;
     bottom: 10px;
@@ -224,6 +229,10 @@
         cursor: pointer;
         bottom: 10px;
         left: 10px;
+    }
+
+    .hidden {
+        display: none;
     }
 
     .boris--image {

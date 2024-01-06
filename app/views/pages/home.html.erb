@@ -29,7 +29,7 @@
                     <p class="artist">Grupo Niche</p>
                 </div>
             </div>  
-            <%= image_tag("arrow.png", alt: "image of an arrow", class: "arrow", data: { action: "click->overlay#hideOverlay click->overlay#showOverlay" } ) %>
+            <%= image_tag("arrow.png", alt: "image of an arrow", class: "arrow", data: { target: "overlay.arrow", action: "click->overlay#hideOverlay click->overlay#showOverlay" } ) %>
         </section>
 
         <section class="boris">
