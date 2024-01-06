@@ -7,7 +7,7 @@
 
 .colombia-overlay {
     position: absolute;
-    margin-left: 30px;
+    margin-left: 30px; 
     top: 0;
     left: 0;
     width: 316px;
@@ -28,6 +28,12 @@
     font-weight: 200;
     line-height: 40px; 
     letter-spacing: 0.6px;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
 }
 
 .artist {
@@ -194,6 +200,30 @@
 
     .colombia-overlay {
         margin-left: 0;
+    }
+
+    .colombia-paragraph {
+        width: 460px;
+        height: 205px;
+        margin-left: -64px;
+    }
+
+    .col-p-1 {
+        padding-left: 30px;
+    }
+
+    .col-p-3 {
+        padding-left: 5px;
+    }
+
+    .artist {
+        padding-left: 172px;
+    }
+
+    .arrow {
+        cursor: pointer;
+        bottom: 10px;
+        left: 10px;
     }
 
     .boris--image {

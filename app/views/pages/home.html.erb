@@ -18,17 +18,18 @@
     </nav>
     
     <div class="infinite" data-controller="scroller infinite" data-infinite-target="sections">
-        <section id="scroller" data-target="navbar.section.overlay" class="colombia section1" data-controller="overlay" data-action="click->overlay#showOverlay">    
+        <section id="scroller" data-target="navbar.section.overlay" class="colombia section1" data-controller="overlay">    
             <%= image_tag("/assets/blue-rect.png", alt: "blue image", id: "svg", class: "colombia--svg") %>
             <%= image_tag("colombia.png", alt: "image of colombia", id: "png", class: "colombia--image") %>
             <div class="colombia-overlay" data-overlay-target="overlay" >
-                <div class="colombia-paragraph" data-action="click->overlay#hideOverlay">
-                    <p>A lo lejos se ve, mi pueblo natal</p>
-                    <p>se vienen a mi mente bellos recuerdos</p>
-                    <p>infancia alegre que yo nunca olvidaré.</p>
+                <div class="colombia-paragraph">
+                    <p class="col-p-1">A lo lejos se ve, mi pueblo natal</p>
+                    <p class="col-p-2">Se vienen a mi mente bellos recuerdos</p>
+                    <p class="col-p-3">Infancia alegre que yo nunca olvidaré.</p>
                     <p class="artist">Grupo Niche</p>
                 </div>
             </div>  
+            <%= image_tag("arrow.png", alt: "image of an arrow", class: "arrow", data: { action: "click->overlay#hideOverlay click->overlay#showOverlay" } ) %>
         </section>
 
         <section class="boris">
