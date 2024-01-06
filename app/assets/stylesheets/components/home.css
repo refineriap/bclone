@@ -208,13 +208,15 @@
     }
 
     .colombia-paragraph {
+        position: fixed;
+        top: 150px;
         width: 460px;
         height: 205px;
         margin-left: -64px;
     }
 
     .col-p-1 {
-        padding-left: 30px;
+        padding-left: 40px;
     }
 
     .col-p-3 {
