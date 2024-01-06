@@ -1,7 +1,7 @@
 .colombia {
     position: relative;
     margin-top: 126px;
-    width: 375px;
+    width: 375px;  
     height: 393px;
 }
 
@@ -257,7 +257,7 @@
     }
 
     .plane--image {
-        width: 250px;
+        width: 250px;  
         height: 311.53px;
     }
 
