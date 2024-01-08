@@ -60,17 +60,18 @@
             <audio id="audioPlayer" src="/audio/fesliyan.mp3"></audio>
         </section>
 
-        <section id="scroller" data-target="navbar.section.overlay" class="nyc section4" data-controller="overlay" data-action="click->overlay#showOverlay">
+        <section id="scroller" data-target="navbar.section.overlay" class="nyc section4" data-controller="overlay">
             <%= image_tag("/assets/beige-rect.png", alt:"beige image", id:"svg", class:"nyc--svg") %>  
             <%= image_tag("nyc.png", alt:"image of nyc", id:"png", class:"nyc--image") %>
-            <div class="nyc-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay">
+            <div class="nyc-overlay" data-overlay-target="overlay">
                 <div class="nyc-paragraph">
-                    <p>I never sleep, 'cause sleep is the cousin of death</p> 
-                    <p>I lay puzzled as I backtrack to earlier times</p> 
-                    <p>Nothing's equivalent to the New York state of mind.</p>
-                    <p class="artist">Nas</p>
+                    <p class="nyc-p-1">I never sleep, 'cause sleep is the cousin of death</p> 
+                    <p class="nyc-p-2">I lay puzzled as I backtrack to earlier times</p> 
+                    <p class="nyc-p-3">Nothing's equivalent to the New York state of mind.</p>
+                    <p class="artist2">Nas</p>
                 </div>
             </div>
+            <%= image_tag("arrow.png", alt: "image of an arrow", class: "arrow", data: { target: "overlay.arrow", action: "click->overlay#hideOverlay click->overlay#showOverlay" } ) %>
         </section>
 
         <section id="scroller" data-target="navbar.section" class="bike section5" data-controller="popup" data-action="click->popup#toggle">
