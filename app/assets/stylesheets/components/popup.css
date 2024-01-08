@@ -167,7 +167,7 @@
     bottom: -100%;
     left: 0;
     width: 375px;
-    height: 712px;
+    height: 714px;
     background-color: #E3C4E5;
     overflow: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease, bottom 1s ease; /* Adjusted durations and timing functions */
@@ -185,11 +185,8 @@
 .popup3--container {
     font-family: "avenue_mono";
     min-width: 297px;
-    height: 130px;
-    padding: 30px 48px 0px 30px;   
-}
-
-.popup3--chapter {
+    height: 100px;
+    margin: 30px 0px 0px 30px;    
     color: #0D0E0F;
     font-size: 1.875rem;
     font-style: normal;
@@ -234,6 +231,7 @@
     cursor: pointer;
     transition: bottom 0.5s ease; 
     padding-top: 9px;
+    margin-top: 10px;
 }
 
 
@@ -284,6 +282,29 @@
     }
 
     .close2 {
+        margin: 0px 0px 0px 30px;
+    }
+
+    .popup3 {  
+        width: 650px; 
+        margin-left: 730px;
+    }
+
+    .popup3.active {
+       width: 650px; 
+    }
+
+    .popup3--container {
+        margin: 60px 0px 0px 60px;
+    }
+
+    .popup3--paragraph {
+        width: 446px;
+        height: 100px;
+        margin-left: 60px;
+    }
+
+    .close3 {
         margin: 0px 0px 0px 30px;
     }
 }
