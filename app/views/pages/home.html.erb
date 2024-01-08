@@ -97,16 +97,17 @@
             </a>
         </section>
 
-        <section id="scroller" data-target="navbar.section.overlay" class="mexico section7" data-controller="overlay"  data-action="click->overlay#showOverlay">
+        <section id="scroller" data-target="navbar.section.overlay" class="mexico section7" data-controller="overlay">
             <%= image_tag("/assets/beige-rect.png", alt:"beige image", id:"svg", class:"mexico--svg")%>  
             <%= image_tag("mexico.png", alt:"image of mexico", id:"png", class:"mexico--image")%>
-            <div class="mexico-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay">
+            <div class="mexico-overlay" data-overlay-target="overlay">
                 <div class="mexico-paragraph">
-                    <p>México lindo y querido, si muero lejos de ti.</p> 
+                    <p class="mexico-p-1">México lindo y querido, si muero lejos de ti.</p> 
                     <p>Que digan que estoy dormido y que me traigan a ti.</p> 
-                    <p class="artist">Vicente Fernandez</p>
+                    <p class="artist3">Vicente Fernandez</p>
                 </div>
             </div>
+            <%= image_tag("arrow.png", alt: "image of an arrow", class: "arrow", data: { target: "overlay.arrow", action: "click->overlay#hideOverlay click->overlay#showOverlay" } ) %>
         </section>
 
         <section id="scroller" data-target="navbar.section" class="agave section8" data-controller="popup" data-action="click->popup#toggle">

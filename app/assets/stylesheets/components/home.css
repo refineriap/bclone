@@ -194,6 +194,18 @@
     letter-spacing: 0.6px;
 }
 
+.artist3 {
+    margin-top: 40px;
+    color: #EEECE3;
+    font-family: "PPNeueMontreal-Regular";
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
 .agave {
     position: relative;
     margin-top: 300px;  
@@ -265,7 +277,7 @@
 
     .plane--svg {
         width: 250px;
-        height: 311.53px;
+        height: 311.53px;  
     }
 
     .plane--image {
@@ -357,24 +369,29 @@
     }
 
     .mexico {
-        width: 315px;
-        height: 393px;
         margin-left: 479px;
-    }
-
-    .mexico--image {
-        width: 315px;
-        height: 393px;
-    }
-
-    .mexico--svg {
-        width: 315px;
-        height: 393px;
     }
 
     .mexico-overlay {
         margin-left: 0;
     }
+
+    .mexico-paragraph {
+        position: fixed;
+        top: 150px;
+        width: 580px;
+        height: 164px;
+        margin-left: -30px;
+    }
+
+    .mexico-p-1 {
+        padding-left: 46px;
+    }
+
+    .artist3 {
+        padding-left: 202px;
+    }
+
 
     .agave {
         width: 250px;
