@@ -243,41 +243,23 @@
 @media screen and (min-width: 1024px) {
     .popup1 {
         margin-left: 730px;
-        width: 650px;
     }
 
     .popup1.active {
        width: 650px; 
-       overflow-y: hidden;
     }
 
     .popup1--container {
-        padding: 60px 0px 0px 84px;
-    }
-
-    .popup1--chapter {
-        width: 297px;
+        margin: 60px 0px 0px 60px;
     }
 
     .popup1--paragraph {
-        width: 500px;
-        height: 318px;
-        padding-top: 40px;
-    }
-
-    .popup1--text {
-        width: 470px;
-        height: 125px;
-        padding-left: 60px;
-        padding-top: 30px;
-    }
-    .popup1--text2 {
-        width: 470px;
-        height: 125px;
-        padding-left: 60px;
+        width: 446px;
+        height: 174px;
+        margin-left: 60px;
     }
 
     .close1 {
-        margin-left: 60px;
+        margin: 0px 0px 0px 30px;
     }
 }
