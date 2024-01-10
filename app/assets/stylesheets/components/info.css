@@ -1,6 +1,5 @@
 .info--container {
     background-color: #F6F3B2;
-
 }
 
 .back--section {
@@ -182,7 +181,7 @@ hr {
 @media screen and (min-width: 1024px) {
     .info--container {
         width: auto;
-        height: auto;
+        height: 100vh;
     }
 
     .back--section {
@@ -249,15 +248,17 @@ hr {
 
     .info--languages {
         width: 418px;
-        margin: 0px;
+        margin: 0px;  
         height: 100px;
         column-gap: 10px;
     }
 
     .info--boris {
         width: 399px;
-        height: 100%;
-        margin: 80px 0px 60px 60px;
+        height: 118px;
+        position: fixed;
+        left: 60px;
+        bottom: 60px;
     }
 
     .info-boris-img {
