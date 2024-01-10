@@ -300,8 +300,16 @@
     }
 
     .burger--journal {
-       width: 615px;
+       width: 444px;
        height: 91px;
        margin-left: 60px; 
+    }
+
+    .burger--hr {
+       width: 444px; 
+    }
+
+    .burger--text {
+        width: 444px;
     }
 }
