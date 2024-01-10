@@ -143,6 +143,7 @@
     display: flex;
     flex-wrap: wrap;
 }
+
 .burger--item {
     width: 153px;
     height: 196px;
@@ -281,9 +282,26 @@
     }
 
     .burger--menu {
-        width: 615px;
-        margin-left: 663px;
+        width: 717px;
+        margin-left: 672px;
         margin-top: -397px;
     }
 
+    .burger--item {
+        width: 232px;
+        height: 297.2px;
+        gap: 7px;
+        margin: 0px 7px 7px 0px;
+
+    }
+
+    .burger--item:nth-child(2n) {
+        margin: 0px 7px 7px 0px;
+    }
+
+    .burger--journal {
+       width: 615px;
+       height: 91px;
+       margin-left: 60px; 
+    }
 }

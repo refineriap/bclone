@@ -53,16 +53,7 @@ const burgersData = [
       year: '2023',
       image: '/assets/delfina-cocciardi-NDPBK-d-03M-unsplash.jpg',
       price: 19.99,
-    },    
-    {
-      name: 'Turkey Burger',
-      rating: 7.5,
-      location: 'Burger Brothers',
-      country: 'Nashville',
-      year: '2022',
-      image: '/assets/delfina-cocciardi-NDPBK-d-03M-unsplash.jpg',
-      price: 20.99,
-    },    
+    },        
 ]  
   
   export default burgersData;
