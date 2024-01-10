@@ -213,26 +213,45 @@ hr {
     }
 
     .boris--btn {
-        width: 315px;
-        height: 222px;
-        margin-right: 20px;
-        padding: 88px 59px;
+        width: 316px;
+        height: 230px;
+        margin-right: 20px;   
         border-radius: 120px;
+        transition: background-color 0.3s;
+        padding: 96px 62px;
+    }
+
+    .boris--btn:hover {
+        background-color: #0D0E0F;
+        color: #EEECE3;
     }
 
     .github--btn {
         width: 231px;
-        height: 222px;
-        border-radius: 120px;
-        padding: 88px 49px;
+        height: 231px;
+        border-radius: 50%;
+        padding: 96px 50px;
         margin-right: 20px;
+        transition: background-color 0.3s;
     }
+
+    .github--btn:hover {
+        background-color: #0D0E0F;
+        color: #EEECE3;
+    }
+
     .linkedin--btn {
         width: 231px;
-        height: 222px;
-        border-radius: 120px;
-        padding: 88px 49px;
+        height: 231px;
+        border-radius: 50%;
+        padding: 96px 50px;
         margin-right: 20px;
+        transition: background-color 0.3s;
+    }
+
+    .linkedin--btn:hover {
+        background-color: #0D0E0F;
+        color: #EEECE3;
     }
 
     .info--description {
