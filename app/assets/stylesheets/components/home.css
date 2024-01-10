@@ -1,8 +1,8 @@
 .colombia {
     position: relative;
-    margin-top: 126px;
     width: 375px;  
     height: 393px;
+    margin-top: 40px;
 }
 
 .colombia-overlay {
@@ -54,15 +54,17 @@
 }
 
 .boris {
-    margin-top: 90px;
+    position: fixed;
+    bottom: 30px;
+    width: 375px;
+    height: 93px;
+    z-index: 3;
 }
 
 .boris--image {
-    position: fixed;
-    bottom: 30px;
+    margin: 0;
     width: 315px;
     height: 93px;
-    z-index: 3;
 }
 
 .plane {
@@ -261,12 +263,18 @@
         display: none;
     }
 
+    .boris {
+        position: fixed;
+        bottom: 60px;
+        left: 60px;
+        width: 399px;
+        height: 118px;
+        margin-top: 70px;
+    }
+
     .boris--image {
         width: 399px;
-        bottom: 0;
         height: 118px;
-        margin-left: 60px;
-        margin-bottom: 60px;
     }
 
     .plane {
