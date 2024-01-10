@@ -1,9 +1,10 @@
 .info--container {
     background-color: #F6F3B2;
+    width: auto;
 }
 
 .back--section {
-    width: 375px;   
+    width: auto;   
     height: 100px;
 }
 

@@ -5,13 +5,13 @@
 
 .burger--container {
     background-color: #0D0E0F;
-    width: 375px;
-    height: fit-content;
+    width: auto;
+    height: auto;
 }
 
 .burger--buttons {
     display: flex;
-    width: 315px;
+    width: auto;
     height: 100px;
 }
 
@@ -57,9 +57,6 @@
 .burger--hero {
     width: 185px;
     height: 136px;
-}
-
-.burger--hero p {
     color: #EEECE3;
     margin-top: 20px;
     font-family: "avenue_mono";
@@ -259,3 +256,34 @@
 }
 
 
+/****************************************************/
+
+@media screen and (min-width: 1024px) {
+    .burger--buttons {
+        padding: 0px 60px;
+        justify-content: space-between;
+    }
+
+    .burger--hero {
+        width: 338px;
+        height: 272px;
+        margin: 30px 0px 0px 60px;
+        font-family: "avenue_mono";
+        color: #EEECE3;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 68px; /* 113.333% */
+    }
+
+    .burger--view {
+        margin: 48px 0px 0px 60px;
+    }
+
+    .burger--menu {
+        width: 615px;
+        margin-left: 663px;
+        margin-top: -397px;
+    }
+
+}
