@@ -1,22 +1,34 @@
-import { Controller } from "@hotwired/stimulus"
+import { Controller } from "@hotwired/stimulus";
 
-// Connects to data-controller="overlay"
 export default class extends Controller {
   static targets = ["overlay"];
 
   connect() {
+    
+    if (window.innerWidth < 768) {
+      this.initializeMobileOverlay();
+    }
   }
+
+  initializeMobileOverlay() {
+  }
+
   showOverlay() {
-    this.overlayTarget.style.opacity = 1;
-    this.overlayTarget.classList.add("visible");
-    // this.arrowTarget.classList.add("hidden"); 
+    if (window.innerWidth < 768) {
+      this.overlayTarget.style.opacity = 1;
+      this.overlayTarget.classList.add("visible");
+      // this.arrowTarget.classList.add("hidden"); 
+    }
   }
   
   hideOverlay() {
-    setTimeout(() => {
-      this.overlayTarget.style.opacity = 0;
-      this.overlayTarget.classList.remove("visible");
-      // this.arrowTarget.classList.remove("hidden");
-    }, 3800); 
+    if (window.innerWidth < 768) {
+      setTimeout(() => {
+        this.overlayTarget.style.opacity = 0;
+        this.overlayTarget.classList.remove("visible");
+        // this.arrowTarget.classList.remove("hidden");
+      }, 3800); 
+    }
   }
-}    
+}
+
