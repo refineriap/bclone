@@ -11,11 +11,11 @@ export default class extends Controller {
         if (isPlaying) {
         audio.pause();
         isPlaying = false;
-        button.textContent = 'PLAY';
+        button.textContent = 'Listen';
         } else {
         audio.play();
         isPlaying = true;
-        button.textContent = 'PAUSE';
+        button.textContent = 'Pause';
         }
     });
   }

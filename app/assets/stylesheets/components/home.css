@@ -68,6 +68,7 @@
 }
 
 .plane {
+    cursor: pointer;
     position: relative;
     margin-top: 300px;  
     width: 296px;
@@ -89,18 +90,21 @@
 
 .listen {
     position: absolute;
-    top: 60px;
-    left: 90px;
-    width: 80px;  
-    height: 80px;
-    border-radius: 50%;
+    top: 140px;
+    left: 40px;
+    width: 86px;  
+    height: 50px;
+    border-radius: 30px;
     border: none;
-    background-color: #C5ACA6;
+    background-color: #F6F3B2;
     font-family: "PPNeueMontreal-Regular";
-    display: inline-block;
-    font-size: 0.75rem;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 200% */
+    letter-spacing: 0.3px;
     color: #0D0E0F;
-    padding: 20px;
+    padding: 8px;
     letter-spacing: 0.5px;
 }
 
@@ -319,10 +323,11 @@
     }
 
     .listen {
-        top: 60px;
-        left: 70px;
-        width: 100px;
-        height: 100px;
+        top: 171px;
+        left: 10px;
+        width: 86px;
+        height: 50px;
+        cursor: pointer;
     }
 
     .nyc {
@@ -331,6 +336,14 @@
     
     .nyc-overlay {
         margin-left: 0;
+        opacity: 0;
+        z-index: 2;
+        transition: opacity 1s;
+    }
+
+    .nyc-overlay:hover {
+        cursor: pointer;
+        opacity: 1;
     }
 
     .nyc-paragraph {
@@ -339,6 +352,7 @@
         width: 600px;
         height: 205px;
         margin-left: -380px;
+        pointer-events: none;
     }
 
     .nyc-p-1 {
@@ -391,6 +405,14 @@
 
     .mexico-overlay {
         margin-left: 0;
+        opacity: 0;
+        z-index: 2;
+        transition: opacity 1s;
+    }
+
+    .mexico-overlay:hover {
+        cursor: pointer;
+        opacity: 1;
     }
 
     .mexico-paragraph {
@@ -399,6 +421,7 @@
         width: 580px;
         height: 164px;
         margin-left: -30px;
+        pointer-events: none;
     }
 
     .mexico-p-1 {

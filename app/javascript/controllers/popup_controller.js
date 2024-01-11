@@ -14,7 +14,7 @@ export default class extends Controller {
   toggle() {
     if (this.state.isTransitioning) {
       return;
-    }
+    } 
 
     this.state.isOpen ? this.closePopup() : this.openPopup();
   }
@@ -24,7 +24,6 @@ export default class extends Controller {
     this.state.isTransitioning = true;
 
     this.popupTarget.classList.add("active");
-
     this.popupTarget.addEventListener("transitionend", this.transitionEndHandler);
   }
 

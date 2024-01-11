@@ -50,20 +50,20 @@
                 </div>
                 <div class="close1" data-action="click->popup#closePopup">Close</div>
             </div>
-            <%= image_tag("arrow.png", alt: "image of an arrow", class: "arrow" ) %>
+            <%= image_tag("arrow.png", alt: "image of an arrow", class: "arrow" ) %>  
         </section>
 
         <section id="scroller" data-target="navbar.section" class="beats section3" data-controller="audio">
             <%= image_tag("/assets/red-rect.png", alt:"red image", id:"svg", class:"beats--svg")%>  
             <%= image_tag("beats.png", alt:"image of beat machine", id:"png", class:"beats--image")%>
-            <button class="listen">PLAY</button>
+            <button class="listen">Listen</button>
             <audio id="audioPlayer" src="/audio/fesliyan.mp3"></audio>
         </section>
 
-        <section id="scroller" data-target="navbar.section.overlay" class="nyc section4" data-controller="overlay">
+        <section id="scroller" data-target="navbar.section.overlay" class="nyc section4" data-controller="overlay" data-action="click->overlay#showOverlay">
             <%= image_tag("/assets/beige-rect.png", alt:"beige image", id:"svg", class:"nyc--svg") %>  
             <%= image_tag("nyc.png", alt:"image of nyc", id:"png", class:"nyc--image") %>
-            <div class="nyc-overlay" data-overlay-target="overlay">
+            <div class="nyc-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay">
                 <div class="nyc-paragraph">
                     <p class="nyc-p-1">I never sleep, 'cause sleep is the cousin of death</p> 
                     <p class="nyc-p-2">I lay puzzled as I backtrack to earlier times</p> 
@@ -71,7 +71,6 @@
                     <p class="artist2">Nas</p>
                 </div>
             </div>
-            <%= image_tag("arrow.png", alt: "image of an arrow", class: "arrow", data: { target: "overlay.arrow", action: "click->overlay#hideOverlay click->overlay#showOverlay" } ) %>
         </section>
 
         <section id="scroller" data-target="navbar.section" class="bike section5" data-controller="popup" data-action="click->popup#toggle">
@@ -88,6 +87,7 @@
                 </div>
                 <div class="close2" data-action="click->popup#closePopup">Close</div>
             </div>
+            <%= image_tag("arrow.png", alt: "image of an arrow", class: "arrow" ) %>  
         </section>
 
         <section id="scroller" data-target="navbar.section" class="earth section6">
@@ -97,17 +97,16 @@
             </a>
         </section>
 
-        <section id="scroller" data-target="navbar.section.overlay" class="mexico section7" data-controller="overlay">
+        <section id="scroller" data-target="navbar.section.overlay" class="mexico section7" data-controller="overlay" data-action="click->overlay#showOverlay">
             <%= image_tag("/assets/beige-rect.png", alt:"beige image", id:"svg", class:"mexico--svg")%>  
             <%= image_tag("mexico.png", alt:"image of mexico", id:"png", class:"mexico--image")%>
-            <div class="mexico-overlay" data-overlay-target="overlay">
+            <div class="mexico-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay">
                 <div class="mexico-paragraph">
                     <p class="mexico-p-1">México lindo y querido, si muero lejos de ti.</p> 
                     <p>Que digan que estoy dormido y que me traigan a ti.</p> 
                     <p class="artist3">Vicente Fernandez</p>
                 </div>
             </div>
-            <%= image_tag("arrow.png", alt: "image of an arrow", class: "arrow", data: { target: "overlay.arrow", action: "click->overlay#hideOverlay click->overlay#showOverlay" } ) %>
         </section>
 
         <section id="scroller" data-target="navbar.section" class="agave section8" data-controller="popup" data-action="click->popup#toggle">
@@ -124,6 +123,7 @@
                 </div>
                 <div class="close3" data-action="click->popup#closePopup">Close</div>
             </div>
+            <%= image_tag("arrow.png", alt: "image of an arrow", class: "arrow" ) %>  
         </section>
 
         <section id="scroller" data-target="navbar.section" class="burger section9">
