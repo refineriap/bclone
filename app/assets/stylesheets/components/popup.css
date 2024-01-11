@@ -34,7 +34,7 @@
 }
 
 .popup1--paragraph {    
-    width: 315px;
+    width: 310px;
     height: 257px;
     margin: 231px 30px 0px 30px;
 }
@@ -47,16 +47,6 @@
     font-weight: 400;
     line-height: 25px; 
     letter-spacing: 0.15px;
-}
-
-.popup1--text2 {
-    color: #0D0E0F;
-    font-family: "PPNeueMontreal-Regular";
-    font-size: 0.9375rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 25px; /* 166.667% */
-    letter-spacing: 0.15px; 
 }
 
 .close1 {
@@ -255,7 +245,7 @@
     .popup1--paragraph {
         width: 446px;
         height: 174px;
-        margin-left: 60px;
+        margin: 270px 0px 0px 60px;
     }
 
     .close1 {

@@ -1,4 +1,4 @@
-<div class="home">  
+<div class="home">    
     <nav class="dropdown" data-controller="navbar">
         <button class="dropbtn" id="dropbtn" data-action="click->navbar#toggleDropdown">MY LIFE'S PLAYLIST</button>
         <div id="myDropdown" class="dropdown-content">
@@ -18,10 +18,10 @@
     </nav>
     
     <div class="infinite" data-controller="scroller infinite" data-infinite-target="sections">
-        <section id="scroller" data-target="navbar.section.overlay" class="colombia section1" data-controller="overlay">    
+        <section id="scroller" data-target="navbar.section.overlay" class="colombia section1" data-controller="overlay" data-action="click->overlay#showOverlay">    
             <%= image_tag("/assets/blue-rect.png", alt: "blue image", id: "svg", class: "colombia--svg") %>
             <%= image_tag("colombia.png", alt: "image of colombia", id: "png", class: "colombia--image") %>
-            <div class="colombia-overlay" data-overlay-target="overlay" >
+            <div class="colombia-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay" >
                 <div class="colombia-paragraph">
                     <p class="col-p-1">A lo lejos se ve, mi pueblo natal</p>
                     <p class="col-p-2">Se vienen a mi mente bellos recuerdos</p>
@@ -29,7 +29,7 @@
                     <p class="artist">Grupo Niche</p>
                 </div>
             </div>  
-            <%= image_tag("arrow.png", alt: "image of an arrow", class: "arrow", data: { target: "overlay.arrow", action: "click->overlay#hideOverlay click->overlay#showOverlay" } ) %>
+            
         </section>
 
         <section class="boris">
@@ -46,11 +46,11 @@
                     <p>1981-1995</p>
                 </div>
                 <div class="popup1--paragraph">
-                    <p class="popup1--text">I was born in Cali, Colombia — the second son to a seamstress and a mechanic. Our family owned a local bakery and lived a very humble life. During the height of the Cali cartel’s reign, my family (like many others) was subject to it’s corruption.</p>
-                    <p class="popup1--text2">In turn, my mother and I sought a new life in the United States. There I stood on the streets of Jackson Heights, Queens — a first generation immigrant at age 14.</p>
+                    <p class="popup1--text">I was born in Cali, Colombia — the second son to a seamstress and a mechanic. Our family owned a local bakery and lived a very humble life. During the height of the Cali cartel’s reign, my family (like many others) was subject to it’s corruption. In turn, my mother and I sought a new life in the United States. There I stood on the streets of Jackson Heights, Queens — a first generation immigrant at age 14.</p>
                 </div>
                 <div class="close1" data-action="click->popup#closePopup">Close</div>
             </div>
+            <%= image_tag("arrow.png", alt: "image of an arrow", class: "arrow" ) %>
         </section>
 
         <section id="scroller" data-target="navbar.section" class="beats section3" data-controller="audio">

@@ -227,10 +227,19 @@
 @media screen and (min-width: 1024px) {
     .colombia {
         margin-left: 563px;
+
     }
 
     .colombia-overlay {
         margin-left: 0;
+        opacity: 0;
+        z-index: 2;
+        transition: opacity 1s;
+    }
+
+    .colombia-overlay:hover {
+        cursor: pointer;
+        opacity: 1;
     }
 
     .colombia-paragraph {
@@ -239,6 +248,7 @@
         width: 460px;
         height: 205px;
         margin-left: -64px;
+        pointer-events: none;
     }
 
     .col-p-1 {
