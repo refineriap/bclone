@@ -73,8 +73,8 @@
     width: 315px;
     height: auto;
     margin: 0px;
-    padding: 0px 0px 90px 0px;   
-}
+    padding: 0px 0px 90px 0px;
+    }
 
 .burger--view {
     width: 315px;
@@ -151,7 +151,7 @@
     border-radius: 10px;
     margin-bottom: 5px;
     margin-right: 4.5px;
-}
+}  
 
 .burger--item:nth-child(2n) {
     margin-right:4.5px; 
@@ -175,7 +175,7 @@
 
 .burger-location {
     color: #EEECE3;
-    text-align: center;
+    padding-left: 7px;
     font-family: "PPNeueMontreal-Regular";
     font-size: 0.5rem;
     font-style: normal;
@@ -183,11 +183,12 @@
     line-height: 10px; /* 125% */
     letter-spacing: 0.8px;
     text-transform: uppercase;
-    margin-top: 106px;
+    margin-top: 115px;
 }
+
 .burger-name {
     color: #EEECE3;
-    text-align: center;
+    padding-left: 7px;
     font-family: "PPNeueMontreal-Regular";
     font-size: 0.5rem;
     font-style: normal;
@@ -199,7 +200,7 @@
 
 .burger-country {
     color: #EEECE3;
-    text-align: center;
+    padding-left: 7px;
     font-family: "PPNeueMontreal-Regular";
     font-size: 0.5rem;
     font-style: normal;
@@ -211,7 +212,6 @@
 
 .burger-price {
     color: #EEECE3;
-    text-align: center;
     font-family: "PPNeueMontreal-Regular";
     font-size: 0.5rem;
     font-style: normal;
@@ -225,7 +225,7 @@
 
 .burger--journal {
     background-color: #0D0E0F;
-    width: 315px;
+    width: 375px;
     height: 91px;
     position: fixed;
     bottom: 0;
@@ -233,17 +233,14 @@
 }
 
 .burger--hr {
-    position: absolute;
-    top: 20px;
-    left: 0;
+    margin-top: 20px;
     border: 1px solid #EEECE3;
     width: 315px;
     margin-left: 0px;
 }
 
 .burger--text {
-    position: absolute;
-    top: 32px;
+    margin-top: 12px;
     width: 269px;
     height: 36px;
     color: #EEECE3;
@@ -260,6 +257,12 @@
 /****************************************************/
 
 @media screen and (min-width: 1024px) {
+
+    .burger--container {
+        width: auto;
+        height: 100vh;
+    }
+
     .burger--buttons {
         padding: 0px 60px;
         justify-content: space-between;
@@ -282,36 +285,89 @@
     }
 
     .burger--menu {
-        width: 717px;
+        width: 730px;
         margin-left: 672px;
-        margin-top: -397px;
-        overflow-x: scroll;
-        
+        margin-top: -405px;
+        max-height: 600px; /* Set the maximum height for the menu */
+        overflow-y: auto;
+    }
+
+    .burger--load {
+        width: 0;
+        height: 0;
+        padding: 0;
     }
 
     .burger--item {
         width: 232px;
         height: 297.2px;
         gap: 7px;
-        margin: 0px 7px 7px 0px;
+        margin: 0px 10px 10px 0px;
 
+    }
+
+    .burger-rating {
+        margin: 10px 10px 0px 190px; 
+    }
+
+    .burger-location {
+        font-size: 0.625rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 14px; /* 140% */
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin: 204px 0px 0px 20px;
+    }
+
+    .burger-name {
+        font-size: 0.625rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 14px; /* 140% */
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-left: 20px;
+    }
+
+    .burger-country {
+        font-size: 0.625rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 14px; /* 140% */
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-left: 20px;
+    }
+
+    .burger-price {
+        font-size: 0.625rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 14px; /* 140% */
+        letter-spacing: 1px;
+        text-transform: uppercase;
     }
 
     .burger--item:nth-child(2n) {
-        margin: 0px 7px 7px 0px;
+        margin: 0px 10px 10px 0px;
     }
 
     .burger--journal {
-       width: 444px;
-       height: 91px;
+       width: 500px;
+       height: 140px;
        margin-left: 60px; 
     }
 
     .burger--hr {
-       width: 444px; 
+        width: 411px;
     }
 
     .burger--text {
-        width: 444px;
+        margin-top: 20px;
+        width: 243px;
+        height: 43px;
     }
+
+
 }

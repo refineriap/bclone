@@ -28,9 +28,8 @@ export default class extends Controller {
       burgerElement.innerHTML = `
         <p class="burger-rating">${formattedRating}</p>
         <p class="burger-location">${burger.location}</p>
-        <p class="burger-name">${burger.name}</p>
+        <p class="burger-name">${burger.name} $${burger.price.toFixed(2)}</p>
         <p class="burger-country">${burger.country}, ${burger.year}</p>
-        <p class="burger-price">$${burger.price.toFixed(2)}</p>
       `;
 
       const ratingElement = burgerElement.querySelector('.burger-rating');

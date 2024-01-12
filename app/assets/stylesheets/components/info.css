@@ -107,7 +107,7 @@
     padding: 10px;
 }
 
-hr {
+.info--hr {
     margin: 0px 30px;
     border: 0.75px solid #0D0E0F;
 }
@@ -209,7 +209,7 @@ hr {
         margin-left: 126px;
     }
 
-    hr {
+    .info--hr {
         display: none;
     }
 
