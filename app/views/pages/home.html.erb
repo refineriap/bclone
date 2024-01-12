@@ -39,6 +39,7 @@
         <section id="scroller" data-target="navbar.section" class="plane section2" data-controller="popup" data-action="click->popup#toggle">
             <%= image_tag("/assets/green-rect.png", alt: "green image", id: "svg", class: "plane--svg") %>
             <%= image_tag("plane.png", alt: "image of plane", id: "png", class: "plane--image") %>
+            <div class="hover-image"></div>
             <div class="popup1" id="fullScreenPopup" data-popup-target="popup">
                 <div class="popup1--container">
                     <p>Chapter 1.</p>
@@ -49,8 +50,9 @@
                     <p class="popup1--text">I was born in Cali, Colombia — the second son to a seamstress and a mechanic. Our family owned a local bakery and lived a very humble life. During the height of the Cali cartel’s reign, my family (like many others) was subject to it’s corruption. In turn, my mother and I sought a new life in the United States. There I stood on the streets of Jackson Heights, Queens — a first generation immigrant at age 14.</p>
                 </div>
                 <div class="close1" data-action="click->popup#closePopup">Close</div>
+                
             </div>
-            <%= image_tag("arrow.png", alt: "image of an arrow", class: "arrow" ) %>  
+            <%# <%= image_tag("arrow.png", alt: "image of an arrow", class: "arrow" ) %> 
         </section>
 
         <section id="scroller" data-target="navbar.section" class="beats section3" data-controller="audio">
@@ -76,6 +78,7 @@
         <section id="scroller" data-target="navbar.section" class="bike section5" data-controller="popup" data-action="click->popup#toggle">
             <%= image_tag("/assets/grey-rect.png", alt:"gray image", id:"svg", class:"bike--svg") %> 
             <%= image_tag("bike.png", alt:"image of a bike", id:"png", class:"bike--image") %>
+            <div class="hover-image"></div>
             <div class="popup2" id="fullScreenPopup" data-popup-target="popup">
                 <div class="popup2--container">
                     <p>Chapter 2.</p>
@@ -87,7 +90,6 @@
                 </div>
                 <div class="close2" data-action="click->popup#closePopup">Close</div>
             </div>
-            <%= image_tag("arrow.png", alt: "image of an arrow", class: "arrow" ) %>  
         </section>
 
         <section id="scroller" data-target="navbar.section" class="earth section6">
@@ -112,6 +114,7 @@
         <section id="scroller" data-target="navbar.section" class="agave section8" data-controller="popup" data-action="click->popup#toggle">
             <%= image_tag("/assets/purple-rect.png", alt:"purple image", id:"svg", class:"agave--svg")%>    
             <%= image_tag("agave.png", alt:"image of agave plant", id:"png", class:"agave--image") %>
+            <div class="hover-image"></div>
             <div class="popup3" id="fullScreenPopup" data-popup-target="popup">
                 <div class="popup3--container">
                     <p>Chapter 3.</p>
@@ -122,8 +125,7 @@
                     <p class="popup3--text">When the pandemic hit, my job was affected, as with countless others around the world. However, I chose to see it as an opportunity — one to pursue a new career in web development. I started to study on my off-hours and eventually completed a bootcamp in Mexico City.</p>   
                 </div>
                 <div class="close3" data-action="click->popup#closePopup">Close</div>
-            </div>
-            <%= image_tag("arrow.png", alt: "image of an arrow", class: "arrow" ) %>  
+            </div> 
         </section>
 
         <section id="scroller" data-target="navbar.section" class="burger section9">

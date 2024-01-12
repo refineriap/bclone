@@ -229,13 +229,14 @@
 
 @media screen and (min-width: 1024px) {
     .popup1 {
-        width: 650px; 
-        margin-left: 730px;
+        width: 566px; 
+        margin-left: 813px;
     }
 
     .popup1.active {
-       width: 650px; 
+       width: 566px; 
        height: 715px;
+       margin-left: 813px;
     }
 
     .popup1--container {
@@ -253,12 +254,12 @@
     }
 
     .popup2 {
-        width: 650px; 
-        margin-left: 730px;
+        width: 566px;
+        margin-left: 813px; 
     }
 
     .popup2.active {
-       width: 650px; 
+       width: 566px; 
     }
 
     .popup2--container {
@@ -276,12 +277,12 @@
     }
 
     .popup3 {  
-        width: 650px; 
-        margin-left: 730px;
+        width: 566px; 
+        margin-left: 813px;
     }
 
     .popup3.active {
-       width: 650px; 
+       width: 566px; 
     }
 
     .popup3--container {
@@ -290,9 +291,10 @@
 
     .popup3--paragraph {
         width: 446px;
-        height: 100px;
+        height: 125px;
         margin-left: 60px;
     }
+
 
     .close3 {
         margin: 0px 0px 0px 30px;

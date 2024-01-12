@@ -18,7 +18,7 @@
 }
 
 .colombia-paragraph {
-    padding-top: 30px;
+    margin-top: 30px;
     width: 259px;
     height: 392px;
     color: #EEECE3;
@@ -30,16 +30,21 @@
     letter-spacing: 0.6px;
 }
 
-.hidden {
+/* .hidden {
     display: none;
     transition: ease;
-}
+} */
 
-.arrow {
+/* .arrow {
     position: absolute;
     bottom: 10px;
     left: 40px;
+    opacity: 0;
 }
+
+.arrow:hover {
+    opacity: 1;
+} */
 
 .artist {
     margin-top: 40px;
@@ -124,7 +129,7 @@
     height: 394px;
     background-color: #0D0E0F;
     opacity: 0;
-    transition: opacity 0.75s ease-in-out;
+    transition: opacity 0.1s ease-in-out;
 }
 
 .nyc-paragraph {
@@ -153,6 +158,7 @@
 }
 
 .bike {
+    cursor: pointer;
     position: relative;
     margin-top: 300px;  
     width: 295px;
@@ -184,11 +190,11 @@
     height: 394px;
     background-color: #0D0E0F;
     opacity: 0;
-    transition: opacity 0.75s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
 .mexico-paragraph {
-    padding-top: 30px;
+    margin-top: 30px;
     width: 299px;
     height: 393px;
     color: #EEECE3;
@@ -291,9 +297,25 @@
     }
 
     .plane {
+        position: relative;
         width: 250px;
         height: 311.53px;
         margin-left: 1046px;
+    }
+
+    .hover-image {
+        position: absolute;
+        bottom: 10px; 
+        left: 10px;  
+        width: 30px;
+        height: 30px;
+        background-image: url("/assets/arrow.png"); 
+        opacity: 0;
+        transition: opacity 0.50s;
+    }
+
+    .plane:hover .hover-image {
+        opacity: 1; 
     }
 
     .plane--svg {
@@ -368,12 +390,17 @@
     }
 
     .bike {
+        position: relative;
         width: 250px;
         height: 311.53px;
         margin-left: 144px;
     }
 
-    .bike--image {
+    .bike:hover .hover-image {
+        opacity: 1; 
+    }
+
+    .bike--image {  
         width: 250px;
         height: 311.53px;
     }
@@ -434,9 +461,14 @@
 
 
     .agave {
+        position: relative;
         width: 250px;
         height: 311.48px;
         margin-left: 961px;
+    }
+
+    .agave:hover .hover-image {
+        opacity: 1; 
     }
 
     .agave--image {
