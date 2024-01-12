@@ -285,6 +285,8 @@
         width: 717px;
         margin-left: 672px;
         margin-top: -397px;
+        overflow-x: scroll;
+        
     }
 
     .burger--item {
