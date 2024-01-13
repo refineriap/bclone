@@ -1,12 +1,12 @@
 .poll--container {
     background-color: #0D0E0F;
-    width: 375px;
+    width: auto;
     height: fit-content;
 }
 
 .poll--buttons {
     display: flex;
-    width: 315px;
+    width: auto;  
     height: 100px;
 }
 
@@ -49,12 +49,106 @@
     border-radius: 30px;
 }
 
-.poll--image {
+.poll--vote {
+    position: relative;
     width: 315px;
-    height: 812px;
+    height: 393px;
+    margin-top: 95px;
 }
 
-.poll--image img {
+.poll--vector {
+    position: absolute;
     width: 315px;
-    height: 810px;
+    height: 393px;
 }
+
+.poll--title {
+    position: absolute;
+    top: 27px;
+    left: 81px;
+    width: 183px;
+    height: 64px;
+    color:#EEECE3;
+    font-family: 'avenue_mono';
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; 
+    letter-spacing: 0.6px;
+}
+
+.poll--select {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    top: 175px;
+    left: 81px;
+    font-family: 'PPNeueMontreal-Regular';
+    
+}
+
+.obviously {
+    width: 116px;
+    height: 50px;
+    background-color: #596B51;
+    border-radius: 30px;
+    border: 1px solid; 
+    border-color: #EEECE3;
+    color: #EEECE3;
+    text-align: center;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 333.333% */
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.hell--no {
+    width: 116px;
+    height: 50px;
+    background-color: #596B51;
+    border-radius: 30px;
+    border: 1px solid; 
+    border-color: #EEECE3;
+    color: #EEECE3;
+    text-align: center;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 333.333% */
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+.undecided {
+    width: 116px;
+    height: 50px;
+    background-color: #596B51;
+    border-radius: 30px;
+    border: 1px solid; 
+    border-color: #EEECE3;
+    color: #EEECE3;
+    text-align: center;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 333.333% */
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.boris--poll {
+    width: 375px;
+    height: 224px;
+    padding-top: 101px;
+}
+
+
+
+
+/* .obviously:hover {
+    background-color: #CAFA6D;
+    color: #0D0E0F;
+    border: none;
+} */

@@ -1,9 +1,20 @@
-    <section class="poll--container">
-        <div class="poll--buttons">
+    <div class="poll--container">
+        <section class="poll--buttons">
             <a href="/" class="poll--back">Back</a>
             <a href="/info" class="poll--info">Info</a>
-        </div>
-        <div class="poll--image">
-            <img src="/assets/max-bohme-2DYmvQ_gvS8-unsplash.jpg" alt="" class="">
-        </div>
-    </section>
+        </section>
+
+        <section class="poll--vote">
+            <img class="poll--vector" src="/assets/poll-vector.svg" alt="">
+            <p class="poll--title">Do Aliens Exist?</p>
+            <div class="poll--select">
+                <button class="obviously">OBVIOUSLY</button>
+                <button class="hell--no">HELL NO</button>
+                <button class="undecided">UNDECIDED</button>
+            </div>
+        </section>
+
+        <section class="boris--poll">
+            <%= image_tag("/assets/Boris.svg", alt: "Boris svg", class: "boris--image") %>
+        </section>
+    </div>  
