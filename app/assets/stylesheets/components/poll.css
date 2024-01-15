@@ -105,8 +105,22 @@
     text-transform: uppercase;
 }
 
+.poll--obviously {
+    position: absolute;
+    color: #EEECE3;
+    top: 3px;
+    left: 150px;
+    width: 85px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 333.333% */
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
 .hell--no {
-    width: 116px;
+    width: 97px;
     height: 50px;
     background-color: #596B51;
     border-radius: 30px;
@@ -121,6 +135,21 @@
     letter-spacing: 1.2px;
     text-transform: uppercase;
 }
+
+.poll--hell--no {
+    position: absolute;
+    color: #EEECE3;
+    top: 65px;
+    left: 130px;
+    width: 106px;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 333.333% */
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
 .undecided {
     width: 116px;
     height: 50px;
@@ -138,12 +167,43 @@
     text-transform: uppercase;
 }
 
+.poll--link {
+    position: absolute;
+    align-items: center;
+    top: 120px;
+    left: 154px; 
+    display: flex;
+    width: 81px;
+    height: 50px;
+    /* opacity: 0; */
+}
+
+.poll--link p {
+    color: #EEECE3;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 333.333% */
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.poll--link img {
+    margin-left: 10px;
+}
+
+
 .boris--poll {
     width: 375px;
     height: 224px;
     padding-top: 101px;
 }
 
+/********************************************/
+
+@media screen and (min-width: 1024px) {
+
+}
 
 
 
