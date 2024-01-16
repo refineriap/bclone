@@ -4,15 +4,16 @@
             <a href="/info" class="poll--info">Info</a>
         </section>
 
-        <section class="poll--vote" data-controller="poll">
+        <section class="poll--vote" >
             <img class="poll--vector" src="/assets/poll-vector.svg" alt="">
             <p class="poll--title">Do Aliens Exist?</p>
-            <div class="poll--select">
-                <button class="obviously">OBVIOUSLY</button>
-                <button class="hell--no">HELL NO</button>
-                <button class="undecided">UNDECIDED</button>
+            <div class="poll--select" data-controller="poll">
+                <button class="obviously" data-action="click->poll#vote" data-target="poll.button">OBVIOUSLY</button>
+                <button class="hell--no" data-action="click->poll#vote" data-target="poll.button">HELL NO</button>
+                <button class="undecided" data-action="click->poll#vote" data-target="poll.button">UNDECIDED</button>
 
-                <div class="poll--obviously">87% AGREED</div>
+
+                <div class="poll--obviously" data-target="poll.result">20% AGREED</div>
                 
             </div>
         </section>
@@ -23,8 +24,11 @@
     </div> 
 
 
-    <%# <div class="poll--hell--no">ARE YOU SURE?</div>
-                <div class="poll--link">
-                    <p class="">WHY?</p>
-                    <img src="/assets/arrow.svg" alt="" class="hover-image">
-                </div> %>
+    
+
+
+    <div class="poll--hell--no">ARE YOU SURE?</div>
+    <div class="poll--link">
+        <p class="">WHY?</p>
+        <img src="/assets/arrow.svg" alt="" class="hover-image">
+    </div>            

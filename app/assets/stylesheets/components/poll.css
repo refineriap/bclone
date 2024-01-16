@@ -74,7 +74,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 32px; 
-    letter-spacing: 0.6px;
+    letter-spacing: 0.6px;  
 }
 
 .poll--select {
@@ -105,20 +105,6 @@
     text-transform: uppercase;
 }
 
-.poll--obviously {
-    position: absolute;
-    color: #EEECE3;
-    top: 3px;
-    left: 150px;
-    width: 85px;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 40px; /* 333.333% */
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-}
-
 .hell--no {
     width: 97px;
     height: 50px;
@@ -136,20 +122,6 @@
     text-transform: uppercase;
 }
 
-.poll--hell--no {
-    position: absolute;
-    color: #EEECE3;
-    top: 65px;
-    left: 130px;
-    width: 106px;
-    font-size: 0.75rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 40px; /* 333.333% */
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-}
-
 .undecided {
     width: 116px;
     height: 50px;
@@ -159,6 +131,34 @@
     border-color: #EEECE3;
     color: #EEECE3;
     text-align: center;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 333.333% */
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.poll--obviously {
+    position: absolute;
+    color: #EEECE3;
+    top: 3px;
+    left: 150px;
+    width: 100px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 333.333% */
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.poll--hell--no {
+    position: absolute;
+    color: #EEECE3;
+    top: 65px;
+    left: 130px;
+    width: 106px;
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 500;
@@ -197,6 +197,17 @@
     width: 375px;
     height: 224px;
     padding-top: 101px;
+}
+
+.selected {
+    background-color: #CAFA6D;
+    color: #0D0E0F;
+    border: none;
+}
+
+.disabled {
+    color: rgba(238, 236, 227, 0.50);
+    border: 1px solid rgba(238, 236, 227, 0.50);
 }
 
 /********************************************/
