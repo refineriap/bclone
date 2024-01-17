@@ -1,10 +1,9 @@
 .poll--container {
     background-color: #0D0E0F;
     width: auto;
-    height: fit-content;
 }
 
-.poll--buttons {
+.poll--buttons {  
     display: flex;
     width: auto;  
     height: 100px;
@@ -217,6 +216,89 @@
 /********************************************/
 
 @media screen and (min-width: 1024px) {
+    .polll--container {
+        width: auto;
+        height: 100vh;
+    }
+
+    .poll--buttons {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 60px;
+    }
+
+    .poll--vote {
+        background-image: url("/assets/pollgreen.svg");
+        position: relative;
+        width: 629px;
+        height: 630px;
+        margin: 0px 0px 0px 753px;
+    }
+
+    .poll--vector {
+        display: none;
+
+    }
+
+    .poll--title {
+        position: absolute;
+        top: 40px;
+        left: 63px;
+        width: 372px;
+        height: 104px;
+        color: #EEECE3;
+        font-size: 3.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 52px; /* 104% */
+    }
+
+    .poll--select {
+        position: absolute;
+        top: 390px;
+        left: 63px;
+    }
+
+    .obviously {
+        width: 176px;
+        height: 50px;
+    }
+
+    .hell--no {
+        width: 157px;
+        height: 50px;
+    }
+
+    .undecided {
+        width: 178px;
+        height: 50px; 
+    }
+
+    .poll--obviously {
+        margin-left: 256px;
+    }
+
+    .poll--hell--no {
+        margin-left: 254px;
+    }
+
+    .poll--link {
+        margin-left: 261px;
+    }
+
+    .poll--link a {
+        opacity: 1;
+        margin-left: 41px;    
+    }
+
+
+    .boris--poll {
+        padding-top: 0;
+        width: 400px;
+        height: 178px;
+        margin-top: -93px;
+        margin-left: 60px;
+    }
 
 }
 
