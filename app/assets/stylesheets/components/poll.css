@@ -169,20 +169,18 @@
     text-transform: uppercase;
 }
 
-.poll--link {
-    
+.poll--link { 
     position: absolute;
+    visibility: hidden;
     align-items: center;
     top: 120px;
     left: 154px; 
     display: flex;
-    width: 81px;
+    width: 85px;
     height: 50px;
-    /* opacity: 0; */
 }
 
 .poll--link p {
-    display: none;
     color: #EEECE3;
     font-size: 0.75rem;
     font-style: normal;
@@ -193,7 +191,6 @@
 }
 
 .poll--link a {
-    display: none;
     margin-left: 10px;
 }
 

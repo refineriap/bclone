@@ -56,8 +56,9 @@ export default class extends Controller {
         clickedButton.classList.add("selected");
     }
 
-    undecidedMessage() {
-        this.unDecidedTarget.style.display = "block";
+    undecidedMessage(event) {
+        this.unDecidedTarget.style.visibility = "visible";
+
         
         const clickedButton = event.target;
 
