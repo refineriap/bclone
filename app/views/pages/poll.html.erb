@@ -8,13 +8,17 @@
             <img class="poll--vector" src="/assets/poll-vector.svg" alt="">
             <p class="poll--title">Do Aliens Exist?</p>
             <div class="poll--select" data-controller="poll">
-                <button class="obviously" data-action="click->poll#vote" data-target="poll.button">OBVIOUSLY</button>
-                <button class="hell--no" data-action="click->poll#vote" data-target="poll.button">HELL NO</button>
-                <button class="undecided" data-action="click->poll#vote" data-target="poll.button">UNDECIDED</button>
+                <button class="obviously" data-action="click->poll#vote" data-poll-target="button">OBVIOUSLY</button>
+                <button class="hell--no" data-action="click->poll#voteHellNo" data-poll-target="button">HELL NO</button>
+                <button class="undecided" data-action="click->poll#undecidedMessage" data-poll-target="button">UNDECIDED</button>
 
-
-                <div class="poll--obviously" data-target="poll.result">20% AGREED</div>
                 
+                <div class="poll--obviously" data-poll-target="result"></div>
+                <div class="poll--hell--no" data-poll-target="hellNoMessage">ARE YOU SURE?</div>
+                <div class="poll--link">
+                    <p class="" data-poll-target="unDecided">WHY?</p>
+                    <a href=""src="/assets/arrow.svg" class="hover-image" data-poll-target="unDecided"></a>
+                </div>                  
             </div>
         </section>
 
@@ -27,8 +31,4 @@
     
 
 
-    <div class="poll--hell--no">ARE YOU SURE?</div>
-    <div class="poll--link">
-        <p class="">WHY?</p>
-        <img src="/assets/arrow.svg" alt="" class="hover-image">
-    </div>            
+             

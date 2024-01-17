@@ -154,6 +154,7 @@
 }
 
 .poll--hell--no {
+    display: none;
     position: absolute;
     color: #EEECE3;
     top: 65px;
@@ -168,6 +169,7 @@
 }
 
 .poll--link {
+    
     position: absolute;
     align-items: center;
     top: 120px;
@@ -179,6 +181,7 @@
 }
 
 .poll--link p {
+    display: none;
     color: #EEECE3;
     font-size: 0.75rem;
     font-style: normal;
@@ -188,7 +191,8 @@
     text-transform: uppercase;
 }
 
-.poll--link img {
+.poll--link a {
+    display: none;
     margin-left: 10px;
 }
 
@@ -209,6 +213,8 @@
     color: rgba(238, 236, 227, 0.50);
     border: 1px solid rgba(238, 236, 227, 0.50);
 }
+
+
 
 /********************************************/
 
