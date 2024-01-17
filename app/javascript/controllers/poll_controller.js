@@ -9,7 +9,7 @@ export default class extends Controller {
 
     vote(event) {
         const clickedButton = event.target;
-
+        this.resultTarget.style.display = "block";
         // Disable all buttons except the clicked one
         this.element.querySelectorAll('[data-poll-target="button"]').forEach(button => {
             if (button !== clickedButton) {
@@ -40,20 +40,35 @@ export default class extends Controller {
         }
     }
 
-    voteHellNo() {
-        
+    voteHellNo(event) {
         this.hellNoMessageTarget.style.display = "block";
-        this.buttonTargets.forEach(button => {
-            button.disabled = true;
-            button.classList.add("disabled");
+        
+        const clickedButton = event.target;
+
+        // Disable all buttons except the clicked one
+        this.element.querySelectorAll('[data-poll-target="button"]').forEach(button => {
+            if (button !== clickedButton) {
+                button.disabled = true;
+                button.classList.add("disabled");
+            }
         });
+
+        clickedButton.classList.add("selected");
     }
 
     undecidedMessage() {
         this.unDecidedTarget.style.display = "block";
-        this.buttonTargets.forEach(button => {
-            button.disabled = true;
-            button.classList.add("disabled");
+        
+        const clickedButton = event.target;
+
+        // Disable all buttons except the clicked one
+        this.element.querySelectorAll('[data-poll-target="button"]').forEach(button => {
+            if (button !== clickedButton) {
+                button.disabled = true;
+                button.classList.add("disabled");
+            }
         });
+
+        clickedButton.classList.add("selected");
     }
 }

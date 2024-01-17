@@ -140,6 +140,7 @@
 }
 
 .poll--obviously {
+    display: none;
     position: absolute;
     color: #EEECE3;
     top: 3px;
