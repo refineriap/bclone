@@ -1,8 +1,11 @@
 <div class="home">    
     <nav class="dropdown" data-controller="navbar">
-        <button class="dropbtn" id="dropbtn" data-action="click->navbar#toggleDropdown">MY LIFE'S PLAYLIST</button>
+        <div class="dropbtn" id="dropbtn" data-action="click->navbar#toggleDropdown">
+            <img src="assets/blue.svg" alt="" class="dot">
+            <a class="dot--text">MY LIFE'S PLAYLIST</a>
+        </div>
         <div id="myDropdown" class="dropdown-content">
-            <ul>
+            <ul class="lista">
                 <li style="list-style-image: url('assets/blue.svg');"><a href="#section1" data-action="click->navbar#scrollToSection" data-section-class="section1">MI PUEBLO NATAL</a></li>
                 <li style="list-style-image: url('assets/green.svg');"><a href="#section2" data-action="click->navbar#scrollToSection" data-section-class="section2">TALES OF COLOMBIA</a></li>
                 <li style="list-style-image: url('assets/red.svg');"><a href="#section3" data-action="click->navbar#scrollToSection" data-section-class="section3">LATEST BEAT</a></li>

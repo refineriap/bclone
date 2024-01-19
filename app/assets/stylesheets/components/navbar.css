@@ -24,7 +24,20 @@
   letter-spacing: 1.2px;
   text-transform: uppercase;
   border-radius: 40px;
+  padding: 18px 18px;
+  display: flex;
 } 
+
+.dot {
+  margin-right: 22px;
+  height: 15px;
+  width: 15px;
+}
+
+.dot--text {
+  width: 140px;
+
+}
   
 .dropdown-content {
   display: none;
@@ -40,6 +53,10 @@
   padding-left: 40px;
   padding-top: 29px;
   border-radius: 20px;
+}
+
+.lista {
+  padding-bottom: 10px;
 }
   
 
