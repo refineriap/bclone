@@ -14,16 +14,10 @@ export default class extends Controller {
 
   scrollToSection(event) {
     event.preventDefault();
-
-    // Get the image source from the data attribute
     const imageSrc = event.currentTarget.getAttribute("data-image-src");
-
-    // Update the selected image source
     this.selectedImageTarget.src = imageSrc;
 
     this.toggleDropdown();
-
-    // Update the content of the dropbtn with both image and text
     const sectionClassName = event.currentTarget.getAttribute("href").substring(1);
     const sectionName = event.currentTarget.innerText;
     const contentHTML = `<img src="${imageSrc}" alt="" class="dot"> ${sectionName}`;
