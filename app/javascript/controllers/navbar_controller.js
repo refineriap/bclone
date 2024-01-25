@@ -5,7 +5,7 @@ export default class extends Controller {
   connect() {
   }
 
-  static targets = ["section"];
+  static targets = ["section", "selectedImage", "dropbtn"];
 
   toggleDropdown() {
     const dropdown = document.getElementById("myDropdown");
@@ -14,23 +14,33 @@ export default class extends Controller {
 
   scrollToSection(event) {
     event.preventDefault();
-  
+
+    // Get the image source from the data attribute
+    const imageSrc = event.currentTarget.getAttribute("data-image-src");
+
+    // Update the selected image source
+    this.selectedImageTarget.src = imageSrc;
+
     this.toggleDropdown();
-  
+
+    // Update the content of the dropbtn with both image and text
     const sectionClassName = event.currentTarget.getAttribute("href").substring(1);
+    const sectionName = event.currentTarget.innerText;
+    const contentHTML = `<img src="${imageSrc}" alt="" class="dot"> ${sectionName}`;
+    
+    this.dropbtnTarget.innerHTML = contentHTML;
+
     const sections = document.getElementsByClassName(sectionClassName);
-  
+
     if (sections.length > 0) {
-      const section = sections[0]; // Assuming you want to scroll to the first element with the specified class
-      const sectionName = event.currentTarget.innerText;
-      document.getElementById('dropbtn').innerText = sectionName;
-  
+      const section = sections[0];
+
       this.element.querySelectorAll("a").forEach((link) => {
         link.classList.remove("active");
       });
-  
+
       event.currentTarget.classList.add("active");
-  
+
       section.scrollIntoView({
         behavior: "smooth",
         block: "center",
@@ -39,13 +49,3 @@ export default class extends Controller {
     }
   }  
 }
-
-  
-
-
-
-
-
-
-
-  
