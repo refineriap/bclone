@@ -43,7 +43,9 @@
         <section id="scroller" data-target="navbar.section" class="plane section2" data-controller="popup" data-action="click->popup#toggle">
             <%= image_tag("green-rect.png", alt: "green image", id: "svg", class: "plane--svg") %>
             <%= image_tag("plane.png", alt: "image of plane", id: "png", class: "plane--image") %>
-            <div class="hover-image"></div>
+            <%# <div class="hover-image"> %>
+            <%= image_tag("arrow.svg", alt: "image of an arrow", class: "hover-image" ) %>
+            <%# </div> %>
             <div class="popup1" id="fullScreenPopup" data-popup-target="popup">
                 <div class="popup1--container">
                     <p>Chapter 1.</p>
@@ -53,10 +55,8 @@
                 <div class="popup1--paragraph">
                     <p class="popup1--text">I was born in Cali, Colombia — the second son to a seamstress and a mechanic. Our family owned a local bakery and lived a very humble life. During the height of the Cali cartel’s reign, my family (like many others) was subject to it’s corruption. In turn, my mother and I sought a new life in the United States. There I stood on the streets of Jackson Heights, Queens — a first generation immigrant at age 14.</p>
                 </div>
-                <div class="close1" data-action="click->popup#closePopup">Close</div>
-                
-            </div>
-            <%# <%= image_tag("arrow.png", alt: "image of an arrow", class: "arrow" ) %> 
+                <div class="close1" data-action="click->popup#closePopup">Close</div>               
+            </div> 
         </section>
 
         <section id="scroller" data-target="navbar.section" class="beats section3" data-controller="audio">
