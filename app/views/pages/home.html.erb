@@ -1,7 +1,7 @@
 <div class="home">    
     <nav class="dropdown" data-controller="navbar">
         <div class="dropbtn" id="dropbtn" data-action="click->navbar#toggleDropdown" data-navbar-target="dropbtn">
-            <img src="assets/blue.svg" alt="" class="dot" id="selectedImage" data-navbar-target="selectedImage">
+            <img src="blue.svg" alt="" class="dot" id="selectedImage" data-navbar-target="selectedImage">
             <a class="dot--text">MI PUEBLO NATAL</a>
         </div>
         <div id="myDropdown" class="dropdown-content">
@@ -40,7 +40,7 @@
         </section>
 
         <section id="scroller" data-target="navbar.section" class="plane section2" data-controller="popup" data-action="click->popup#toggle">
-            <%= image_tag("/assets/green-rect.png", alt: "green image", id: "svg", class: "plane--svg") %>
+            <%= image_tag("green-rect.png", alt: "green image", id: "svg", class: "plane--svg") %>
             <%= image_tag("plane.png", alt: "image of plane", id: "png", class: "plane--image") %>
             <div class="hover-image"></div>
             <div class="popup1" id="fullScreenPopup" data-popup-target="popup">
