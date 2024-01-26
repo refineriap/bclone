@@ -286,7 +286,7 @@
 
     .burger--menu {
         width: 730px;
-        margin-left: 672px;
+        margin-left: 661px;
         margin-top: -405px;
         max-height: 600px; /* Set the maximum height for the menu */
         overflow-y: auto;
