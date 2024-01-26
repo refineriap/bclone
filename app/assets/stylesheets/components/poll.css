@@ -189,7 +189,7 @@
     text-transform: uppercase;
 }
 
-.poll--link a {
+.poll--link .hover-image {
     margin-left: 10px;
 }
 
