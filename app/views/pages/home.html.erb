@@ -1,7 +1,8 @@
 <div class="home">    
     <nav class="dropdown" data-controller="navbar">
         <div class="dropbtn" id="dropbtn" data-action="click->navbar#toggleDropdown" data-navbar-target="dropbtn">
-            <img src="blue.svg" alt="" class="dot" id="selectedImage" data-navbar-target="selectedImage">
+            <%= image_tag("blue.svg", alt: "blue svg", class: "dot", id: "selectedImage", data: { target: "navbar.selectedImage" }) %>
+            <%# <img src="blue.svg" alt="" class="dot" id="selectedImage" data-navbar-target="selectedImage"> %>
             <a class="dot--text">MI PUEBLO NATAL</a>
         </div>
         <div id="myDropdown" class="dropdown-content">
