@@ -21,10 +21,20 @@ export default class extends Controller {
         clickedButton.classList.add("selected");
 
         // Update and store the vote count in local storage
-        const currentPercentage = parseInt(this.resultTarget.innerText.match(/\d+/)[0]) || 0;
+        // const currentPercentage = parseInt(this.resultTarget.innerText.match(/\d+/)[0]) || 0;
+        // const newPercentage = currentPercentage + 1;
+        // this.resultTarget.innerText = newPercentage + "% AGREED";
+        // this.storeVotes(newPercentage);
+
+        const matchResult = this.resultTarget.innerText.match(/\d+/);
+
+        // Check if matchResult is not null before accessing its index
+        const currentPercentage = matchResult ? parseInt(matchResult[0]) || 0 : 0;
+
         const newPercentage = currentPercentage + 1;
         this.resultTarget.innerText = newPercentage + "% AGREED";
         this.storeVotes(newPercentage);
+
     }
 
     storeVotes(voteCount) {
