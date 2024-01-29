@@ -6,7 +6,7 @@ const burgersData = [
     location: 'Shake Shack',
     country: 'USA',
     year: '2000',
-    image: 'chad-montano.jpg',
+    image: '/assets/chad-montano.jpg',
     price: 8.99,
   },
   {
@@ -15,7 +15,7 @@ const burgersData = [
     location: 'Shake Shack',
     country: 'USA',
     year: '2000',
-    image: 'chad-montano.jpg',
+    image: '/assets/chad-montano.jpg',
     price: 8.99,
   },
   {
@@ -24,7 +24,7 @@ const burgersData = [
     location: 'Shake Shack',
     country: 'USA',
     year: '2000',
-    image: 'chad-montano.jpg',
+    image: '/assets/chad-montano.jpg',
     price: 8.99,
   },
   {
@@ -33,7 +33,7 @@ const burgersData = [
     location: 'Shake Shack',
     country: 'USA',
     year: '2000',
-    image: 'chad-montano.jpg',
+    image: '/assets/chad-montano.jpg',
     price: 8.99,
   },
          
