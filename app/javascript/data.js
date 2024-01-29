@@ -6,7 +6,7 @@ const burgersData = [
     location: 'Shake Shack',
     country: 'USA',
     year: '2000',
-    image: '/assets/chad-montano--GFCYhoRe48-unsplash.jpg',
+    image: 'chad-montano--GFCYhoRe48-unsplash.jpg',
     price: 8.99,
   },
   {
@@ -15,7 +15,7 @@ const burgersData = [
     location: "Wendy's",
     country: 'USA',
     year: '2018',
-    image: '/assets/vitor-monthay-WCyh_uJU4Wk-unsplash.jpg',
+    image: 'vitor-monthay-WCyh_uJU4Wk-unsplash.jpg',
     price: 5.99,
   },
   {
@@ -24,7 +24,7 @@ const burgersData = [
     location: 'Burger Brothers',
     country: 'Nashville',
     year: '2021',
-    image: '/assets/delfina-cocciardi-NDPBK-d-03M-unsplash.jpg',
+    image: 'delfina-cocciardi-NDPBK-d-03M-unsplash.jpg',
     price: 7.99,
   },
   {
@@ -33,7 +33,7 @@ const burgersData = [
     location: "Wendy's",
     country: 'USA',
     year: '2018',
-    image: '/assets/vitor-monthay-WCyh_uJU4Wk-unsplash.jpg',
+    image: 'vitor-monthay-WCyh_uJU4Wk-unsplash.jpg',
     price: 5.99,
   },
   {
@@ -42,7 +42,7 @@ const burgersData = [
     location: 'Burger Brothers',
     country: 'Nashville',
     year: '2021',
-    image: '/assets/delfina-cocciardi-NDPBK-d-03M-unsplash.jpg',
+    image: 'delfina-cocciardi-NDPBK-d-03M-unsplash.jpg',
     price: 5,
   },             
   {
@@ -51,7 +51,7 @@ const burgersData = [
     location: 'Burger Brothers',
     country: 'Nashville',
     year: '2021',
-    image: '/assets/delfina-cocciardi-NDPBK-d-03M-unsplash.jpg',
+    image: 'delfina-cocciardi-NDPBK-d-03M-unsplash.jpg',
     price: 5,
   },             
   {
@@ -60,7 +60,7 @@ const burgersData = [
     location: 'Burger Brothers',
     country: 'Nashville',
     year: '2021',
-    image: '/assets/delfina-cocciardi-NDPBK-d-03M-unsplash.jpg',
+    image: 'delfina-cocciardi-NDPBK-d-03M-unsplash.jpg',
     price: 5,
   },             
 ]  
