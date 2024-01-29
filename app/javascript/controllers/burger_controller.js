@@ -20,7 +20,7 @@ export default class extends Controller {
     burgers.forEach(burger => {
       const burgerElement = document.createElement('div');
       burgerElement.classList.add('burger--item');
-      burgerElement.style.backgroundImage = `url('${burger.image}')`;
+      burgerElement.style.backgroundImage = `url('<%= asset_path("${burger.image}") %>')`;
       burgerElement.style.backgroundPosition = 'center';
       burgerElement.style.backgroundSize = 'cover';
       const formattedRating = burger.rating.toFixed(1);
