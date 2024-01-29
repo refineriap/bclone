@@ -6,7 +6,7 @@ const burgersData = [
     location: 'Shake Shack',
     country: 'USA',
     year: '2000',
-    image: '<%= asset_path("chad-montano--GFCYhoRe48-unsplash.jpg") %>',
+    image: '/assets/chad-montano--GFCYhoRe48-unsplash.jpg',
     price: 8.99,
   },
   {
