@@ -1,9 +1,9 @@
-import { Controller } from "@hotwired/stimulus"
-
-import burgersData from '../data'
+// app/javascript/controllers/burger_controller.js
+import { Controller } from "@hotwired/stimulus";
+import burgersData from '../data';
 
 export default class extends Controller {
-  static targets = ["create", "allButton", "bestToWorstButton", "under15Button"];
+  static targets = ["create", "allButton", "bestToWorstButton", "under15Button", "burgerLoad"];
 
   connect() {
     this.renderBurgers();
@@ -20,7 +20,7 @@ export default class extends Controller {
     burgers.forEach(burger => {
       const burgerElement = document.createElement('div');
       burgerElement.classList.add('burger--item');
-      burgerElement.style.backgroundImage = `url('<%= image_path("${burger.image}") %>')`;
+      burgerElement.setAttribute('data-burger-image', `url('${burger.image}')`); // Set data attribute for image URL
       burgerElement.style.backgroundPosition = 'center';
       burgerElement.style.backgroundSize = 'cover';
       const formattedRating = burger.rating.toFixed(1);
@@ -38,7 +38,17 @@ export default class extends Controller {
       }
 
       burgerContainer.appendChild(burgerElement);
+
+      // Set the background image using the data attribute
+      this.setImageBackground(burgerElement);
     });
+  }
+
+  setImageBackground(element) {
+    const imageUrl = element.getAttribute('data-burger-image');
+    if (imageUrl) {
+      element.style.backgroundImage = imageUrl;
+    }
   }
 
   sortBurgers() {
@@ -56,5 +66,3 @@ export default class extends Controller {
     this.renderBurgers(filteredBurgers);
   }
 }
-
-  
