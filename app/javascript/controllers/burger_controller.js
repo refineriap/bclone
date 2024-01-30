@@ -1,6 +1,6 @@
 import { Controller } from "@hotwired/stimulus"
 
-import burgersData from '@/assets/data.js';  
+import burgersData from '@/assets/data';  
 
 
 export default class extends Controller {
