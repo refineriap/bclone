@@ -1,6 +1,7 @@
 import { Controller } from "@hotwired/stimulus"
 
-import burgersData from `${process.env.PUBLIC_URL}/assets/data.js`;
+const burgersData = await import('../data.js');
+
   
 
 
