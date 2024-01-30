@@ -15,7 +15,7 @@ const burgersData = [
     location: 'Shake Shack',
     country: 'USA',
     year: '2000',
-    image: '/assets/chad-montano.jpg',
+    image: 'chad-montano.jpg',
     price: 8.99,
   },
   {
