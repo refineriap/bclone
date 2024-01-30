@@ -1,6 +1,6 @@
 import { Controller } from "@hotwired/stimulus"
 
-import burgersData from '../data'
+import burgersData from '/data.js'
 
 export default class extends Controller {
   static targets = ["create", "allButton", "bestToWorstButton", "under15Button"];
@@ -16,7 +16,7 @@ export default class extends Controller {
   renderBurgers(burgers = burgersData) {
     const burgerContainer = this.createTarget;
     burgerContainer.innerHTML = ''; 
-    
+
     burgers.forEach(burger => {
       const burgerElement = document.createElement('div');
       burgerElement.classList.add('burger--item');
