@@ -1,9 +1,6 @@
 import { Controller } from "@hotwired/stimulus"
 
-const burgersData = await import('../data.js');
-
-  
-
+import burgersData from '../data.js'
 
 export default class extends Controller {
   static targets = ["create", "allButton", "bestToWorstButton", "under15Button"];
