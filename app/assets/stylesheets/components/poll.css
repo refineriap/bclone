@@ -180,7 +180,7 @@
 }
 
 .poll--link--text {
-    color: green;
+    color: #EEECE3;
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 500;
@@ -189,7 +189,7 @@
     text-transform: uppercase;
 }
 
-.poll--link .hover-image {
+.poll-image-arrow {
     margin-left: 10px;
 }
 
@@ -285,9 +285,8 @@
         margin-left: 261px;
     }
 
-    .poll--link a {
-        opacity: 1;
-        margin-left: 41px;    
+    .poll-image-arrow {
+        opacity: 1;  
     }
 
 
