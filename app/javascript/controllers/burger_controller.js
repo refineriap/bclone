@@ -1,6 +1,7 @@
 import { Controller } from "@hotwired/stimulus"
 
-import burgersData from '/data.js';  
+import burgersData from `${process.env.PUBLIC_URL}/assets/data.js`;
+  
 
 
 export default class extends Controller {
