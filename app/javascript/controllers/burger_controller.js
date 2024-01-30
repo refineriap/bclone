@@ -15,12 +15,12 @@ export default class extends Controller {
 
   renderBurgers(burgers = burgersData) {
     const burgerContainer = this.createTarget;
-    burgerContainer.innerHTML = ''; // Clear existing content
-
+    burgerContainer.innerHTML = ''; 
+    
     burgers.forEach(burger => {
       const burgerElement = document.createElement('div');
       burgerElement.classList.add('burger--item');
-      burgerElement.style.backgroundImage = `('${burger.image}')`;
+      burgerElement.style.backgroundImage = `url('${burger.image}')`;
       burgerElement.style.backgroundPosition = 'center';
       burgerElement.style.backgroundSize = 'cover';
       const formattedRating = burger.rating.toFixed(1);

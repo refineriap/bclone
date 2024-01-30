@@ -48,5 +48,5 @@ const burgersData = [
          
 ]  
   
-  export default burgersData;
+export default burgersData;
   
