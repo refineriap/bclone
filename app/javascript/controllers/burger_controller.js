@@ -1,6 +1,6 @@
 import { Controller } from "@hotwired/stimulus"
 
-import burgersData from '../data.js'
+import burgersData from asset_url('../data')
 
 export default class extends Controller {
   static targets = ["create", "allButton", "bestToWorstButton", "under15Button"];
