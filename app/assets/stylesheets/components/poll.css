@@ -2,7 +2,7 @@
     background-color: #0D0E0F;
     width: auto;
 }
-
+   
 .poll--buttons {  
     display: flex;
     width: auto;  
@@ -228,7 +228,7 @@
     }
 
     .poll--vote {
-        background-image: url("/assets/pollgreen.svg");
+        background-image: url("pollgreen.svg");
         position: relative;
         width: 629px;
         height: 630px;
