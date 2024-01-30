@@ -179,8 +179,8 @@
     height: 50px;
 }
 
-.poll--link p {
-    color: #EEECE3;
+.poll--link--text {
+    color: green;
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 500;

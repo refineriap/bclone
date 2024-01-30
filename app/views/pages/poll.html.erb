@@ -6,7 +6,6 @@
 
         <section class="poll--vote" >
             <%= image_tag("poll-vector.svg", alt: "poll vector", class: "poll--vector") %>
-            <%# <img class="poll--vector" src="/assets/poll-vector.svg" alt=""> %>
             <p class="poll--title">Do Aliens Exist?</p>
             <div class="poll--select" data-controller="poll">
                 <button class="obviously" data-action="click->poll#vote" data-poll-target="button">OBVIOUSLY</button>
@@ -17,7 +16,7 @@
                 <div class="poll--obviously" data-poll-target="result"></div>
                 <div class="poll--hell--no" data-poll-target="hellNoMessage">ARE YOU SURE?</div>
                 <div class="poll--link" data-poll-target="unDecided" >
-                    <p class="">WHY?</p>
+                    <p class="poll--link--text">WHY?</p>
                     <a href="https://www.instagram.com/lilmayo/" target="_blank" data-poll-target="unDecided">
                        <%= image_tag("arrow.svg", alt: "image of an arrow", class: "hover-image" ) %> 
                     </a>
