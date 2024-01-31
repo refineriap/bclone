@@ -189,7 +189,7 @@
     text-transform: uppercase;
 }
 
-.poll-image-arrow {
+.poll--image--arrow {
     margin-left: 10px;
 }
 
@@ -245,7 +245,7 @@
         left: 63px;
         width: 372px;
         height: 104px;
-        color: #EEECE3;
+        color:#EEECE3;
         font-size: 3.125rem;
         font-style: normal;
         font-weight: 400;
@@ -285,7 +285,7 @@
         margin-left: 261px;
     }
 
-    .poll-image-arrow {
+    .poll--image--arrow {
         opacity: 1;  
     }
 
