@@ -505,15 +505,20 @@
 @media screen and (min-width: 375px) {
     .colombia {
         padding: 0px 30px;
+        width: 415px;
+        height: 442px;
     }
 
-    .colombia img {
-        width: 353px;
-        height: 393px;
+    .colombia--svg {
+        width: 353px;  
+    }
+
+    .colombia--image {
+        width: 353px;   
     }
 
     .colombia-overlay {
         width: 353px;
-        height: 393px;
+        height: 440px;
     }
 }
