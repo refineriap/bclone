@@ -30,22 +30,6 @@
     letter-spacing: 0.6px;
 }
 
-/* .hidden {
-    display: none;
-    transition: ease;
-} */
-
-/* .arrow {
-    position: absolute;
-    bottom: 10px;
-    left: 40px;
-    opacity: 0;
-}
-
-.arrow:hover {
-    opacity: 1;
-} */
-
 .artist {
     margin-top: 40px;
     color: #EEECE3;
@@ -87,7 +71,6 @@
     left: 40px;  
     width: 30px;
     height: 30px;
-    /* background-image: url("<%= asset_url('arrow.svg') %>");      */
 }
 
 .beats {  
@@ -115,7 +98,7 @@
     font-size: 0.9375rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 30px; /* 200% */
+    line-height: 30px; 
     letter-spacing: 0.3px;
     color: #0D0E0F;
     padding: 8px;
@@ -518,3 +501,19 @@
     }
 }
 
+
+@media screen and (min-width: 375px) {
+    .colombia {
+        padding: 0px 30px;
+    }
+
+    .colombia img {
+        width: 353px;
+        height: 393px;
+    }
+
+    .colombia-overlay {
+        width: 353px;
+        height: 393px;
+    }
+}
