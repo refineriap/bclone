@@ -509,13 +509,13 @@
         height: 442px;
     }
 
-    .colombia--svg {
+    /* .colombia--svg {
         width: 353px;  
     }
 
     .colombia--image {
         width: 353px;   
-    }
+    } */
 
     .colombia-overlay {
         width: 353px;
@@ -523,7 +523,6 @@
     }
 
     .boris {
-        margin-top: 50px;
         padding-left: 30px;
     }
 }
