@@ -121,7 +121,7 @@
 
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 375px) {
   .dropdown {
     width: auto;
     height: 100px;
