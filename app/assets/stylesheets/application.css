@@ -52,6 +52,12 @@ section {
     }
 }
 
+@media screen and (min-width: 375px) {
+    section {
+        padding: 0px;
+    }
+}
+
 section #svg {
     position: absolute;
     opacity: 1;
