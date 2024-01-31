@@ -98,8 +98,7 @@
 @media screen and (min-width: 1024px) {
   .dropdown {
     width: auto;
-    background-color: violet;
-    height: 400px;
+    height: 100px;
     padding: 0px 60px;
   }
   
