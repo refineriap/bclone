@@ -19,7 +19,8 @@
     visibility: visible;
     bottom: 0;
     width: 375px;
-    max-height: 87%;
+    height: 100%;
+    z-index: 15;
 }
 
 .popup1--container {
