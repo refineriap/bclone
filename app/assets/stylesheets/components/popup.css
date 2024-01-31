@@ -18,12 +18,12 @@
     opacity: 1; 
     visibility: visible;
     bottom: 0;
+    width: 375px;
+    height: 712px;
 }
 
 .popup1--container {
     font-family: "avenue_mono";
-    width: 297px;
-    height: 102px;
     margin: 30px 0px 0px 30px;  
     color: #0D0E0F;
     font-size: 1.875rem;

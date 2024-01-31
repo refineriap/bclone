@@ -4,7 +4,7 @@
             <%= image_tag("blue.svg", alt: "blue svg", class: "dot", id: "selectedImage", data: { target: "navbar.selectedImage" }) %>
             <a class="dot--text">MI PUEBLO NATAL</a>
         </div>
-        <div id="myDropdown" class="dropdown-content">
+        <div id="myDropdown" class="dropdown-content">  
             <ul class="lista">
                 <li style="list-style-image: url('<%= asset_path('blue.svg') %>');"><a href="#section1" data-action="click->navbar#scrollToSection" data-section-class="section1" data-image-src="<%= asset_url('blue.svg') %>" data-navbar-target="selectedImage">MI PUEBLO NATAL</a></li>
                 <li style="list-style-image: url('<%= asset_path('green.svg') %>');"><a href="#section2" data-action="click->navbar#scrollToSection" data-section-class="section2" data-image-src="<%= asset_url('green.svg') %>" data-navbar-target="selectedImage">TALES OF COLOMBIA</a></li>
