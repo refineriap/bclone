@@ -54,6 +54,8 @@ section {
 
 @media screen and (min-width: 376px) {
     section {
+        display: flex;
+        flex-direction: column;
         padding: 0px 56px;
     }
 }
