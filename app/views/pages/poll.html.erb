@@ -1,36 +1,36 @@
-    <div class="poll--container" data-controller="back">
-        <section class="poll--buttons">
-            <a href="/" class="poll--back" data-action="click->back#goBackEarth">Back</a>    
-            <a href="/info" class="poll--info">Info</a>
-        </section>
+<div class="poll--container" data-controller="back">
+    <section class="poll--buttons">
+        <a href="/" class="poll--back" data-action="click->back#goBackEarth">Back</a>    
+        <a href="/info" class="poll--info">Info</a>
+    </section>
 
-        <section class="poll--vote" >
-            <%= image_tag("poll-vector.svg", alt: "poll vector", class: "poll--vector") %>
-            <p class="poll--title">Do Aliens Exist?</p>
-            <div class="poll--select" data-controller="poll">
-                <button class="obviously" data-action="click->poll#vote" data-poll-target="button">OBVIOUSLY</button>
-                <button class="hell--no" data-action="click->poll#voteHellNo" data-poll-target="button">HELL NO</button>
-                <button class="undecided" data-action="click->poll#undecidedMessage" data-poll-target="button">UNDECIDED</button>
+    <section class="poll--vote" >
+        <%= image_tag("poll-vector.svg", alt: "poll vector", class: "poll--vector") %>
+        <p class="poll--title">Do Aliens Exist?</p>
+        <div class="poll--select" data-controller="poll">
+            <button class="obviously" data-action="click->poll#vote" data-poll-target="button">OBVIOUSLY</button>
+            <button class="hell--no" data-action="click->poll#voteHellNo" data-poll-target="button">HELL NO</button>
+            <button class="undecided" data-action="click->poll#undecidedMessage" data-poll-target="button">UNDECIDED</button>
 
-                
-                <div class="poll--obviously" data-poll-target="result"></div>
-                <div class="poll--hell--no" data-poll-target="hellNoMessage">ARE YOU SURE?</div>
-                <div class="poll--link" data-poll-target="unDecided" >
-                    <p class="poll--link--text">WHY?</p>
-                    <a href="https://www.instagram.com/lilmayo/" target="_blank" data-poll-target="unDecided">
-                       <%= image_tag("arrow.svg", alt: "image of an arrow", class: "poll--image--arrow" ) %> 
-                    </a>
-                </div>                  
-            </div>
-        </section>
+            
+            <div class="poll--obviously" data-poll-target="result"></div>
+            <div class="poll--hell--no" data-poll-target="hellNoMessage">ARE YOU SURE?</div>
+            <div class="poll--link" data-poll-target="unDecided" >
+                <p class="poll--link--text">WHY?</p>
+                <a href="https://www.instagram.com/lilmayo/" target="_blank" data-poll-target="unDecided">  
+                    <%= image_tag("arrow.svg", alt: "image of an arrow", class: "poll--image--arrow" ) %> 
+                </a>
+            </div>                  
+        </div>
+    </section>
 
-        <section class="boris--poll">
-            <%= image_tag("Boris.svg", alt: "Boris svg", class: "boris--image") %>
-        </section>
-    </div> 
-
-
-    
+    <section class="boris--poll">
+        <%= image_tag("Boris.svg", alt: "Boris svg", class: "boris--image") %>
+    </section>
+</div> 
 
 
-             
+
+
+
+            
