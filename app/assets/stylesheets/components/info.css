@@ -1,11 +1,11 @@
 .info--container {
     background-color: #F6F3B2;
-    width: auto;
 }
 
 .back--section {
-    width: auto;   
+    width: 375px;   
     height: 100px;
+    padding: 0px 30px;
 }
 
 .back {
@@ -14,7 +14,7 @@
     width: 67px;
     height: 50px;
     display: inline-block;
-    margin: 30px 0px 30px 248px;
+    margin: 30px 0px 0px 248px;
     border-radius: 30px;
     text-align: center;
     text-decoration: none;
@@ -29,7 +29,9 @@
 
 .info--me {
     width: 375px;
-    height: 84px;}
+    height: 84px;
+    padding: 0px 30px;
+}
 
 .info--me p {
     color: #0D0E0F;
@@ -42,10 +44,11 @@
 }
 
 .info--buttons {
-    margin: 23px 0px 60px 0px;
+    display: grid;
     width: 375px;
     height: 230px;
-    display: grid;
+    margin: 23px 0px 60px 0px;
+    padding: 0px 30px;
 }
 
 .boris--btn {
@@ -114,9 +117,14 @@
 
 .info--description {
     width: 375px;
-    height: 165px;
+    margin-top: 20px;
+    padding: 0px 30px;
+}
+
+.info-paragraph {
+    width: 315px;
+    height: 112px;
     color: #0D0E0F;
-    padding-top: 20px;
     font-family: "avenue_mono";
     font-size: 1.25rem;
     font-style: normal;
@@ -127,7 +135,9 @@
 
 .info--skills {
     width: 375px;
-    height: 170px;   
+    height: 170px;
+    padding: 0px 30px; 
+    margin-top: 33px;  
 }
 
 .skills {
@@ -149,7 +159,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 22px;
-    /* margin-left: 7px; */
 }
 
 .info--languages li {
@@ -169,6 +178,7 @@
 .info--boris {
     width: 375px;
     height: 123px;
+    padding: 0px 30px;
 }
 
 .info-boris-img {
