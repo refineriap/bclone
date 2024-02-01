@@ -52,9 +52,9 @@ section {
     }
 }
 
-@media screen and (min-width: 377px) {
+@media screen and (min-width: 376px) {
     section {
-        padding: 0px;
+        padding: 0px 56px;
     }
 }
 
