@@ -52,13 +52,12 @@ section {
     }
 }
 
-@media screen and (min-width: 376px) {
+/* @media screen and (min-width: 376px) {
     section {
-        display: flex;
-        flex-direction: column;
+        margin: 0;
         padding: 0px 56px;
     }
-}
+} */
 
 section #svg {
     position: absolute;
