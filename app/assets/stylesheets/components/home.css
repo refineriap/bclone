@@ -1,17 +1,16 @@
 .colombia {
     position: relative;
-    margin-top: 40px;
-    width: 375px;  
+    margin: 40px 0px 0px 30px;
+    width: 316px;  
     height: 393px;
 }
 
 .colombia-overlay {
     position: absolute;
-    margin-left: 30px; 
     top: 0;
     left: 0;
     width: 316px;
-    height: 394px;
+    height: 393px;
     background-color: #0D0E0F;
     opacity: 0; 
     transition: opacity 0.35s;
@@ -20,7 +19,7 @@
 .colombia-paragraph {
     margin-top: 30px;
     width: 259px;
-    height: 392px;
+    height: 364px;
     color: #EEECE3;
     font-family: "PPEditorialNew-Ultralight";
     font-size: 1.875rem;
@@ -45,7 +44,8 @@
 .boris {
     position: fixed;
     bottom: 30px;
-    width: 375px;
+    left: 30px;
+    width: 315px;
     height: 93px;
     z-index: 3;
 }
@@ -60,22 +60,22 @@
     cursor: pointer;
     position: relative;
     margin-top: 300px;  
-    width: 296px;
+    width: 236px;
     height: 293px;
-    margin-left: 80px;
+    /* margin-left: 110px; */
 }
 
 .hover-image {
     position: absolute;
     bottom: 10px; 
-    left: 40px;  
+    left: 10px;  
     width: 30px;
     height: 30px;
 }
 
 .beats {  
     position: relative;
-    margin-top: 300px;  
+    margin: 300px 0px 0px 30px;  
     width: 260px;
     height: 200px;
 }
@@ -88,7 +88,7 @@
 .listen {
     position: absolute;
     top: 140px;
-    left: 40px;
+    left: 10px;
     width: 86px;  
     height: 50px;
     border-radius: 30px;
@@ -107,18 +107,17 @@
 
 .nyc {
     position: relative;
-    margin-top: 300px;  
-    width: 375px;
+    margin: 300px 0px 0px 30px;  
+    width: 315px;
     height: 393px;
 }
 
 .nyc-overlay {
     position: absolute;
-    margin-left: 30px;
     top: 0;
     left: 0;
-    width: 316px;
-    height: 394px;
+    width: 315px;
+    height: 393px;
     background-color: #0D0E0F;
     opacity: 0;
     transition: opacity 0.35s;
@@ -127,7 +126,7 @@
 .nyc-paragraph {
     margin-top: 30px;
     width: 314px;
-    height: 393px;
+    height: 364px;
     color: #EEECE3;
     font-family: "PPEditorialNew-Ultralight";
     font-size: 1.875rem;

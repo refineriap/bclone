@@ -1,6 +1,7 @@
 .dropdown {
   display: flex;
-  width: auto;
+  padding: 0px 30px;
+  width: 375px;
   height: 100px;
   position: sticky;
   top: 0;
@@ -12,7 +13,7 @@
 .dropbtn {
   width: 233px;
   height: 50px;
-  margin: 30px 0 0 30px;
+  margin: 30px 0 0 0px;
   background-color: #1E1E1E;
   border: none;
   color: #EEECE3;
@@ -77,7 +78,7 @@
   width: 71px;
   height: 50px;
   padding: 17px 24px;
-  margin: 30px 0px 0px 11px;
+  margin: 30px 0px 0px 10px;
   background-color: #F6F3B2;
   border: none;
   color: #0D0E0F;

@@ -42,7 +42,7 @@ body {
     background-color: #0D0E0F;
 }
 
-section {
+/* section {
     padding: 0 30px;
 }
 
@@ -52,10 +52,9 @@ section {
     }
 }
 
-/* @media screen and (min-width: 376px) {
+@media screen and (min-width: 376px) and (max-width: 1024px) {
     section {
-        margin: 0;
-        padding: 0px 56px;
+        padding: 0px 50px;
     }
 } */
 
