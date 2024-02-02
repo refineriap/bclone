@@ -301,30 +301,30 @@
 
 @media screen and (min-width: 376px) and (max-width: 480px) {
     .back--section {
-        padding: 0px 50px;   
+        padding: 0px 30px;   
     }
 
     .info--me {
-        padding: 0px 50px;
+        padding: 0px 30px;
     }
 
     .info--buttons {
-        padding: 0px 50px;
+        padding: 0px 30px;
     }
 
     .info--hr {
-        margin: 0px 50px;
+        margin: 0px 30px;
     }
 
     .info--description {
-        padding: 0px 50px;
+        padding: 0px 30px;
     }
 
     .info--skills {
-        padding: 0px 50px;
+        padding: 0px 30px;
     }
 
     .info--boris {
-        padding: 0px 50px;
+        padding: 0px 30px;
     }
 }
