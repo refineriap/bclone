@@ -525,4 +525,8 @@
     .plane {
         padding: 0px 50px;
     }
+
+    .plane-arrow {
+        left: 90px;
+    }
 }
