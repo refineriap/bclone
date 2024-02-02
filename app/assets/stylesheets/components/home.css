@@ -523,19 +523,19 @@
     }
 
     .plane {
-        padding: 0px 30px 0px 140px;
+        padding: 0px 30px 0px 150px;
     }
 
     .plane-arrow {
-        left: 60px;
+        left: 100px;
     }  
 
     .beats {
-        padding: 0px 50px; 
+        padding: 0px 30px; 
     }
 
     .listen {
-        left: 60px;
+        left: 40px;
     }
 
     .nyc {
