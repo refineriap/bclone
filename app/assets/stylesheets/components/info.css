@@ -189,7 +189,7 @@
 .info-boris-img {
     width: 315px;
     height: 93px;
-    margin-top: 30px; 
+    margin-top: 80px; 
 }
 
 /*********************************************/
@@ -323,6 +323,7 @@
 
     .info--skills {
         padding: 0px 30px;
+        height: 400px;
     }
 
     .info--boris {
