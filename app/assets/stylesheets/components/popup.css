@@ -4,7 +4,7 @@
     position: fixed;
     bottom: -100%;
     left: 0;
-    width: auto;
+    width: 375px;
     background-color: #CAFA6D;
     overflow: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease, bottom 1s ease; 
@@ -17,7 +17,7 @@
     opacity: 1; 
     visibility: visible;
     bottom: 0;
-    width: auto;
+    width: 375px;
     height: 100%;
 }
 
@@ -303,7 +303,22 @@
 
 
 @media screen and (min-width: 376px) {
+    .popup1 {
+        width: auto;
+    }
+    .popup1.active {
+        width: auto;
+    }
+
     .popup1--container {
         padding: 50px 0px 0px 50px; 
+    }
+
+    .popup1--paragraph {
+        margin: 231px 50px 0px 50px;
+    }
+
+    .close1 {
+        left: 50px;
     }
 }
