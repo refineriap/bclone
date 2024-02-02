@@ -111,7 +111,7 @@
 }
 
 .info--hr {
-    margin: 0px 30px;
+    padding: 0px 30px;
     border: 0.75px solid #0D0E0F;
 }
 
@@ -302,5 +302,29 @@
 @media screen and (min-width: 376px) and (max-width: 480px) {
     .back--section {
         padding: 0px 50px;   
+    }
+
+    .info--me {
+        padding: 0px 50px;
+    }
+
+    .info--buttons {
+        padding: 0px 50px;
+    }
+
+    .info--hr {
+        padding: 0px 50px;
+    }
+
+    .info--description {
+        padding: 0px 50px;
+    }
+
+    .info--skills {
+        padding: 0px 50px;
+    }
+
+    .info--boris {
+        padding: 0px 50px;
     }
 }
