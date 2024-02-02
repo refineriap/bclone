@@ -527,7 +527,7 @@
     }
 
     .plane-arrow {
-        left: 100px;
+        left: 140px;
     }  
 
     .beats {
@@ -543,15 +543,15 @@
     }
 
     .bike {
-        padding: 0px 50px;
+        padding: 0px 30px;
     }
 
     .bike-arrow {
-        left: 60px;
+        left: 40px;
     }
 
     .earth {
-        padding: 0px 50px 0px 165px;
+        padding: 0px 50px 0px 185px;
     }
 
     .mexico {
@@ -559,14 +559,14 @@
     }
 
     .agave {
-        padding: 0px 50px 0px 130px;
+        padding: 0px 50px 0px 150px;
     }
 
     .agave-arrow {
-        left: 140px;
+        left: 160px;
     }
 
     .burger {
-        padding: 0px 125px 0px 50px;
+        padding: 0px 125px 0px 30px;
     }
 }
