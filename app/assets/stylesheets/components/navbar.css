@@ -116,11 +116,11 @@
 
 }
 
-/* @media screen and (min-width: 377px) {
+@media screen and (min-width: 376px) {
   .dropdown {
     width: auto;
     height: 100px;
-    padding: 0px 30px;
+    padding: 0px 50px;
   }
   
   .dropbtn {
@@ -142,4 +142,4 @@
     padding-left: 50px;
   }
 
-} */
+}
