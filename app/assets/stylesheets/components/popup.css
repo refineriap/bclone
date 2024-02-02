@@ -321,4 +321,42 @@
     .close1 {
         left: 50px;
     }
+
+    .popup2 {
+        width: auto;
+    }
+    .popup2.active {
+        width: auto;
+    }
+
+    .popup2--container {
+        padding: 50px 0px 0px 50px; 
+    }
+
+    .popup2--paragraph {
+        margin: 231px 50px 0px 50px;
+    }
+
+    .close2 {
+        left: 50px;
+    }
+
+    .popup3 {
+        width: auto;
+    }
+    .popup3.active {
+        width: auto;
+    }
+
+    .popup3--container {
+        padding: 50px 0px 0px 50px; 
+    }
+
+    .popup3--paragraph {
+        margin: 231px 50px 0px 50px;
+    }
+
+    .close3 {
+        left: 50px;
+    }
 }
