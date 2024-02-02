@@ -377,3 +377,13 @@
 
 
 }
+
+@media screen and (min-width: 376px) and (max-width: 480px) {
+    .burger--menu {
+        padding: 0px 50px;
+    }
+
+    .burger--journal {
+        padding: 0px 50px;
+    } 
+}
