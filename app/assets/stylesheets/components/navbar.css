@@ -139,7 +139,7 @@
   .dropdown-content {
     margin-left: 0px;
     width: 355px;
-    padding-left: 50px;
+    padding: 0px 50px;
   }
 
 }
