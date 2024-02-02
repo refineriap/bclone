@@ -110,8 +110,7 @@
 .popup2--paragraph {    
     width: 308px;
     height: 144px;
-    margin-left: 30px;
-    margin-top: 312px;
+    margin: 231px 30px 0px 30px;
 }
 
 .popup2--text {
@@ -306,6 +305,7 @@
     .popup1 {
         width: auto;
     }
+
     .popup1.active {
         width: auto;
     }
