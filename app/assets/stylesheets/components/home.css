@@ -73,7 +73,7 @@
 .beats {  
     position: relative;
     margin-top: 300px;  
-    width: 375px;
+    width: auto;
     height: 200px;
     padding: 0px 145px 0px 30px;
 }
@@ -107,7 +107,7 @@
     position: relative;
     padding: 0px 30px;
     margin-top: 300px;  
-    width: 375px;
+    width: auto;
     height: 393px;
 }
 
@@ -149,7 +149,7 @@
 .bike {
     position: relative;
     margin-top: 300px;  
-    width: 375px;
+    width: auto;
     height: 293px;
     padding: 0px 110px 0px 30px;
 }
@@ -165,7 +165,7 @@
 .earth {
     position: relative;
     margin-top: 300px;  
-    width: 375px;
+    width: auto;
     height: 200px;
     padding: 0px 30px 0px 145px;
 }
@@ -174,7 +174,7 @@
 .mexico {
     position: relative;
     margin-top: 300px;  
-    width: 375px;
+    width: auto;
     height: 393px;
     padding: 0px 30px;
 }
@@ -217,7 +217,7 @@
 .agave {
     position: relative;
     margin-top: 300px;  
-    width: 375px;
+    width: auto;
     padding: 0px 30px 0px 110px;
     height: 292.79px;
 }
@@ -231,7 +231,7 @@
 }
 
 .burger {
-    width: 375px;
+    width: auto;
     height: 495px;
     margin-top: 300px;
     padding: 0px 145px 0px 30px; 

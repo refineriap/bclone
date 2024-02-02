@@ -3,7 +3,7 @@
 }
 
 .back--section {
-    width: 375px;   
+    width: auto;   
     height: 100px;
     padding: 0px 30px;
 }
@@ -28,7 +28,7 @@
 }
 
 .info--me {
-    width: 375px;
+    width: auto;
     height: 84px;
     padding: 0px 30px;
 }
@@ -45,7 +45,7 @@
 
 .info--buttons {
     display: grid;
-    width: 375px;
+    width: auto;
     height: 230px;
     margin: 23px 0px 60px 0px;
     padding: 0px 30px;
@@ -116,7 +116,7 @@
 }
 
 .info--description {
-    width: 375px;
+    width: auto;
     margin-top: 20px;
     padding: 0px 30px;
 }
@@ -134,7 +134,7 @@
 }
 
 .info--skills {
-    width: 375px;
+    width: auto;
     height: 170px;
     padding: 0px 30px; 
     margin-top: 33px;  
@@ -176,7 +176,7 @@
 }
 
 .info--boris {
-    width: 375px;
+    width: auto;
     height: 123px;
     padding: 0px 30px;
 }

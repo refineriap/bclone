@@ -10,7 +10,7 @@
 .burger--buttons {
     display: flex;
     justify-content: space-between;
-    width: 375px;
+    width: auto;
     height: 100px;
     padding: 0px 30px;
 }
@@ -55,7 +55,7 @@
 }
 
 .burger--hero {
-    width: 375px;
+    width: auto;
     padding: 0px 30px;
     margin-top: 20px;
 }
@@ -75,7 +75,7 @@
 /*****************************************************/
 
 .burger--load {
-    width: 375px;
+    width: auto;
     height: auto;
     margin: 0px;
     padding: 0px 30px 90px 30px;
@@ -231,7 +231,7 @@
 .burger--journal {
     background-color: #0D0E0F;
     padding: 0px 30px;
-    width: 375px;
+    width: auto;
     height: 91px;
     position: fixed;
     bottom: 0;

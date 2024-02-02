@@ -1,7 +1,7 @@
 .dropdown {
   display: flex;
   padding: 0px 30px;
-  width: 375px;
+  width: auto;
   height: 100px;
   position: sticky;
   top: 0;
@@ -54,11 +54,6 @@
   padding-top: 29px;
   border-radius: 20px;
 }
-
-/* .lista {
-  padding-bottom: 10px;
-} */
-  
 
 .dropdown-content a {
   color: #EEECE3;
