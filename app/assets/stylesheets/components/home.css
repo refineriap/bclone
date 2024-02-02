@@ -533,4 +533,40 @@
     .beats {
         padding: 0px 50px; 
     }
+
+    .listen {
+        left: 60px;
+    }
+
+    .nyc {
+        padding: 0px 50px; 
+    }
+
+    .bike {
+        padding: 0px 50px;
+    }
+
+    .bike-arrow {
+        left: 60px;
+    }
+
+    .earth {
+        padding: 0px 50px 0px 125px;
+    }
+
+    .mexico {
+        padding: 0px 50px;
+    }
+
+    .agave {
+        padding: 0px 50px 0px 90px;
+    }
+
+    .agave-arrow {
+        left: 60px;
+    }
+
+    .burger {
+        padding: 0px 125px 0px 50px;
+    }
 }
