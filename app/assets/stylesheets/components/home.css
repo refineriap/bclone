@@ -529,4 +529,8 @@
     .plane-arrow {
         left: 60px;
     }
+
+    .beats {
+        padding: 0px 50px; 
+    }
 }
