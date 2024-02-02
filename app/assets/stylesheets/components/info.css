@@ -296,4 +296,11 @@
         height: 118px;
         margin: 0px;
     }
+
+}
+
+@media screen and (min-width: 376px) and (max-width: 480px) {
+    .back--section {
+        padding: 0px 50px;   
+    }
 }
