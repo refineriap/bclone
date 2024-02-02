@@ -513,9 +513,9 @@
     }
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 376px) and (max-width: 480px) {
     .colombia {
-        padding: 0px 50px;
+        padding: 0px 0px 0px 30px;
     }
 
     .boris {
@@ -523,7 +523,7 @@
     }
 
     .plane {
-        padding: 0px 50px;
+        padding: 0px 30px 0px 0px;
     }
 
     .plane-arrow {
