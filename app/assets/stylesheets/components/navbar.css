@@ -138,8 +138,8 @@
 
   .dropdown-content {
     margin-left: 0px;
-    width: 355px;
-    padding: 0px 50px;
+    width: 315px;
+    padding-left: 50px;
   }
 
 }
