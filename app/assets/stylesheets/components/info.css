@@ -111,7 +111,7 @@
 }
 
 .info--hr {
-    padding: 0px 30px;
+    margin: 0px 30px;
     border: 0.75px solid #0D0E0F;
 }
 
@@ -313,7 +313,7 @@
     }
 
     .info--hr {
-        padding: 0px 50px;
+        margin: 0px 50px;
     }
 
     .info--description {
