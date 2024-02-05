@@ -14,7 +14,7 @@
 
 .popup1.active {
     width: 375px;
-    height: 88%;
+    height: 100%;
     z-index: 7;
     opacity: 1; 
     visibility: visible;
