@@ -190,9 +190,9 @@
 }
 
 .mexico-paragraph {
-    margin-top: 30px;
-    width: 299px;
-    height: 363px;
+    margin-top: 60px;
+    width: 291px;
+    height: 334px;
     color: #EEECE3;
     font-family: "PPEditorialNew-Ultralight";
     font-size: 1.875rem;
@@ -200,6 +200,11 @@
     font-weight: 200;
     line-height: 40px; 
     letter-spacing: 0.6px;
+}
+
+.mexico-p-2 {
+    width: 292px;
+    height: 114px;
 }
 
 .artist3 {
