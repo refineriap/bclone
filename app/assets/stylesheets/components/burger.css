@@ -381,9 +381,15 @@
 @media screen and (min-width: 376px) and (max-width: 480px) {
     .burger--load{
         padding: 0px 30px;
+        height: 780px;
     }
 
     .burger--journal {
         padding: 0px 30px;
     } 
+
+    .burger--hr {
+        width: 344px;
+    }
+
 }
