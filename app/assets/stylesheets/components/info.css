@@ -48,9 +48,10 @@
 .info--buttons {
     display: grid;
     width: auto;
-    height: 230px;
+    height: 180px;
     margin: 23px 0px 60px 0px;
     padding: 0px 30px;
+    gap: 20px;
 }
 
 .boris--btn {
