@@ -2,7 +2,7 @@
     background-color: #F6F3B2;
 }
 
-.back--section {  
+.back--section {    
     width: auto;
     display: flex;
     justify-content: flex-end;
@@ -179,7 +179,7 @@
 
 .info--boris {
     position: fixed;
-    width: auto;
+    width: 375px;
     height: 153px;
     bottom: 0;
     padding: 0px 30px;
@@ -187,9 +187,12 @@
 }
 
 .info-boris-img {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
     width: 315px;
     height: 93px;
-    margin-top: 80px; 
+    
 }
 
 /*********************************************/
