@@ -118,7 +118,7 @@
     position: absolute;
     top: 448px;
     left: 30px;
-    width: 305px;
+    width: 307px;
     height: 150px;
     color: #0D0E0F;
     font-family: "PPNeueMontreal-Regular";
@@ -197,7 +197,7 @@
     position: absolute;
     top: 423px;
     left: 30px;
-    width: 315px;
+    width: 317px;
     height: 175px;
     color: #0D0E0F;
     font-family: "PPNeueMontreal-Regular";
@@ -335,18 +335,20 @@
     }
 
     .popup2 {
-        width: auto;
+        width: 100%;
     }
     .popup2.active {
-        width: auto;
+        width: 100%;
     }
 
     .popup2--container {
-        padding: 50px 0px 0px 50px; 
+        top: 50px;
+        left: 50px;
     }
 
     .popup2--paragraph {
-        margin: 231px 50px 0px 50px;
+        top: 448px;
+        left: 50px
     }
 
     .close2 {
@@ -354,18 +356,20 @@
     }
 
     .popup3 {
-        width: auto;
+        width: 100%;
     }
     .popup3.active {
-        width: auto;
+        width: 100%;
     }
 
     .popup3--container {
-        padding: 50px 0px 0px 50px; 
+        top: 50px;
+        left: 50px;
     }
 
     .popup3--paragraph {
-        margin: 231px 50px 0px 50px;
+        top: 423px;
+        left: 50px;
     }
 
     .close3 {
