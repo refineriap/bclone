@@ -312,11 +312,11 @@
 
 @media screen and (min-width: 376px) {
     .popup1 {
-        width: auto;
+        width: 100%;
     }
 
     .popup1.active {
-        width: auto;
+        width: 100%;
     }
 
     .popup1--container {
