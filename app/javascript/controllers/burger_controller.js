@@ -1,13 +1,12 @@
 import { Controller } from "@hotwired/stimulus"
 
-import burgersData from '../javascript/data.js'
+import burgersData from '../data/data'
 
 export default class extends Controller {
   static targets = ["create", "allButton", "bestToWorstButton", "under15Button"];
 
   connect() {
     this.renderBurgers();
-
     this.allButtonTarget.addEventListener('click', () => this.sortBurgers());
     this.bestToWorstButtonTarget.addEventListener('click', () => this.sortBurgersByRating());
     this.under15ButtonTarget.addEventListener('click', () => this.filterBurgersUnder15());
@@ -57,4 +56,6 @@ export default class extends Controller {
   }
 }
 
+
+   
   
