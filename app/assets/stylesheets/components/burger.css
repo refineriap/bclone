@@ -77,7 +77,7 @@
 .burger--load {
     width: auto;
     margin: 0px;
-    padding: 0px 30px 90px 30px;
+    padding: 0px 30px 10px 30px;
 }
 
 .burger--view {
@@ -144,7 +144,7 @@
 
 .burger--menu {
     width: 315px;
-    height: auto;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
 }
@@ -233,20 +233,22 @@
     padding: 0px 30px;
     width: auto;
     height: 91px;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     z-index: 1;
 }
 
 .burger--hr {
-    margin-top: 20px;
+    position: absolute;
+    top: 20px;
     border: 1px solid #EEECE3;
     width: 315px;
     margin-left: 0px;
 }
 
 .burger--text {
-    margin-top: 12px;
+    position: absolute;
+    top: 32px;
     width: 269px;
     height: 36px;
     color: #EEECE3;
@@ -262,7 +264,43 @@
 
 /****************************************************/
 
-@media screen and (min-width: 1024px) {
+
+
+@media screen and (min-width: 376px) and (max-width: 991px) {
+    .burger--load{
+        padding: 0px 30px 10px 30px;
+        /* height: 780px; */
+    }
+
+    .burger--menu {
+        width: 355px;
+    }
+
+    .burger--item {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 166px;
+    }
+
+    .burger--item:nth-child(2n) {
+        margin-right: 10px;
+    }
+
+    .burger-rating {
+        margin: 10px 10px 0px 128px;
+    }  
+
+    .burger--journal {
+        padding: 0px 30px;
+    } 
+
+    .burger--hr {
+        width: 355px;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 3200px) {
 
     .burger--container {
         width: auto;
@@ -370,39 +408,10 @@
     }
 
     .burger--text {
-        margin-top: 20px;
+        margin-top: 20px;  
         width: 243px;
         height: 43px;
     }
 
-
-}
-
-@media screen and (min-width: 376px) and (max-width: 480px) {
-    .burger--load{
-        padding: 0px 30px;
-        height: 780px;
-    }
-
-    .burger--menu {
-        width: 355px;
-    }
-
-    .burger--item {
-        margin-right: 12px;
-        margin-bottom: 12px;
-    }
-
-    .burger--item:nth-child(2n) {
-        margin-right: 12px;
-    }
-
-    .burger--journal {
-        padding: 0px 30px;
-    } 
-
-    .burger--hr {
-        width: 344px;
-    }
 
 }
