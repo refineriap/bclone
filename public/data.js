@@ -34,7 +34,7 @@ const burgersData = [
         year: '2024',
         image: 'carls.png',
         price: 5.99,
-    },
+    },   
     {
         name: 'Famous star',
         rating: 5.0,
@@ -44,42 +44,7 @@ const burgersData = [
         image: 'carls.png',
         price: 5.99,
     },
-    {
-        name: 'Famous star',
-        rating: 5.0,
-        location: 'Carl\'s JR',
-        country: 'MEXICO',
-        year: '2024',
-        image: 'carls.png',
-        price: 5.99,
-    },
-    {
-        name: 'Famous star',
-        rating: 5.0,
-        location: 'Carl\'s JR',
-        country: 'MEXICO',
-        year: '2024',
-        image: 'carls.png',
-        price: 5.99,
-    },
-    {
-        name: 'Famous star',
-        rating: 5.0,
-        location: 'Carl\'s JR',
-        country: 'MEXICO',
-        year: '2024',
-        image: 'carls.png',
-        price: 5.99,
-    },
-    {
-        name: 'Famous star',
-        rating: 5.0,
-        location: 'Carl\'s JR',
-        country: 'MEXICO',
-        year: '2024',
-        image: 'carls.png',
-        price: 5.99,
-    },
+    
 ]
 
 export default burgersData;

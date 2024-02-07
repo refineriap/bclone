@@ -75,6 +75,7 @@
 /*****************************************************/
 
 .burger--load {
+    position: relative;
     width: auto;
     margin: 0px;
     padding: 0px 30px 10px 30px;
@@ -144,7 +145,7 @@
 
 .burger--menu {
     width: 315px;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
 }
