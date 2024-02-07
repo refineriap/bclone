@@ -197,15 +197,13 @@
 
 
 .boris--poll {
-    position: fixed;
-    bottom: 0px;
     width: 375px;
-    height: 153px;
+    height: 254px;
     padding: 0px 30px;
 }
 
 .boris--poll--image {
-    position: absolute;
+    position: fixed;
     left: 30px;
     bottom: 30px;
     width: 315px;
@@ -227,7 +225,7 @@
 
 /********************************************/
 
-@media screen and (min-width: 992px) and (max-width: 3200px) {
+/* @media screen and (min-width: 992px) and (max-width: 3200px) {
     .poll--container {
         width: auto;
         height: 100vh;
@@ -263,7 +261,7 @@
         font-size: 3.125rem;
         font-style: normal;
         font-weight: 400;
-        line-height: 52px; /* 104% */
+        line-height: 52px; 
     }
 
     .poll--select {
@@ -317,5 +315,5 @@
         left: 60px;
         bottom: 60px;
     }
-}
+}  */
 
