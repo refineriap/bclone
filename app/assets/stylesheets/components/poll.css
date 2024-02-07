@@ -197,10 +197,19 @@
 
 
 .boris--poll {
-    width: auto;
-    height: 123px;
-    margin-top: 131px;
+    position: fixed;
+    bottom: 0px;
+    width: 375px;
+    height: 153px;
     padding: 0px 30px;
+}
+
+.boris--poll--image {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    width: 315px;
+    height: 93px;
 }
 
 .selected {
@@ -218,13 +227,14 @@
 
 /********************************************/
 
-@media screen and (min-width: 1024px) {
-    .polll--container {
+@media screen and (min-width: 992px) and (max-width: 3200px) {
+    .poll--container {
         width: auto;
         height: 100vh;
     }
 
     .poll--buttons {
+        width: auto;
         display: flex;
         justify-content: space-between;
         padding: 0px 60px;
@@ -233,6 +243,7 @@
     .poll--vote {
         background-image: url("pollgreen.svg");
         position: relative;
+        padding: 0;
         width: 629px;
         height: 630px;
         margin: 0px 0px 0px 753px;
@@ -294,19 +305,17 @@
 
 
     .boris--poll {
-        padding-top: 0;
-        width: 400px;
-        height: 178px;
-        margin-top: -93px;
-        margin-left: 60px;
+        width: 399px;
+        height: 118px;
     }
-
+    
+    .boris--poll--image {
+        padding: 0;
+        position: absolute;
+        width: 399px;
+        height: 118px;
+        left: 60px;
+        bottom: 60px;
+    }
 }
 
-
-
-/* .obviously:hover {
-    background-color: #CAFA6D;
-    color: #0D0E0F;
-    border: none;
-} */
