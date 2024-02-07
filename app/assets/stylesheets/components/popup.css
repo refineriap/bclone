@@ -301,7 +301,8 @@
 
 @media screen and (min-width: 992px) and (max-width: 3200px) {
     .popup1 {
-        width: 566px; 
+        width: 566px;
+        height: 690px; 
         margin-left: 813px;
     }
 
