@@ -5,7 +5,7 @@ const burgersData = [
         location: 'Chubbie\'s',
         country: 'MEXICO',
         year: '2023',
-        image: '',
+        image: 'chubbies.png',
         price: 12,
     },
     {

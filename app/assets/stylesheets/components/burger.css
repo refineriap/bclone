@@ -270,7 +270,6 @@
 @media screen and (min-width: 376px) and (max-width: 991px) {
     .burger--load{
         padding: 0px 30px 10px 30px;
-        /* height: 780px; */
     }
 
     .burger--menu {
@@ -301,7 +300,7 @@
 
 }
 
-@media screen and (min-width: 992px) and (max-width: 3200px) {
+@media screen and (min-width: 992px) and (max-width: 4000px) {
 
     .burger--container {
         width: auto;
@@ -316,13 +315,19 @@
     .burger--hero {
         width: 338px;
         height: 272px;
-        margin: 30px 0px 0px 60px;
+        padding: 0;
+        margin-left: 60px;
+    }
+
+    .burger--paragraph {
+        width: 338px;
+        height: 272px;
         font-family: "avenue_mono";
         color: #EEECE3;
         font-size: 60px;
         font-style: normal;
         font-weight: 400;
-        line-height: 68px; /* 113.333% */
+        line-height: 68px; 
     }
 
     .burger--view {
@@ -399,9 +404,10 @@
     }
 
     .burger--journal {
+        margin-top: 200px;
         width: 500px;
         height: 140px;
-        margin-left: 60px; 
+        margin-left: 30px; 
     }
 
     .burger--hr {
