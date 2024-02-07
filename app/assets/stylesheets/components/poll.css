@@ -225,7 +225,7 @@
 
 /********************************************/
 
-/* @media screen and (min-width: 992px) and (max-width: 3200px) {
+@media screen and (min-width: 992px) and (max-width: 3200px) {
     .poll--container {
         width: auto;
         height: 100vh;
@@ -244,7 +244,7 @@
         padding: 0;
         width: 629px;
         height: 630px;
-        margin: 0px 0px 0px 753px;
+        margin: 25px 0px 0px 753px;
     }
 
     .poll--vector {
@@ -303,17 +303,16 @@
 
 
     .boris--poll {
-        width: 399px;
-        height: 118px;
+        width: 0;
+        height: 0;
+        padding: 0;
     }
     
     .boris--poll--image {
-        padding: 0;
-        position: absolute;
-        width: 399px;
-        height: 118px;
         left: 60px;
         bottom: 60px;
-    }
-}  */
+        width: 399px;
+        height: 118px;
+    } 
+} 
 
