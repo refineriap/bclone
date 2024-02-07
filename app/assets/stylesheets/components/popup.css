@@ -1,5 +1,5 @@
 .popup1 {
-    width: 375px;
+    width: 375px;  
     position: fixed;
     bottom: -100%;
     left: 0;
@@ -233,7 +233,73 @@
 
 /**********************************************/
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 376px) and (max-width: 991px) {
+    .popup1 {
+        width: 100%;
+    }
+
+    .popup1.active {
+        width: 100%;
+    }
+
+    .popup1--container {
+       top: 50px;
+       left: 50px; 
+    }
+
+    .popup1--paragraph {
+        top: 363px;
+        left: 50px;
+    }
+
+    .close1 {
+        left: 50px;
+    }
+
+    .popup2 {
+        width: 100%;
+    }
+    .popup2.active {
+        width: 100%;
+    }
+
+    .popup2--container {
+        top: 50px;
+        left: 50px;
+    }
+
+    .popup2--paragraph {
+        top: 448px;
+        left: 50px
+    }
+
+    .close2 {
+        left: 50px;
+    }
+
+    .popup3 {
+        width: 100%;
+    }
+    .popup3.active {
+        width: 100%;
+    }
+
+    .popup3--container {
+        top: 50px;
+        left: 50px;
+    }
+
+    .popup3--paragraph {
+        top: 423px;
+        left: 50px;
+    }
+
+    .close3 {
+        left: 50px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 3200px) {
     .popup1 {
         width: 566px; 
         margin-left: 813px;
@@ -246,17 +312,20 @@
     }
 
     .popup1--container {
-        margin: 60px 0px 0px 60px;
+        top: 60px;
+        left: 60px;
     }
 
     .popup1--paragraph {
         width: 446px;
         height: 174px;
-        margin: 270px 0px 0px 60px;
+        top: 376px;
+        left: 60px;
     }
 
     .close1 {
-        margin: 0px 0px 0px 30px;
+        top: 580px;
+        left: 60px;
     }
 
     .popup2 {
@@ -306,73 +375,5 @@
 
     .close3 {
         margin: 0px 0px 0px 30px;
-    }
-}
-
-
-@media screen and (min-width: 376px) {
-    .popup1 {
-        width: 100%;
-    }
-
-    .popup1.active {
-        width: 100%;
-    }
-
-    .popup1--container {
-       top: 50px;
-       left: 50px; 
-    }
-
-    .popup1--paragraph {
-        top: 363px;
-        left: 50px;
-        /* margin: 231px 50px 0px 50px; */
-    }
-
-    .close1 {
-        left: 50px;
-    }
-
-    .popup2 {
-        width: 100%;
-    }
-    .popup2.active {
-        width: 100%;
-    }
-
-    .popup2--container {
-        top: 50px;
-        left: 50px;
-    }
-
-    .popup2--paragraph {
-        top: 448px;
-        left: 50px
-    }
-
-    .close2 {
-        left: 50px;
-    }
-
-    .popup3 {
-        width: 100%;
-    }
-    .popup3.active {
-        width: 100%;
-    }
-
-    .popup3--container {
-        top: 50px;
-        left: 50px;
-    }
-
-    .popup3--paragraph {
-        top: 423px;
-        left: 50px;
-    }
-
-    .close3 {
-        left: 50px;
     }
 }
