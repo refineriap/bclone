@@ -353,7 +353,7 @@
         height: 297.2px;
         gap: 7px;
         margin: 0px 10px 10px 0px;
-
+        border-radius: 30px;
     }
 
     .burger-rating {
