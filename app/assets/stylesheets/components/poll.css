@@ -224,6 +224,16 @@
 
 /********************************************/
 
+@media screen and (min-width: 376px) and (max-width: 991px) {
+    .poll--vote {
+        margin-top: 40px;
+    }
+
+    .boris--poll {
+        height: 280px;
+    }
+}
+
 @media screen and (min-width: 992px) and (max-width: 3200px) {
     .poll--container {
         width: auto;
