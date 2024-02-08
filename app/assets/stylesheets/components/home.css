@@ -1,7 +1,7 @@
 .colombia {
     position: relative;
     padding: 0px 30px;
-    margin-top: 40px;  
+    margin-top: 10px;  
     width: auto;  
     height: 393px;
 }
@@ -246,6 +246,7 @@
 
 @media screen and (min-width: 376px) and (max-width: 991px) {
     .colombia {
+        margin-top: 40px;  
         padding: 0px 0px 0px 30px;
     }
 
