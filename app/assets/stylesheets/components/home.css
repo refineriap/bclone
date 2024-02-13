@@ -277,6 +277,10 @@
         padding: 0px 30px 0px 70px; 
     }
 
+    .nyc-paragraph {
+        margin-left: -30px;
+    }
+
     .bike {
         padding: 0px 30px;
     }
