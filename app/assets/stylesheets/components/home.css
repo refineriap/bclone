@@ -306,7 +306,7 @@
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 3200px) {
+@media screen and (min-width: 992px) and (max-width: 4000px) {
     .colombia {
         padding: 0;
         margin: 40px 0px 0px 563px;
@@ -362,7 +362,7 @@
         position: relative;
         width: 250px;
         height: 311.53px;
-        margin: 150px 0px 0px 1046px;
+        margin: 300px 0px 0px 1046px;
         padding: 0;
     }
 
@@ -371,6 +371,7 @@
         left: 10px;
         opacity: 0;
         transition: opacity 0.50s;
+        cursor: pointer;
     }
 
     .plane:hover .plane-arrow {
@@ -470,6 +471,7 @@
         left: 10px;
         opacity: 0;
         transition: opacity 0.50s;
+        cursor: pointer;
     }
 
     .bike:hover .bike-arrow {
@@ -556,6 +558,7 @@
         left: 10px;
         opacity: 0;
         transition: opacity 0.50s;
+        cursor: pointer;
     }
 
     .agave:hover .agave-arrow {
