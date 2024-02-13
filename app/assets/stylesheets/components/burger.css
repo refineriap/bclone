@@ -88,6 +88,7 @@
 }
 
 .view--all {
+    cursor: pointer;
     width: 44px;
     height: 30px;
     background-color: #FFF;
@@ -108,6 +109,7 @@
 }
 
 .view--best {
+    cursor: pointer;
     width: 127px;
     height: 30px;
     border-radius: 30px;
@@ -126,6 +128,7 @@
 }
 
 .view--under {
+    cursor: pointer;
     width: 91px;
     height: 30px;
     background-color: #0D0E0F;
@@ -334,11 +337,12 @@
         margin: 48px 0px 0px 60px;
     }
 
+
     .burger--menu {
         width: 730px;
         margin-left: 661px;
         margin-top: -405px;
-        max-height: 600px; /* Set the maximum height for the menu */
+        max-height: 600px; 
         overflow-y: auto;
     }
 
