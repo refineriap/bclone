@@ -299,7 +299,7 @@
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 3200px) {
+@media screen and (min-width: 992px) and (max-width: 1440px) {
     .popup1 {
         width: 566px;
         height: 690px; 
@@ -386,5 +386,93 @@
     .close3 {
         top: 580px;
         left: 60px;
+    }
+}
+
+@media screen and (min-width: 1536px) and (max-width: 2560px) {
+    .popup1 {
+        width: 660px;
+        height: 690px; 
+        margin-left: 1200px;
+    }
+
+    .popup1.active {
+       width: 660px; 
+       height: 90.5%;
+       margin-left: 1200px;
+    }
+
+    .popup1--container {
+        top: 100px;
+        left: 100px;
+    }
+
+    .popup1--paragraph {
+        width: 446px;
+        height: 174px;
+        top: 516px;
+        left: 100px;
+    }
+
+    .close1 {
+        top: 760px;
+        left: 100px;
+    }
+
+    .popup2 {
+        width: 660px;
+        height: 690px;
+        margin-left: 1200px; 
+    }
+
+    .popup2.active {
+       width: 660px; 
+       height: 90.5%;
+       margin-left: 1200px;
+    }
+
+    .popup2--container {
+        top: 100px;
+        left: 100px;
+    }
+
+    .popup2--paragraph {
+        width: 446px;
+        height: 100px;
+        top: 560px;
+        left: 100px;
+    }
+
+    .close2 {
+        top: 760px;
+        left: 100px;
+    }
+    .popup3 {
+        width: 660px;
+        height: 690px;
+        margin-left: 1200px; 
+    }
+
+    .popup3.active {
+       width: 660px; 
+       height: 90.5%;
+       margin-left: 1200px;
+    }
+
+    .popup3--container {
+        top: 100px;
+        left: 100px;
+    }
+
+    .popup3--paragraph {
+        width: 446px;
+        height: 100px;
+        top: 560px;
+        left: 100px;
+    }
+
+    .close3 {
+        top: 760px;
+        left: 100px;
     }
 }
