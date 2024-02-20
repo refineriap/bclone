@@ -53,7 +53,7 @@
 
 .close1 {
     position: absolute;
-    top: 628px;
+    /* top: 628px; */
     left: 30px;
     bottom: 34px;
     width: 86px;
