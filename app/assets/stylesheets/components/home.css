@@ -243,7 +243,7 @@
 
 /*********************************************/
 
-@media screen and (min-width: 376px) and (max-width: 991px) {
+@media screen and (min-width: 390px) {
     .colombia {
         margin-top: 40px;  
         padding: 0px 0px 0px 30px;
@@ -258,15 +258,15 @@
     }
 
     .plane {
-        padding: 0px 30px 0px 150px;
+        padding: 0px 0px 0px 124px;
     }
 
     .plane-arrow {
-        left: 160px;
+        left: 135px;
     }  
 
     .beats {
-        padding: 0px 30px; 
+        padding: 0px 0px 0px 30px; 
     }
 
     .listen {
@@ -274,7 +274,7 @@
     }
 
     .nyc {
-        padding: 0px 30px 0px 70px; 
+        padding: 0px 0px 0px 45px; 
     }
 
     .nyc-paragraph {
@@ -282,7 +282,7 @@
     }
 
     .bike {
-        padding: 0px 30px;
+        padding: 0px 0px 0px 30px;
     }
 
     .bike-arrow {
@@ -290,23 +290,23 @@
     }
 
     .earth {
-        padding: 0px 50px 0px 185px;
+        padding: 0px 0px 0px 160px;
     }
 
     .mexico {
-        padding: 0px 30px;
+        padding: 0px 0px 0px 30px;
     }
 
     .agave {
-        padding: 0px 50px 0px 150px;
+        padding: 0px 0px 0px 125px;
     }
 
     .agave-arrow {
-        left: 160px;
+        left: 135px;
     }
 
     .burger {
-        padding: 0px 125px 0px 30px;
+        padding: 0px 0px 0px 30px;
     }
 }
 
