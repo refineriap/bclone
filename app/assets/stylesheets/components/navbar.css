@@ -91,7 +91,7 @@
 /****************************************/
 
 
-@media screen and (min-width: 376px) and (max-width: 991px) {
+@media screen and (min-width: 390px) {
   .dropdown {
     width: auto;
     height: 100px;
@@ -113,13 +113,13 @@
 
   .dropdown-content {
     margin-left: 0px;
-    width: 355px;
+    width: 330px;
     padding-left: 50px;
   }
 
 }
 
-@media screen and (min-width: 992px) and (max-width: 3200px) {
+/* @media screen and (min-width: 992px) and (max-width: 3200px) {
   .dropdown {
     width: auto;
     height: 100px;
@@ -143,4 +143,4 @@
     margin-left: 0px;
   }
 
-}
+} */
