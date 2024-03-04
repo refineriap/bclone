@@ -306,7 +306,6 @@
     }
 }
 
-
 @media screen and (min-width: 414px) {
    .plane {
     padding: 0px 0px 0px 148px;
@@ -333,11 +332,7 @@
 }
 }
 
-
-
-
-
-/* @media screen and (min-width: 992px) and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
     .colombia {
         padding: 0;
         margin: 40px 0px 0px 563px;
@@ -624,10 +619,10 @@
     }
 }
 
-@media screen and (min-width: 1536px) and (max-width: 2560px) {
+@media screen and (min-width: 1728px)  {
     .colombia {
         padding: 0;
-        margin: 40px 0px 0px 814px;
+        margin: 40px 0px 0px 750px;
     }
 
     .colombia-overlay {
@@ -648,7 +643,7 @@
         top: 150px;
         width: 460px;
         height: 205px;
-        margin-left: -64px;
+        margin-left: -54px;
         pointer-events: none;
     }
 
@@ -680,7 +675,7 @@
         position: relative;
         width: 250px;
         height: 311.53px;
-        margin: 500px 0px 0px 1473px;
+        margin: 500px 0px 0px 1368px;
         padding: 0;
     }
 
@@ -739,7 +734,294 @@
 
     .nyc {
         padding: 0;
-        margin-left: 1048px;
+        margin-left: 1080px;
+    }
+    
+    .nyc-overlay {
+        margin-left: 0;
+        opacity: 0;
+        z-index: 2;
+        transition: opacity 0.35s;
+    }
+
+    .nyc-overlay:hover {
+        cursor: pointer;
+        transition: opacity 0.35s;
+        opacity: 1;
+    }
+
+    .nyc-paragraph {
+        position: fixed;
+        top: 150px;
+        width: 600px;
+        height: 205px;
+        margin-left: -470px;
+        pointer-events: none;
+    }
+
+    .nyc-p-1 {
+        padding-left: 30px;
+    }
+
+    .nyc-p-2 {
+        padding-left: 50px;
+    }
+
+    .artist2 {
+        padding-left: 280px;
+    }
+
+    .bike {
+        position: relative;
+        width: 250px;
+        height: 311.53px;
+        margin-left: 144px;
+        padding: 0;
+    }
+
+    .bike-arrow {
+        position: absolute;
+        left: 10px;
+        opacity: 0;
+        transition: opacity 0.50s;
+        cursor: pointer;
+    }
+
+    .bike:hover .bike-arrow {
+        opacity: 1; 
+    }
+
+    .bike--image {  
+        width: 250px;
+        height: 311.53px;
+    }
+
+    .bike--svg {
+        width: 250px;
+        height: 311.53px;
+    }
+
+    .earth {
+        width: 231px;
+        height: 231px;
+        margin-left: 1435px;
+        padding: 0;
+    }
+
+    .earth--image {
+        width: 231px;
+        height: 231px;
+    }
+
+    .earth--svg {
+        width: 231px;
+        height: 231px;
+    }
+
+    .mexico {
+        margin-left: 745px;
+        padding: 0;
+    }
+
+    .mexico-overlay {
+        margin-left: 0;
+        opacity: 0;
+        z-index: 2;
+        transition: opacity 0.35s;
+    }
+
+    .mexico-overlay:hover {
+        cursor: pointer;
+        transition: opacity 0.35s;
+        opacity: 1;
+    }
+
+    .mexico-paragraph {
+        position: fixed;
+        top: 150px;
+        width: 580px;
+        height: 164px;
+        margin-left: -115px;
+        pointer-events: none;
+    }
+
+    .mexico-p-1 {
+       padding-left: 46px;
+    }
+    .mexico-p-2 {
+       width: 580px;
+       height: 40px; 
+    }
+
+    .artist3 {
+        padding-left: 202px;
+    }
+
+
+    .agave {
+        position: relative;
+        width: 250px;
+        height: 311.48px;
+        margin-left: 1339px;
+        padding: 0;
+    }
+
+    .agave-arrow {
+        position: absolute;
+        left: 10px;
+        opacity: 0;
+        transition: opacity 0.50s;
+        cursor: pointer;
+    }
+
+    .agave:hover .agave-arrow {
+        opacity: 1; 
+    }
+
+    .agave--image {
+        width: 250px;
+        height: 311.48px;
+    }
+
+    .agave--svg {
+        width: 250px;
+        height: 311.48px;
+    }
+
+    .burger {
+        width: 231px;
+        height: 526px;
+        margin-left: 428px;
+        padding: 0;
+    }
+
+    .burger--image {
+        width: 231px;
+        height: 231px;
+    }
+
+    .burger--svg {
+        width: 231px;
+        height: 231px;
+    }
+}
+
+@media screen and (min-width: 1900px)  {
+    .colombia {
+        padding: 0;
+        margin: 40px 0px 0px 835px;
+    }
+
+    .colombia-overlay {
+        margin-left: 0;
+        opacity: 0;
+        z-index: 2;
+        transition: opacity 0.35s;
+    }
+
+    .colombia-overlay:hover {
+        cursor: pointer;
+        transition: opacity 0.35s;
+        opacity: 1;
+    }
+
+    .colombia-paragraph {
+        position: fixed;
+        top: 150px;
+        width: 460px;
+        height: 205px;
+        margin-left: -64px;
+        pointer-events: none;
+    }
+
+    .col-p-1 {
+        padding-left: 40px;
+    }
+
+    .col-p-3 {
+        padding-left: 5px;
+    }
+
+    .artist {
+        padding-left: 172px;
+    }
+
+    .boris {
+        position: relative;
+        z-index: 3;
+    }
+
+    .boris--image {
+        position: fixed;
+        width: 399px;
+        left: 60px;
+        bottom: 60px;
+    }
+
+    .plane {
+        position: relative;
+        width: 250px;
+        height: 311.53px;
+        margin: 500px 0px 0px 1368px;
+        padding: 0;
+    }
+
+    .plane-arrow {
+        position: absolute;
+        left: 10px;
+        opacity: 0;
+        transition: opacity 0.50s;
+        cursor: pointer;
+    }
+
+    .plane:hover .plane-arrow {
+        opacity: 1; 
+    }
+
+    .plane--svg {
+        width: 250px;
+        height: 311.53px;  
+    }
+
+    .plane--image {
+        width: 250px;  
+        height: 311.53px;
+    }
+
+    .beats {
+        width: 231px;
+        height: 231px;
+        margin-left: 411px;
+        padding: 0;
+    }
+
+    .beats--image {
+        width: 231px;
+        height: 231px;  
+    }
+
+    .beats--svg {
+        width: 231px;
+        height: 231px;
+    }
+
+    .listen {
+        top: 171px;
+        left: 10px;
+        width: 86px;
+        height: 50px;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity 0.50s;
+    }
+
+    .beats:hover .listen {
+        opacity: 1; 
+    }
+
+    .nyc {
+        padding: 0;
+        margin-left: 1080px;
     }
     
     .nyc-overlay {
@@ -824,7 +1106,7 @@
     }
 
     .mexico {
-        margin-left: 728px;
+        margin-left: 745px;
         padding: 0;
     }
 
@@ -909,4 +1191,4 @@
         width: 231px;
         height: 231px;
     }
-} */
+}
