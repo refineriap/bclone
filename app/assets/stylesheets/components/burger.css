@@ -270,7 +270,7 @@
 
 
 
-@media screen and (min-width: 376px) and (max-width: 991px) {
+@media screen and (min-width: 390px) {
     .burger--load{
         padding: 0px 30px 10px 30px;
     }
@@ -282,7 +282,44 @@
     .burger--item {
         margin-right: 10px;
         margin-bottom: 10px;
-        width: 166px;
+        width: 160px;
+        height: 203px;
+        border-radius: 20px; 
+    }
+
+    .burger--item:nth-child(2n) {
+        margin-right: 10px;
+    }
+
+    .burger-rating {
+        margin: 10px 10px 0px 122px;
+    }  
+
+    .burger--journal {
+        padding: 0px 30px;
+    } 
+
+    .burger--hr {
+        width: 330px;
+    }
+
+}
+
+@media screen and (min-width: 414px) {
+    .burger--load{
+        padding: 0px 30px 10px 30px;
+    }
+
+    .burger--menu {
+        width: 355px;
+    }
+
+    .burger--item {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 167px;
+        height: 210px;
+        border-radius: 20px; 
     }
 
     .burger--item:nth-child(2n) {
@@ -294,16 +331,18 @@
     }  
 
     .burger--journal {
+        height: 106px;
         padding: 0px 30px;
     } 
 
     .burger--hr {
-        width: 355px;
+        width: 353px;
     }
+ 
 
 }
 
-@media screen and (min-width: 992px) and (max-width: 4000px) {
+/* @media screen and (min-width: 992px) and (max-width: 4000px) {
 
     .burger--container {
         width: auto;
@@ -368,7 +407,7 @@
         font-size: 0.625rem;
         font-style: normal;
         font-weight: 500;
-        line-height: 14px; /* 140% */
+        line-height: 14px; 
         letter-spacing: 1px;
         text-transform: uppercase;
         margin: 204px 0px 0px 20px;
@@ -378,7 +417,7 @@
         font-size: 0.625rem;
         font-style: normal;
         font-weight: 500;
-        line-height: 14px; /* 140% */
+        line-height: 14px; 
         letter-spacing: 1px;
         text-transform: uppercase;
         margin-left: 20px;
@@ -388,7 +427,7 @@
         font-size: 0.625rem;
         font-style: normal;
         font-weight: 500;
-        line-height: 14px; /* 140% */
+        line-height: 14px; 
         letter-spacing: 1px;
         text-transform: uppercase;
         margin-left: 20px;
@@ -398,7 +437,7 @@
         font-size: 0.625rem;
         font-style: normal;
         font-weight: 500;
-        line-height: 14px; /* 140% */
+        line-height: 14px; 
         letter-spacing: 1px;
         text-transform: uppercase;
     }
@@ -425,4 +464,4 @@
     }
 
 
-}
+} */

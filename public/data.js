@@ -34,7 +34,7 @@ const burgersData = [
         year: '2024',
         image: 'carls.png',
         price: 5.99,
-    },   
+    },     
 ]
 
 export default burgersData;
