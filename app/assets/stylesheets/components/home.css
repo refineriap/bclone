@@ -274,11 +274,7 @@
     }
 
     .nyc {
-        padding: 0px 0px 0px 45px; 
-    }
-
-    .nyc-paragraph {
-        margin-left: -30px;
+        padding: 0px 0px 0px 30px; 
     }
 
     .bike {
@@ -312,8 +308,35 @@
 
 
 @media screen and (min-width: 414px) {
+   .plane {
+    padding: 0px 0px 0px 148px;
+   } 
 
+   .plane-arrow {
+        left: 160px;
+   }
+
+   .nyc {
+    padding: 0px 0px 0px 30px;
+   }
+
+   .earth {
+    padding: 0px 0px 0px 184px;
+   }
+
+   .agave {
+    padding: 0px 0px 0px 148px;
+   }
+
+   .agave-arrow {
+    left: 160px;
 }
+}
+
+
+
+
+
 /* @media screen and (min-width: 992px) and (max-width: 1440px) {
     .colombia {
         padding: 0;
