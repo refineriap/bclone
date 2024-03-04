@@ -1,5 +1,4 @@
 .poll--container {
-    height: 100vh;
     background-color: #0D0E0F;
 }
    
@@ -231,7 +230,27 @@
     }
 
     .boris--poll {
-        height: 280px;
+        height: 312px;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    .poll--vote {
+        margin-top: 40px;
+    }
+
+    .boris--poll {
+        height: 364px;
+    }
+}
+
+@media screen and (min-width: 430px) {
+    .poll--vote {
+        margin-top: 40px;
+    }
+
+    .boris--poll {
+        height: 400px;
     }
 }
 
