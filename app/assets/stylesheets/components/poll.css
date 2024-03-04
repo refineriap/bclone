@@ -1,4 +1,5 @@
 .poll--container {
+    height: 100vh;
     background-color: #0D0E0F;
 }
    
@@ -224,7 +225,7 @@
 
 /********************************************/
 
-@media screen and (min-width: 376px) and (max-width: 991px) {
+@media screen and (min-width: 390px) {
     .poll--vote {
         margin-top: 40px;
     }
@@ -234,7 +235,7 @@
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 3200px) {
+/* @media screen and (min-width: 992px) and (max-width: 3200px) {
     .poll--container {
         width: auto;
         height: 100vh;
@@ -323,5 +324,5 @@
         width: 399px;
         height: 118px;
     } 
-} 
+}  */
 
