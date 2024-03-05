@@ -233,7 +233,7 @@
 
 /**********************************************/
 
-@media screen and (min-width: 376px) and (max-width: 991px) {
+@media screen and (min-width: 390px) {
     .popup1 {
         width: 100%;
     }
@@ -299,7 +299,7 @@
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
     .popup1 {
         width: 566px;
         height: 690px; 
@@ -389,7 +389,96 @@
     }
 }
 
-@media screen and (min-width: 1441px) and (max-width: 2560px) {
+@media screen and (min-width: 1728px) {
+    .popup1 {
+        width: 660px;
+        height: 690px; 
+        margin-left: 1005px;
+    }
+
+    .popup1.active {
+       width: 660px; 
+       height: 90.5%;
+       margin-left: 1005px;
+    }
+
+    .popup1--container {
+        top: 100px;
+        left: 100px;
+    }
+
+    .popup1--paragraph {
+        width: 446px;
+        height: 174px;
+        top: 516px;
+        left: 100px;
+    }
+
+    .close1 {
+        top: 760px;
+        left: 100px;
+    }
+
+    .popup2 {
+        width: 660px;
+        height: 690px;
+        margin-left: 1005px; 
+    }
+
+    .popup2.active {
+       width: 660px; 
+       height: 90.5%;
+       margin-left: 1005px;
+    }
+
+    .popup2--container {
+        top: 100px;
+        left: 100px;
+    }
+
+    .popup2--paragraph {
+        width: 446px;
+        height: 100px;
+        top: 560px;
+        left: 100px;
+    }
+
+    .close2 {
+        top: 760px;
+        left: 100px;
+    }
+
+    .popup3 {
+        width: 660px;
+        height: 690px;
+        margin-left: 1005px; 
+    }
+
+    .popup3.active {
+       width: 660px; 
+       height: 90.5%;
+       margin-left: 1005px;
+    }
+
+    .popup3--container {
+        top: 100px;
+        left: 100px;
+    }
+
+    .popup3--paragraph {
+        width: 446px;
+        height: 100px;
+        top: 560px;
+        left: 100px;
+    }
+
+    .close3 {
+        top: 760px;
+        left: 100px;
+    }
+}
+
+@media screen and (min-width: 1730px) {
     .popup1 {
         width: 660px;
         height: 690px; 
@@ -447,10 +536,11 @@
         top: 760px;
         left: 100px;
     }
+
     .popup3 {
         width: 660px;
         height: 690px;
-        margin-left: 1200px; 
+        margin-left: 1200px;
     }
 
     .popup3.active {
