@@ -619,7 +619,7 @@
     }
 }
 
-@media screen and (min-width: 1728px)  {
+@media only screen and (min-width: 1728px) and (orientation: landscape) {
     .colombia {
         padding: 0;
         margin: 40px 0px 0px 750px;
@@ -906,10 +906,10 @@
     }
 }
 
-@media screen and (min-width: 1900px)  {
+@media only screen and (min-width: 2240px) and (orientation: landscape) {
     .colombia {
         padding: 0;
-        margin: 40px 0px 0px 835px;
+        margin: 40px 0px 0px 962px;
     }
 
     .colombia-overlay {
@@ -962,7 +962,7 @@
         position: relative;
         width: 250px;
         height: 311.53px;
-        margin: 500px 0px 0px 1368px;
+        margin: 500px 0px 0px 1835px;
         padding: 0;
     }
 
@@ -991,7 +991,7 @@
     .beats {
         width: 231px;
         height: 231px;
-        margin-left: 411px;
+        margin-left: 380px;
         padding: 0;
     }
 
@@ -1021,7 +1021,7 @@
 
     .nyc {
         padding: 0;
-        margin-left: 1080px;
+        margin-left: 962px;
     }
     
     .nyc-overlay {
@@ -1042,7 +1042,7 @@
         top: 150px;
         width: 600px;
         height: 205px;
-        margin-left: -380px;
+        margin-left: -130px;
         pointer-events: none;
     }
 
@@ -1091,7 +1091,7 @@
     .earth {
         width: 231px;
         height: 231px;
-        margin-left: 1628px;
+        margin-left: 1949px;
         padding: 0;
     }
 
@@ -1106,7 +1106,7 @@
     }
 
     .mexico {
-        margin-left: 745px;
+        margin-left: 962px;
         padding: 0;
     }
 
@@ -1149,7 +1149,7 @@
         position: relative;
         width: 250px;
         height: 311.48px;
-        margin-left: 1339px;
+        margin-left: 1639px;
         padding: 0;
     }
 
