@@ -320,12 +320,12 @@
     .popup1--paragraph {
         width: 446px;
         height: 174px;
-        top: 376px;
+        top: 396px;
         left: 60px;
     }
 
     .close1 {
-        top: 580px;
+        top: 620px;
         left: 60px;
     }
 
@@ -349,12 +349,12 @@
     .popup2--paragraph {
         width: 446px;
         height: 100px;
-        top: 430px;
+        top: 450px;
         left: 60px;
     }
 
     .close2 {
-        top: 580px;
+        top: 620px;
         left: 60px;
     }
 
@@ -378,13 +378,13 @@
     .popup3--paragraph {
         width: 446px;
         height: 125px;
-        top: 430px;
+        top: 450px;
         left: 60px;
     }
 
 
     .close3 {
-        top: 580px;
+        top: 620px;
         left: 60px;
     }
 }
