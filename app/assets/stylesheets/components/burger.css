@@ -628,3 +628,124 @@
     }
 
 }
+
+@media only screen and (min-width: 2240px) and (orientation: landscape) {
+    .burger--container {
+        width: auto;
+        height: 100vh;
+    }
+
+    .burger--buttons {
+        padding: 0px 60px;
+        justify-content: space-between;
+    }
+
+    .burger--hero {
+        width: 338px;
+        height: 272px;
+        padding: 0;
+        margin: 130px 0px 0px 60px;
+    }
+
+    .burger--paragraph {
+        width: 338px;
+        height: 272px;
+        font-family: "avenue_mono";
+        color: #EEECE3;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 68px; 
+    }
+
+    .burger--view {
+        margin: 48px 0px 0px 60px;
+    }
+
+
+    .burger--menu {
+        width: 730px;
+        margin-left: 1000px;
+        margin-top: -405px;
+        max-height: 600px; 
+        overflow-y: auto;
+    }
+
+    .burger--load {
+        width: 0;
+        height: 0;
+        padding: 0;
+    }
+
+    .burger--item {
+        width: 232px;
+        height: 297.2px;
+        gap: 7px;
+        margin: 0px 10px 10px 0px;
+        border-radius: 30px;
+    }
+
+    .burger-rating {
+        margin: 10px 10px 0px 190px; 
+    }
+
+    .burger-location {
+        font-size: 0.625rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 14px; 
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin: 204px 0px 0px 20px;
+    }
+
+    .burger-name {
+        font-size: 0.625rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 14px; 
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-left: 20px;
+    }
+
+    .burger-country {
+        font-size: 0.625rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 14px; 
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-left: 20px;
+    }
+
+    .burger-price {
+        font-size: 0.625rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 14px; 
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .burger--item:nth-child(2n) {
+        margin: 0px 10px 10px 0px;
+    }
+
+    .burger--journal {
+        margin-top: 265px;
+        width: 500px;
+        height: 140px;
+        margin-left: 30px; 
+    }
+
+    .burger--hr {
+        width: 411px;
+    }
+
+    .burger--text {
+        margin-top: 20px;  
+        width: 243px;
+        height: 43px;
+    }
+}
