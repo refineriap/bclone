@@ -389,7 +389,7 @@
     }
 }
 
-@media screen and (min-width: 1728px) {
+@media only screen and (min-width: 1728px) and (orientation: landscape) {
     .popup1 {
         width: 660px;
         height: 690px; 
@@ -478,17 +478,17 @@
     }
 }
 
-@media screen and (min-width: 1730px) {
+@media only screen and (min-width: 2240px) and (orientation: landscape) {
     .popup1 {
         width: 660px;
         height: 690px; 
-        margin-left: 1200px;
+        margin-left: 1520px;
     }
 
     .popup1.active {
        width: 660px; 
        height: 90.5%;
-       margin-left: 1200px;
+       margin-left: 1520px;
     }
 
     .popup1--container {
@@ -511,13 +511,13 @@
     .popup2 {
         width: 660px;
         height: 690px;
-        margin-left: 1200px; 
+        margin-left: 1520px; 
     }
 
     .popup2.active {
        width: 660px; 
        height: 90.5%;
-       margin-left: 1200px;
+       margin-left: 1520px;
     }
 
     .popup2--container {
@@ -540,13 +540,13 @@
     .popup3 {
         width: 660px;
         height: 690px;
-        margin-left: 1200px;
+        margin-left: 1520px;
     }
 
     .popup3.active {
        width: 660px; 
        height: 90.5%;
-       margin-left: 1200px;
+       margin-left: 1520px;
     }
 
     .popup3--container {
