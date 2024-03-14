@@ -1,15 +1,31 @@
-import { Controller } from "@hotwired/stimulus"
-
+import { Controller } from "@hotwired/stimulus";
 
 export default class extends Controller {
+  static targets = ["section", "selectedImage", "dropbtn", "navbar"];
+
   connect() {
+    this.prevScrollpos = window.pageYOffset;
+    this.navbarTarget.style.transform = "translateY(-100%)";
+    window.addEventListener("scroll", this.handleScroll.bind(this));
   }
 
-  static targets = ["section", "selectedImage", "dropbtn"];
+  disconnect() {
+    window.removeEventListener("scroll", this.handleScroll.bind(this));
+  }
+
+  handleScroll() {
+    let currentScrollPos = window.pageYOffset;
+    if (this.prevScrollpos > currentScrollPos) {
+      this.navbarTarget.style.top = "0";
+    } else {
+      this.navbarTarget.style.top = "100px"; 
+    }
+    this.prevScrollpos = currentScrollPos;
+  }
 
   toggleDropdown() {
     const dropdown = document.getElementById("myDropdown");
-    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
   }
 
   scrollToSection(event) {
@@ -21,7 +37,7 @@ export default class extends Controller {
     const sectionClassName = event.currentTarget.getAttribute("href").substring(1);
     const sectionName = event.currentTarget.innerText;
     const contentHTML = `<img src="${imageSrc}" alt="" class="dot"> ${sectionName}`;
-    
+
     this.dropbtnTarget.innerHTML = contentHTML;
 
     const sections = document.getElementsByClassName(sectionClassName);
@@ -41,5 +57,5 @@ export default class extends Controller {
         inline: "nearest",
       });
     }
-  }  
+  }
 }
