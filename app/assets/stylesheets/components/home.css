@@ -617,6 +617,13 @@
         width: 231px;
         height: 231px;
     }
+
+    .test {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        margin: 0px 0px 0px 300px;
+    }
 }
 
 @media only screen and (min-width: 1728px) and (orientation: landscape) {
