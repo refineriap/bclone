@@ -10,7 +10,7 @@ export default class extends Controller {
   }
 
   disconnect() {
-    window.removeEventListener("scroll", this.handleScroll.bind(this));
+    window.removeEventListener("scroll", this.handleScroll.bind(this));  
   }
 
   handleScroll() {

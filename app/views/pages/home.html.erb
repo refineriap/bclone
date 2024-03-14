@@ -1,5 +1,5 @@
 <div class="home">           
-    <nav class="dropdown" data-controller="navbar" data-navbar-target="navbar">
+    <nav class="dropdown" data-controller="navbar" data-navbar-target="navbar">   
         <div class="dropbtn" id="dropbtn" data-action="click->navbar#toggleDropdown" data-navbar-target="dropbtn">
             <%= image_tag("tweety.svg", alt: "blue svg", class: "dot", id: "selectedImage", data: { target: "navbar.selectedImage" }) %>
             <a class="dot--text">MY SOUNDTRACK</a>
@@ -135,8 +135,6 @@
                 <%= image_tag("huntimage.png", alt: "image of a restaurant", id: "png", class: "burger--image") %> 
             </a>  
         </section>
-
-        <div data-controller="animation" class="test"></div>
     </div>
 </div>
 
