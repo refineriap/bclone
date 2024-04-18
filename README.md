@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is my first project and the purpose is to show you a part of my life and where I come from.
 
-Things you may want to cover:
+I used Ruby on rails, HTML, CSS and Javascript.
 
-* Ruby version
+Each section has click events using stimulus. 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Hope you enjoy it.
