@@ -7,6 +7,8 @@ export default class extends Controller {
     this.prevScrollpos = window.pageYOffset;
     this.navbarTarget.style.transform = "translateY(-100%)";
     window.addEventListener("scroll", this.handleScroll.bind(this));
+    this.observeSections();
+
   }
 
   disconnect() {
@@ -57,5 +59,36 @@ export default class extends Controller {
         inline: "nearest",
       });
     }
+  }
+
+  updateDropdownButton(sectionName, imageSrc) {
+    const contentHTML = `<img src="${imageSrc}" alt="" class="dot"> ${sectionName}`;
+    this.dropbtnTarget.innerHTML = contentHTML;
+  }
+
+  observeSections() {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5 // Adjust this value as needed
+    };
+
+    const observerCallback = (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const section = entry.target;
+          const sectionName = section.getAttribute('data-section-name');
+          const imageSrc = section.getAttribute('data-image-src');
+          this.updateDropdownButton(sectionName, imageSrc);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    // Observe each section
+    this.sectionTargets.forEach(section => {
+      observer.observe(section);
+    });
   }
 }
