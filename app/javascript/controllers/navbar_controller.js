@@ -4,7 +4,7 @@ export default class extends Controller {
   static targets = ["section", "selectedImage", "dropbtn", "navbar"];
 
   connect() {
-    this.prevScrollpos = window.pageYOffset;
+    this.prevScrollpos = window.scrollY;
     this.navbarTarget.style.transform = "translateY(-100%)";
     window.addEventListener("scroll", this.handleScroll.bind(this));
     this.observeSections();
@@ -16,7 +16,7 @@ export default class extends Controller {
   }
 
   handleScroll() {
-    let currentScrollPos = window.pageYOffset;
+    let currentScrollPos = window.scrollY;
     if (this.prevScrollpos > currentScrollPos) {
       this.navbarTarget.style.top = "0";
     } else {
