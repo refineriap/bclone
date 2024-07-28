@@ -6,22 +6,22 @@
         </div>
         <div id="myDropdown" class="dropdown-content">  
             <ul class="lista">
-                <li style="list-style-image: url('<%= asset_path('blue.svg') %>');"><a href="#section1" data-action="click->navbar#scrollToSection" data-section-class="section1" data-image-src="<%= asset_url('blue.svg') %>" data-navbar-target="selectedImage">MI PUEBLO NATAL</a></li>
-                <li style="list-style-image: url('<%= asset_path('green.svg') %>');"><a href="#section2" data-action="click->navbar#scrollToSection" data-section-class="section2" data-image-src="<%= asset_url('green.svg') %>" data-navbar-target="selectedImage">TALES OF COLOMBIA</a></li>
-                <li style="list-style-image: url('<%= asset_path('red.svg') %>');"><a href="#section3" data-action="click->navbar#scrollToSection" data-section-class="section3" data-image-src="<%= asset_url('red.svg') %>" data-navbar-target="selectedImage">LATEST BEAT</a></li>
-                <li style="list-style-image: url('<%= asset_path('beige.svg') %>');"><a href="#section4" data-action="click->navbar#scrollToSection" data-section-class="section4" data-image-src="<%= asset_url('beige.svg') %>" data-navbar-target="selectedImage">N.Y STATE OF MIND</a></li>
-                <li style="list-style-image: url('<%= asset_path('grey.svg') %>');"><a href="#section5" data-action="click->navbar#scrollToSection" data-section-class="section5" data-image-src="<%= asset_url('grey.svg') %>" data-navbar-target="selectedImage">NEW PAVEMENTS</a></li>
-                <li style="list-style-image: url('<%= asset_path('navy.svg') %>');"><a href="#section6" data-action="click->navbar#scrollToSection" data-section-class="section6" data-image-src="<%= asset_url('navy.svg') %>" data-navbar-target="selectedImage">DO ALIENS EXIST</a></li>
-                <li style="list-style-image: url('<%= asset_path('pink.svg') %>');"><a href="#section7" data-action="click->navbar#scrollToSection" data-section-class="section7" data-image-src="<%= asset_url('pink.svg') %>" data-navbar-target="selectedImage">MÉXICO LINDO</a></li>
-                <li style="list-style-image: url('<%= asset_path('purple.svg') %>');"><a href="#section8" data-action="click->navbar#scrollToSection" data-section-class="section8" data-image-src="<%= asset_url('purple.svg') %>" data-navbar-target="selectedImage">LOOKING FORWARD</a></li>
-                <li style="list-style-image: url('<%= asset_path('brown.svg') %>');"><a href="#section9" data-action="click->navbar#scrollToSection" data-section-class="section9" data-image-src="<%= asset_url('brown.svg') %>" data-navbar-target="selectedImage">BURGER HUNT </a></li>
+                <li style="list-style-image: url('<%= asset_path('blue.svg') %>');"><a href="#section1" data-action="click->navbar#scrollToSection" data-section-id="section1" data-section-class="section1" data-image-src="<%= asset_url('blue.svg') %>" data-navbar-target="selectedImage">MI PUEBLO NATAL</a></li>
+                <li style="list-style-image: url('<%= asset_path('green.svg') %>');"><a href="#section2" data-action="click->navbar#scrollToSection" data-section-id="section2" data-section-class="section2" data-image-src="<%= asset_url('green.svg') %>" data-navbar-target="selectedImage">TALES OF COLOMBIA</a></li>
+                <li style="list-style-image: url('<%= asset_path('red.svg') %>');"><a href="#section3" data-action="click->navbar#scrollToSection" data-section-id="section3" data-section-class="section3" data-image-src="<%= asset_url('red.svg') %>" data-navbar-target="selectedImage">LATEST BEAT</a></li>
+                <li style="list-style-image: url('<%= asset_path('beige.svg') %>');"><a href="#section4" data-action="click->navbar#scrollToSection" data-section-id="section4" data-section-class="section4" data-image-src="<%= asset_url('beige.svg') %>" data-navbar-target="selectedImage">N.Y STATE OF MIND</a></li>
+                <li style="list-style-image: url('<%= asset_path('grey.svg') %>');"><a href="#section5" data-action="click->navbar#scrollToSection" data-section-id="section5" data-section-class="section5" data-image-src="<%= asset_url('grey.svg') %>" data-navbar-target="selectedImage">NEW PAVEMENTS</a></li>
+                <li style="list-style-image: url('<%= asset_path('navy.svg') %>');"><a href="#section6" data-action="click->navbar#scrollToSection" data-section-id="section6" data-section-class="section6" data-image-src="<%= asset_url('navy.svg') %>" data-navbar-target="selectedImage">DO ALIENS EXIST</a></li>
+                <li style="list-style-image: url('<%= asset_path('pink.svg') %>');"><a href="#section7" data-action="click->navbar#scrollToSection" data-section-id="section7" data-section-class="section7" data-image-src="<%= asset_url('pink.svg') %>" data-navbar-target="selectedImage">MÉXICO LINDO</a></li>
+                <li style="list-style-image: url('<%= asset_path('purple.svg') %>');"><a href="#section8" data-action="click->navbar#scrollToSection" data-section-id="section8" data-section-class="section8" data-image-src="<%= asset_url('purple.svg') %>" data-navbar-target="selectedImage">LOOKING FORWARD</a></li>
+                <li style="list-style-image: url('<%= asset_path('brown.svg') %>');"><a href="#section9" data-action="click->navbar#scrollToSection" data-section-id="section9" data-section-class="section9" data-image-src="<%= asset_url('brown.svg') %>" data-navbar-target="selectedImage">BURGER HUNT </a></li>
             </ul>
         </div>
         <a class="info--link" href="/info">Info</a>
     </nav>
     
-    <div data-controller="scroller">
-        <section id="scroller" data-target="navbar.section.overlay" class="colombia section1" data-controller="overlay" data-action="click->overlay#showOverlay" data-section-name="MI PUEBLO NATAL" data-image-src="<%= asset_url('blue.svg') %>">    
+    <div data-controller="scroller" data-action="scroll->navbar#observeSections">
+        <section id="section1" data-navbar-target="section" data-target="navbar.section.overlay" class="scroller colombia section1" data-action="scroll->navbar#updateDropdownButton" data-controller="overlay" data-action="click->overlay#showOverlay" data-section-name="MI PUEBLO NATAL" data-image-src="<%= asset_url('blue.svg') %>">    
             <%= image_tag("blue-rect.png", alt: "blue image", id: "svg", class: "colombia--svg") %>
             <%= image_tag("colombia.png", alt: "image of colombia", id: "png", class: "colombia--image") %>
             <div class="colombia-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay" >
@@ -39,7 +39,7 @@
             <%= image_tag("Boris.svg", alt: "Boris svg", class: "boris--image") %>
         </section>
 
-        <section id="scroller" data-target="navbar.section" class="plane section2" data-controller="popup" data-action="click->popup#toggle" data-section-name="TALES OF COLOMBIA" data-image-src="<%= asset_url('green.svg') %>">
+        <section id="section2" data-navbar-target="section" data-target="navbar.section" class="scroller plane section2" data-controller="popup" data-action="click->popup#toggle" data-section-name="TALES OF COLOMBIA" data-image-src="<%= asset_url('green.svg') %>">
             <%= image_tag("green-rect.png", alt: "green image", id: "svg", class: "plane--svg") %>
             <%= image_tag("plane.png", alt: "image of plane", id: "png", class: "plane--image") %>
             <%= image_tag("arrow.svg", alt: "image of an arrow", class: "plane-arrow" ) %>
@@ -56,14 +56,14 @@
             </div> 
         </section>
 
-        <section id="scroller" data-target="navbar.section" class="beats section3" data-controller="audio" data-section-name="LATEST BEAT" data-image-src="<%= asset_url('red.svg') %>">
+        <section id="section3" data-target="navbar.section" class="scroller beats section3" data-controller="audio" data-section-name="LATEST BEAT" data-image-src="<%= asset_url('red.svg') %>">
             <%= image_tag("red-rect.png", alt:"red image", id:"svg", class:"beats--svg")%>  
             <%= image_tag("beats.png", alt:"image of beat machine", id:"png", class:"beats--image")%>
             <button class="listen">Listen</button>
             <audio id="audioPlayer" src="/audio/fesliyan.mp3"></audio>
         </section>
 
-        <section id="scroller" data-target="navbar.section.overlay" class="nyc section4" data-controller="overlay" data-action="click->overlay#showOverlay" data-section-name="N.Y STATE OF MIND" data-image-src="<%= asset_url('beige.svg') %>">
+        <section id="section4" data-target="navbar.section.overlay" class="scroller nyc section4" data-controller="overlay" data-action="click->overlay#showOverlay" data-section-name="N.Y STATE OF MIND" data-image-src="<%= asset_url('beige.svg') %>">
             <%= image_tag("beige-rect.png", alt:"beige image", id:"svg", class:"nyc--svg") %>  
             <%= image_tag("nyc.png", alt:"image of nyc", id:"png", class:"nyc--image") %>
             <div class="nyc-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay">
@@ -76,7 +76,7 @@
             </div>
         </section>
 
-        <section id="scroller" data-target="navbar.section" class="bike section5" data-controller="popup" data-action="click->popup#toggle" data-section-name="NEW PAVEMENTS" data-image-src="<%= asset_url('grey.svg') %>">
+        <section id="section5" data-target="navbar.section" class="scroller bike section5" data-controller="popup" data-action="click->popup#toggle" data-section-name="NEW PAVEMENTS" data-image-src="<%= asset_url('grey.svg') %>">
             <%= image_tag("grey-rect.png", alt:"gray image", id:"svg", class:"bike--svg") %> 
             <%= image_tag("bike.png", alt:"image of a bike", id:"png", class:"bike--image") %>
             <%= image_tag("arrow.svg", alt: "image of an arrow", class: "bike-arrow" ) %>
@@ -93,14 +93,14 @@
             </div>
         </section>
 
-        <section id="scroller" data-target="navbar.section" class="earth section6" data-section-name="DO ALIENS EXIST" data-image-src="<%= asset_url('navy.svg') %>">
+        <section id="section6" data-target="navbar.section" class="scroller earth section6" data-section-name="DO ALIENS EXIST" data-image-src="<%= asset_url('navy.svg') %>">
             <a href="/poll" >
                 <%= image_tag("navy-rect.png", alt:"color navy image", id:"svg", class:"earth--svg")%>   
                 <%= image_tag("earth.png", alt:"image of the earth", id:"png", class:"earth--image")%> 
             </a>
         </section>
 
-        <section id="scroller" data-target="navbar.section.overlay" class="mexico section7" data-controller="overlay" data-action="click->overlay#showOverlay" data-section-name="MÉXICO LINDO" data-image-src="<%= asset_url('pink.svg') %>">
+        <section id="section7" data-target="navbar.section.overlay" class="scroller mexico section7" data-controller="overlay" data-action="click->overlay#showOverlay" data-section-name="MÉXICO LINDO" data-image-src="<%= asset_url('pink.svg') %>">
             <%= image_tag("beige-rect.png", alt:"beige image", id:"svg", class:"mexico--svg")%>  
             <%= image_tag("mexico.png", alt:"image of mexico", id:"png", class:"mexico--image")%>
             <div class="mexico-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay">
@@ -112,7 +112,7 @@
             </div>
         </section>
 
-        <section id="scroller" data-target="navbar.section" class="agave section8" data-controller="popup" data-action="click->popup#toggle" data-section-name="LOOKING FORWARD" data-image-src="<%= asset_url('purple.svg') %>">
+        <section id="section8" data-target="navbar.section" class="scroller agave section8" data-controller="popup" data-action="click->popup#toggle" data-section-name="LOOKING FORWARD" data-image-src="<%= asset_url('purple.svg') %>">
             <%= image_tag("purple-rect.png", alt:"purple image", id:"svg", class:"agave--svg")%>    
             <%= image_tag("agave.png", alt:"image of agave plant", id:"png", class:"agave--image") %>
             <%= image_tag("arrow.svg", alt: "image of an arrow", class: "agave-arrow" ) %>
@@ -129,7 +129,7 @@
             </div> 
         </section>
 
-        <section id="scroller" data-target="navbar.section" class="burger section9" data-section-name="BURGER HUNT" data-image-src="<%= asset_url('brown.svg') %>">
+        <section id="section9" data-target="navbar.section" class="scroller burger section9" data-section-name="BURGER HUNT" data-image-src="<%= asset_url('brown.svg') %>">
             <a href="/burger" class="">
                 <%= image_tag("brown-rect.png", alt: "brown image", id: "svg", class: "burger--svg") %>   
                 <%= image_tag("huntimage.png", alt: "image of a restaurant", id: "png", class: "burger--image") %> 
