@@ -4,15 +4,16 @@ export default class extends Controller {
   static targets = ["section", "selectedImage", "dropbtn", "navbar"];
 
   connect() {
+    console.log("Navbar controller connected");
     this.prevScrollpos = window.scrollY;
     this.navbarTarget.style.transform = "translateY(-100%)";
     window.addEventListener("scroll", this.handleScroll.bind(this));
     this.observeSections();
-
   }
 
   disconnect() {
-    window.removeEventListener("scroll", this.handleScroll.bind(this));  
+    console.log("Navbar controller disconnected");
+    window.removeEventListener("scroll", this.handleScroll.bind(this));
   }
 
   handleScroll() {
@@ -63,32 +64,47 @@ export default class extends Controller {
 
   updateDropdownButton(sectionName, imageSrc) {
     const contentHTML = `<img src="${imageSrc}" alt="" class="dot"> ${sectionName}`;
+    console.log(`Updating dropbtn content: ${contentHTML}`);
     this.dropbtnTarget.innerHTML = contentHTML;
   }
 
   observeSections() {
+    console.log("observeSections called");
     const observerOptions = {
       root: null,
       rootMargin: '0px',
       threshold: 0.5 // Adjust this value as needed
     };
-
-    const observerCallback = (entries) => {
+  
+    const observerCallback = (entries, observer) => {
+      console.log('Intersection observer callback triggered');
       entries.forEach(entry => {
+        console.log('Intersection observer entry', entry);
         if (entry.isIntersecting) {
           const section = entry.target;
           const sectionName = section.getAttribute('data-section-name');
           const imageSrc = section.getAttribute('data-image-src');
+          console.log(`Updating dropdown for section: ${sectionName} with image: ${imageSrc}`);
           this.updateDropdownButton(sectionName, imageSrc);
         }
       });
     };
-
+  
     const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-    // Observe each section
-    this.sectionTargets.forEach(section => {
-      observer.observe(section);
+  
+    // Define section IDs
+    const sectionIds = ["section1", "section2", "section3", "section4", "section5", "section6", "section7", "section8", "section9"];
+  
+    // Observe each section by ID
+    sectionIds.forEach(id => {
+      const section = document.getElementById(id);
+      if (section) {
+        console.log(`Observing section: ${section.getAttribute('data-section-name')}`);
+        observer.observe(section);
+      } else {
+        console.log(`Section with ID ${id} not found`);
+      }
     });
   }
+  
 }
