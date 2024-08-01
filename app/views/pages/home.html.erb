@@ -21,7 +21,7 @@
     </nav>
     
     <div data-controller="scroller">
-        <section id="section1" data-navbar-target="section" class="scroller colombia section1"  data-controller="overlay" data-action="click->overlay#showOverlay" data-section-name="MI PUEBLO NATAL" data-image-src="<%= asset_url('blue.svg') %>">    
+        <section id="section1" data-navbar-target="section"  data-target="navbar.section" class="scroller colombia section1"  data-controller="overlay" data-action="click->overlay#showOverlay" data-section-name="MI PUEBLO NATAL" data-image-src="<%= asset_url('blue.svg') %>">    
             <%= image_tag("blue-rect.png", alt: "blue image", id: "svg", class: "colombia--svg") %>
             <%= image_tag("colombia.png", alt: "image of colombia", id: "png", class: "colombia--image") %>
             <div class="colombia-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay" >
