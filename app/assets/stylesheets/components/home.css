@@ -303,6 +303,7 @@
 
     .burger {
         padding: 0px 0px 0px 30px;
+        margin-bottom: 100px;
     }
 }
 
@@ -606,6 +607,7 @@
         height: 526px;
         margin-left: 228px;
         padding: 0;
+        margin-bottom: 100px;
     }
 
     .burger--image {
@@ -900,6 +902,7 @@
         height: 526px;
         margin-left: 228px;
         padding: 0;
+        margin-bottom: 100px;
     }
 
     .burger--image {
@@ -1194,6 +1197,7 @@
         height: 526px;
         margin-left: 428px;
         padding: 0;
+        margin-bottom: 100px;
     }
 
     .burger--image {
@@ -1481,6 +1485,7 @@
         height: 526px;
         margin-left: 428px;
         padding: 0;
+        margin-bottom: 100px;
     }
 
     .burger--image {

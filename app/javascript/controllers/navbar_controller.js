@@ -3,18 +3,20 @@ import { Controller } from "@hotwired/stimulus";
 export default class extends Controller {
   static targets = ["section", "selectedImage", "dropbtn", "navbar"];
   sectionIds = ["section1", "section2", "section3", "section4", "section5", "section6", "section7", "section8", "section9"];
-  
+
   connect() {
     this.prevScrollpos = window.scrollY;
     this.navbarTarget.style.transform = "translateY(-100%)";
-    window.addEventListener("scroll", this.handleScroll.bind(this));
-    window.addEventListener("scroll", this.checkInfiniteScroll.bind(this));
+    this.scrollHandler = this.handleScroll.bind(this);
+    this.infiniteScrollHandler = this.checkInfiniteScroll.bind(this);
+    window.addEventListener("scroll", this.scrollHandler);
+    window.addEventListener("scroll", this.infiniteScrollHandler);
     this.observeSections();
   }
 
   disconnect() {
-    window.removeEventListener("scroll", this.handleScroll.bind(this));
-    window.removeEventListener("scroll", this.checkInfiniteScroll.bind(this));
+    window.removeEventListener("scroll", this.scrollHandler);
+    window.removeEventListener("scroll", this.infiniteScrollHandler);
   }
 
   handleScroll() {
@@ -22,7 +24,7 @@ export default class extends Controller {
     if (this.prevScrollpos > currentScrollPos) {
       this.navbarTarget.style.top = "0";
     } else {
-      this.navbarTarget.style.top = "100px"; 
+      this.navbarTarget.style.top = "100px";
     }
     this.prevScrollpos = currentScrollPos;
   }
@@ -72,7 +74,7 @@ export default class extends Controller {
     const observerOptions = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.95 
+      threshold: 0.95
     };
 
     const observerCallback = (entries, observer) => {
@@ -100,9 +102,15 @@ export default class extends Controller {
   }
 
   checkInfiniteScroll() {
-    const buffer = 50; // Add a small buffer
-    if ((window.innerHeight + window.scrollY + buffer) >= document.body.offsetHeight) {
-      this.moveFirstSectionToBottom();
+    if (!this.infiniteScrollPending) {
+      this.infiniteScrollPending = true;
+      requestAnimationFrame(() => {
+        this.infiniteScrollPending = false;
+        const buffer = 50; // Add a small buffer
+        if ((window.innerHeight + window.scrollY + buffer) >= document.body.offsetHeight) {
+          this.moveFirstSectionToBottom();
+        }
+      });
     }
   }
 
