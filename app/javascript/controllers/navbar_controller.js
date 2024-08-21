@@ -9,8 +9,8 @@ export default class extends Controller {
     this.navbarTarget.style.transform = "translateY(-100%)";
     this.scrollHandler = this.handleScroll.bind(this);
     this.infiniteScrollHandler = this.checkInfiniteScroll.bind(this);
-    window.addEventListener("scroll", this.throttle(this.scrollHandler, 200)); // Throttling scroll event
-    window.addEventListener("scroll", this.throttle(this.infiniteScrollHandler, 200));
+    window.addEventListener("scroll", this.scrollHandler);
+    window.addEventListener("scroll", this.infiniteScrollHandler);
     this.observeSections();
   }
 
@@ -102,9 +102,15 @@ export default class extends Controller {
   }
 
   checkInfiniteScroll() {
-    const buffer = 50; 
-    if (Math.ceil(window.innerHeight + window.scrollY + buffer) >= document.body.offsetHeight) {
-      this.moveFirstSectionToBottom();
+    if (!this.infiniteScrollPending) {
+      this.infiniteScrollPending = true;
+      requestAnimationFrame(() => {
+        this.infiniteScrollPending = false;
+        const buffer = 50; // Add a small buffer
+        if ((window.innerHeight + window.scrollY + buffer) >= document.body.offsetHeight) {
+          this.moveFirstSectionToBottom();
+        }
+      });
     }
   }
 
@@ -116,15 +122,5 @@ export default class extends Controller {
       this.observer.disconnect();
       this.observeAllSections();
     }
-  }
-
-  throttle(fn, wait) {
-    let time = Date.now();
-    return function() {
-      if ((time + wait - Date.now()) < 0) {
-        fn();
-        time = Date.now();
-      }
-    };
   }
 }
