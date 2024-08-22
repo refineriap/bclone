@@ -26,7 +26,6 @@
    
 }
 
-/* background: #0D0E0F; */
 
 * {
     margin: 0;
@@ -41,22 +40,6 @@ body {
 .home {
     background-color: #0D0E0F;
 }
-
-/* section {
-    padding: 0 30px;
-}
-
-@media screen and (min-width: 1024px) {
-    section {
-        padding: 0px;
-    }
-}
-
-@media screen and (min-width: 376px) and (max-width: 1024px) {
-    section {
-        padding: 0px 50px;
-    }
-} */
 
 section #svg {
     position: absolute;
