@@ -1,12 +1,11 @@
 .dropdown {
-  position: fixed;
+  position: sticky;
+  top: 0;
+  left: 0;
   display: flex;
   padding: 0px 30px;
   width: auto;
   height: 100px;
-  position: sticky;
-  top: 0;
-  left: 0;
   background-color:#0D0E0F;
   transition: top 0.3s;
   z-index: 5;
