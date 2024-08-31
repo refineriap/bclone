@@ -1,140 +1,140 @@
-<div class="home">           
-    <nav class="dropdown" data-controller="navbar" data-navbar-target="navbar">   
-        <div class="dropbtn" id="dropbtn" data-action="click->navbar#toggleDropdown" data-navbar-target="dropbtn">
-            <%= image_tag("tweety.svg", alt: "blue svg", class: "dot", id: "selectedImage", data: { target: "navbar.selectedImage" }) %>
-            <a class="dot--text">MY SOUNDTRACK</a>
-        </div>
-        <div id="myDropdown" class="dropdown-content">  
-            <ul class="lista">
-                <li style="list-style-image: url('<%= asset_path('blue.svg') %>');"><a href="#section1" data-action="click->navbar#scrollToSection" data-section-id="section1" data-section-class="section1" data-image-src="<%= asset_url('blue.svg') %>" data-navbar-target="selectedImage">MI PUEBLO NATAL</a></li>
-                <li style="list-style-image: url('<%= asset_path('green.svg') %>');"><a href="#section2" data-action="click->navbar#scrollToSection" data-section-id="section2" data-section-class="section2" data-image-src="<%= asset_url('green.svg') %>" data-navbar-target="selectedImage">TALES OF COLOMBIA</a></li>
-                <li style="list-style-image: url('<%= asset_path('red.svg') %>');"><a href="#section3" data-action="click->navbar#scrollToSection" data-section-id="section3" data-section-class="section3" data-image-src="<%= asset_url('red.svg') %>" data-navbar-target="selectedImage">LATEST BEAT</a></li>
-                <li style="list-style-image: url('<%= asset_path('beige.svg') %>');"><a href="#section4" data-action="click->navbar#scrollToSection" data-section-id="section4" data-section-class="section4" data-image-src="<%= asset_url('beige.svg') %>" data-navbar-target="selectedImage">N.Y STATE OF MIND</a></li>
-                <li style="list-style-image: url('<%= asset_path('grey.svg') %>');"><a href="#section5" data-action="click->navbar#scrollToSection" data-section-id="section5" data-section-class="section5" data-image-src="<%= asset_url('grey.svg') %>" data-navbar-target="selectedImage">NEW PAVEMENTS</a></li>
-                <li style="list-style-image: url('<%= asset_path('navy.svg') %>');"><a href="#section6" data-action="click->navbar#scrollToSection" data-section-id="section6" data-section-class="section6" data-image-src="<%= asset_url('navy.svg') %>" data-navbar-target="selectedImage">DO ALIENS EXIST</a></li>
-                <li style="list-style-image: url('<%= asset_path('pink.svg') %>');"><a href="#section7" data-action="click->navbar#scrollToSection" data-section-id="section7" data-section-class="section7" data-image-src="<%= asset_url('pink.svg') %>" data-navbar-target="selectedImage">MÉXICO LINDO</a></li>
-                <li style="list-style-image: url('<%= asset_path('purple.svg') %>');"><a href="#section8" data-action="click->navbar#scrollToSection" data-section-id="section8" data-section-class="section8" data-image-src="<%= asset_url('purple.svg') %>" data-navbar-target="selectedImage">LOOKING FORWARD</a></li>
-                <li style="list-style-image: url('<%= asset_path('brown.svg') %>');"><a href="#section9" data-action="click->navbar#scrollToSection" data-section-id="section9" data-section-class="section9" data-image-src="<%= asset_url('brown.svg') %>" data-navbar-target="selectedImage">BURGER HUNT </a></li>
-            </ul>
-        </div>
-        <a class="info--link" href="/info">Info</a>
-    </nav>
-    
-    <div data-controller="scroller">
-        <section id="section1" data-navbar-target="section"  data-target="navbar.section" class="scroller colombia section1"  data-controller="overlay" data-action="click->overlay#showOverlay" data-section-name="MI PUEBLO NATAL" data-image-src="<%= asset_url('blue.svg') %>">    
-            <%= image_tag("blue-rect.png", alt: "blue image", id: "svg", class: "colombia--svg") %>
-            <%= image_tag("colombia.png", alt: "image of colombia", id: "png", class: "colombia--image") %>
-            <div class="colombia-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay" >
-                <div class="colombia-paragraph">
-                    <p class="col-p-1">A lo lejos se ve, mi pueblo natal</p>
-                    <p class="col-p-2">Se vienen a mi mente bellos recuerdos</p>
-                    <p class="col-p-3">Infancia alegre que yo nunca olvidaré.</p>
-                    <p class="artist">Grupo Niche</p>
-                </div>
-            </div>  
-            
-        </section>
-
-        <section class="boris" id="boris--section">
-            <%= image_tag("Boris.svg", alt: "Boris svg", class: "boris--image") %>
-        </section>
-
-        <section id="section2" data-navbar-target="section" data-target="navbar.section" class="scroller plane section2" data-controller="popup" data-action="click->popup#toggle" data-section-name="TALES OF COLOMBIA" data-image-src="<%= asset_url('green.svg') %>">
-            <%= image_tag("green-rect.png", alt: "green image", id: "svg", class: "plane--svg") %>
-            <%= image_tag("plane.png", alt: "image of plane", id: "png", class: "plane--image") %>
-            <%= image_tag("arrow.svg", alt: "image of an arrow", class: "plane-arrow" ) %>
-            <div class="popup1" id="fullScreenPopup" data-popup-target="popup">
-                <div class="popup1--container">
-                    <p>Chapter 1.</p>
-                    <p>Tales of Colombia</p>
-                    <p>1981-1995</p>
-                </div>
-                <div class="popup1--paragraph">
-                    <p>I was born in Cali, Colombia — the second son to a seamstress and a mechanic. Our family owned a local bakery and lived a very humble life. During the height of the Cali cartel’s reign, my family (like many others) was subject to it’s corruption. In turn, my mother and I sought a new life in the United States. There I stood on the streets of Jackson Heights, Queens — a first generation immigrant at age 14.</p>
-                </div>
-                <div class="close1" data-action="click->popup#closePopup">Close</div>               
-            </div> 
-        </section>
-
-        <section id="section3" data-target="navbar.section" class="scroller beats section3" data-controller="audio" data-section-name="LATEST BEAT" data-image-src="<%= asset_url('red.svg') %>">
-            <%= image_tag("red-rect.png", alt:"red image", id:"svg", class:"beats--svg")%>  
-            <%= image_tag("beats.png", alt:"image of beat machine", id:"png", class:"beats--image")%>
-            <button class="listen">Listen</button>
-            <audio id="audioPlayer" src="/audio/fesliyan.mp3"></audio>
-        </section>
-
-        <section id="section4" data-target="navbar.section.overlay" class="scroller nyc section4" data-controller="overlay" data-action="click->overlay#showOverlay" data-section-name="N.Y STATE OF MIND" data-image-src="<%= asset_url('beige.svg') %>">
-            <%= image_tag("beige-rect.png", alt:"beige image", id:"svg", class:"nyc--svg") %>  
-            <%= image_tag("nyc.png", alt:"image of nyc", id:"png", class:"nyc--image") %>
-            <div class="nyc-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay">
-                <div class="nyc-paragraph">
-                    <p class="nyc-p-1">I never sleep, 'cause sleep is the cousin of death</p> 
-                    <p class="nyc-p-2">I lay puzzled as I backtrack to earlier times</p> 
-                    <p class="nyc-p-3">Nothing's equivalent to the New York state of mind.</p>
-                    <p class="artist2">Nas</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="section5" data-target="navbar.section" class="scroller bike section5" data-controller="popup" data-action="click->popup#toggle" data-section-name="NEW PAVEMENTS" data-image-src="<%= asset_url('grey.svg') %>">
-            <%= image_tag("grey-rect.png", alt:"gray image", id:"svg", class:"bike--svg") %> 
-            <%= image_tag("bike.png", alt:"image of a bike", id:"png", class:"bike--image") %>
-            <%= image_tag("arrow.svg", alt: "image of an arrow", class: "bike-arrow" ) %>
-            <div class="popup2" id="fullScreenPopup" data-popup-target="popup">
-                <div class="popup2--container">
-                    <p>Chapter 2.</p>
-                    <p>New Pavements</p>
-                    <p>1996-2021</p>
-                </div>
-                <div class="popup2--paragraph">
-                    <p>For many first-generation immigrants, life in New York City is a grind. From the age of 18, I worked any job I could find, ultimately spending over 15 years in the car industry, doing everything from deliveries, driving limousines, to managing parking garages.</p>   
-                </div>
-                <div class="close2" data-action="click->popup#closePopup">Close</div>
-            </div>
-        </section>
-
-        <section id="section6" data-target="navbar.section" class="scroller earth section6" data-section-name="DO ALIENS EXIST" data-image-src="<%= asset_url('navy.svg') %>">
-            <a href="/poll" >
-                <%= image_tag("navy-rect.png", alt:"color navy image", id:"svg", class:"earth--svg")%>   
-                <%= image_tag("earth.png", alt:"image of the earth", id:"png", class:"earth--image")%> 
-            </a>
-        </section>
-
-        <section id="section7" data-target="navbar.section.overlay" class="scroller mexico section7" data-controller="overlay" data-action="click->overlay#showOverlay" data-section-name="MÉXICO LINDO" data-image-src="<%= asset_url('pink.svg') %>">
-            <%= image_tag("beige-rect.png", alt:"beige image", id:"svg", class:"mexico--svg")%>  
-            <%= image_tag("mexico.png", alt:"image of mexico", id:"png", class:"mexico--image")%>
-            <div class="mexico-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay">
-                <div class="mexico-paragraph">
-                    <p class="mexico-p-1">México lindo y querido, si muero lejos de ti.</p> 
-                    <p class="mexico-p-2">Que digan que estoy dormido y que me traigan a ti.</p> 
-                    <p class="artist3">Vicente Fernandez</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="section8" data-target="navbar.section" class="scroller agave section8" data-controller="popup" data-action="click->popup#toggle" data-section-name="LOOKING FORWARD" data-image-src="<%= asset_url('purple.svg') %>">
-            <%= image_tag("purple-rect.png", alt:"purple image", id:"svg", class:"agave--svg")%>    
-            <%= image_tag("agave.png", alt:"image of agave plant", id:"png", class:"agave--image") %>
-            <%= image_tag("arrow.svg", alt: "image of an arrow", class: "agave-arrow" ) %>
-            <div class="popup3" id="fullScreenPopup" data-popup-target="popup">
-                <div class="popup3--container">
-                    <p>Chapter 3.</p>
-                    <p>Looking Forward</p>
-                    <p>2022-Present</p>
-                </div>
-                <div class="popup3--paragraph">
-                    <p>When the pandemic hit, my job was affected, as with countless others around the world. However, I chose to see it as an opportunity — one to pursue a new career in web development. I started to study on my off-hours and eventually completed a bootcamp in Mexico City.</p>   
-                </div>
-                <div class="close3" data-action="click->popup#closePopup">Close</div>
-            </div> 
-        </section>
-
-        <section id="section9" data-target="navbar.section" class="scroller burger section9" data-section-name="BURGER HUNT" data-image-src="<%= asset_url('brown.svg') %>">
-            <a href="/burger" class="">
-                <%= image_tag("brown-rect.png", alt: "brown image", id: "svg", class: "burger--svg") %>   
-                <%= image_tag("huntimage.png", alt: "image of a restaurant", id: "png", class: "burger--image") %> 
-            </a>  
-        </section>
+<nav class="dropdown" data-controller="navbar" data-navbar-target="navbar">   
+    <div class="dropbtn" id="dropbtn" data-action="click->navbar#toggleDropdown" data-navbar-target="dropbtn">
+        <%= image_tag("tweety.svg", alt: "blue svg", class: "dot", id: "selectedImage", data: { target: "navbar.selectedImage" }) %>
+        <a class="dot--text">MY SOUNDTRACK</a>
     </div>
+    <div id="myDropdown" class="dropdown-content">  
+        <ul class="lista">
+            <li style="list-style-image: url('<%= asset_path('blue.svg') %>');"><a href="#section1" data-action="click->navbar#scrollToSection" data-section-id="section1" data-section-class="section1" data-image-src="<%= asset_url('blue.svg') %>" data-navbar-target="selectedImage">MI PUEBLO NATAL</a></li>
+            <li style="list-style-image: url('<%= asset_path('green.svg') %>');"><a href="#section2" data-action="click->navbar#scrollToSection" data-section-id="section2" data-section-class="section2" data-image-src="<%= asset_url('green.svg') %>" data-navbar-target="selectedImage">TALES OF COLOMBIA</a></li>
+            <li style="list-style-image: url('<%= asset_path('red.svg') %>');"><a href="#section3" data-action="click->navbar#scrollToSection" data-section-id="section3" data-section-class="section3" data-image-src="<%= asset_url('red.svg') %>" data-navbar-target="selectedImage">LATEST BEAT</a></li>
+            <li style="list-style-image: url('<%= asset_path('beige.svg') %>');"><a href="#section4" data-action="click->navbar#scrollToSection" data-section-id="section4" data-section-class="section4" data-image-src="<%= asset_url('beige.svg') %>" data-navbar-target="selectedImage">N.Y STATE OF MIND</a></li>
+            <li style="list-style-image: url('<%= asset_path('grey.svg') %>');"><a href="#section5" data-action="click->navbar#scrollToSection" data-section-id="section5" data-section-class="section5" data-image-src="<%= asset_url('grey.svg') %>" data-navbar-target="selectedImage">NEW PAVEMENTS</a></li>
+            <li style="list-style-image: url('<%= asset_path('navy.svg') %>');"><a href="#section6" data-action="click->navbar#scrollToSection" data-section-id="section6" data-section-class="section6" data-image-src="<%= asset_url('navy.svg') %>" data-navbar-target="selectedImage">DO ALIENS EXIST</a></li>
+            <li style="list-style-image: url('<%= asset_path('pink.svg') %>');"><a href="#section7" data-action="click->navbar#scrollToSection" data-section-id="section7" data-section-class="section7" data-image-src="<%= asset_url('pink.svg') %>" data-navbar-target="selectedImage">MÉXICO LINDO</a></li>
+            <li style="list-style-image: url('<%= asset_path('purple.svg') %>');"><a href="#section8" data-action="click->navbar#scrollToSection" data-section-id="section8" data-section-class="section8" data-image-src="<%= asset_url('purple.svg') %>" data-navbar-target="selectedImage">LOOKING FORWARD</a></li>
+            <li style="list-style-image: url('<%= asset_path('brown.svg') %>');"><a href="#section9" data-action="click->navbar#scrollToSection" data-section-id="section9" data-section-class="section9" data-image-src="<%= asset_url('brown.svg') %>" data-navbar-target="selectedImage">BURGER HUNT </a></li>
+        </ul>
+    </div>
+    <a class="info--link" href="/info">Info</a>
+</nav>
+
+<div data-controller="scroller">
+    <section id="section1" data-navbar-target="section"  data-target="navbar.section" class="scroller colombia section1"  data-controller="overlay" data-action="click->overlay#showOverlay" data-section-name="MI PUEBLO NATAL" data-image-src="<%= asset_url('blue.svg') %>">    
+        <%= image_tag("blue-rect.png", alt: "blue image", id: "svg", class: "colombia--svg") %>
+        <%= image_tag("colombia.png", alt: "image of colombia", id: "png", class: "colombia--image") %>
+        <div class="colombia-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay" >
+            <div class="colombia-paragraph">
+                <p class="col-p-1">A lo lejos se ve, mi pueblo natal</p>
+                <p class="col-p-2">Se vienen a mi mente bellos recuerdos</p>
+                <p class="col-p-3">Infancia alegre que yo nunca olvidaré.</p>
+                <p class="artist">Grupo Niche</p>
+            </div>
+        </div>  
+        
+    </section>
+
+    <section class="boris" id="boris--section">
+        <%= image_tag("Boris.svg", alt: "Boris svg", class: "boris--image") %>
+    </section>
+
+    <section id="section2" data-navbar-target="section" data-target="navbar.section" class="scroller plane section2" data-controller="popup" data-action="click->popup#toggle" data-section-name="TALES OF COLOMBIA" data-image-src="<%= asset_url('green.svg') %>">
+        <%= image_tag("green-rect.png", alt: "green image", id: "svg", class: "plane--svg") %>
+        <%= image_tag("plane.png", alt: "image of plane", id: "png", class: "plane--image") %>
+        <%= image_tag("arrow.svg", alt: "image of an arrow", class: "plane-arrow" ) %>
+        <div class="popup1" id="fullScreenPopup" data-popup-target="popup">
+            <div class="popup1--container">
+                <p>Chapter 1.</p>
+                <p>Tales of Colombia</p>
+                <p>1981-1995</p>
+            </div>
+            <div class="popup1--paragraph">
+                <p>I was born in Cali, Colombia — the second son to a seamstress and a mechanic. Our family owned a local bakery and lived a very humble life. During the height of the Cali cartel’s reign, my family (like many others) was subject to it’s corruption. In turn, my mother and I sought a new life in the United States. There I stood on the streets of Jackson Heights, Queens — a first generation immigrant at age 14.</p>
+            </div>
+            <div class="close1" data-action="click->popup#closePopup">Close</div>               
+        </div> 
+    </section>
+
+    <section id="section3" data-target="navbar.section" class="scroller beats section3" data-controller="audio" data-section-name="LATEST BEAT" data-image-src="<%= asset_url('red.svg') %>">
+        <%= image_tag("red-rect.png", alt:"red image", id:"svg", class:"beats--svg")%>  
+        <%= image_tag("beats.png", alt:"image of beat machine", id:"png", class:"beats--image")%>
+        <button class="listen">Listen</button>
+        <audio id="audioPlayer" src="/audio/fesliyan.mp3"></audio>
+    </section>
+
+    <section id="section4" data-target="navbar.section.overlay" class="scroller nyc section4" data-controller="overlay" data-action="click->overlay#showOverlay" data-section-name="N.Y STATE OF MIND" data-image-src="<%= asset_url('beige.svg') %>">
+        <%= image_tag("beige-rect.png", alt:"beige image", id:"svg", class:"nyc--svg") %>  
+        <%= image_tag("nyc.png", alt:"image of nyc", id:"png", class:"nyc--image") %>
+        <div class="nyc-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay">
+            <div class="nyc-paragraph">
+                <p class="nyc-p-1">I never sleep, 'cause sleep is the cousin of death</p> 
+                <p class="nyc-p-2">I lay puzzled as I backtrack to earlier times</p> 
+                <p class="nyc-p-3">Nothing's equivalent to the New York state of mind.</p>
+                <p class="artist2">Nas</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="section5" data-target="navbar.section" class="scroller bike section5" data-controller="popup" data-action="click->popup#toggle" data-section-name="NEW PAVEMENTS" data-image-src="<%= asset_url('grey.svg') %>">
+        <%= image_tag("grey-rect.png", alt:"gray image", id:"svg", class:"bike--svg") %> 
+        <%= image_tag("bike.png", alt:"image of a bike", id:"png", class:"bike--image") %>
+        <%= image_tag("arrow.svg", alt: "image of an arrow", class: "bike-arrow" ) %>
+        <div class="popup2" id="fullScreenPopup" data-popup-target="popup">
+            <div class="popup2--container">
+                <p>Chapter 2.</p>
+                <p>New Pavements</p>
+                <p>1996-2021</p>
+            </div>
+            <div class="popup2--paragraph">
+                <p>For many first-generation immigrants, life in New York City is a grind. From the age of 18, I worked any job I could find, ultimately spending over 15 years in the car industry, doing everything from deliveries, driving limousines, to managing parking garages.</p>   
+            </div>
+            <div class="close2" data-action="click->popup#closePopup">Close</div>
+        </div>
+    </section>
+
+    <section id="section6" data-target="navbar.section" class="scroller earth section6" data-section-name="DO ALIENS EXIST" data-image-src="<%= asset_url('navy.svg') %>">
+        <a href="/poll" >
+            <%= image_tag("navy-rect.png", alt:"color navy image", id:"svg", class:"earth--svg")%>   
+            <%= image_tag("earth.png", alt:"image of the earth", id:"png", class:"earth--image")%> 
+        </a>
+    </section>
+
+    <section id="section7" data-target="navbar.section.overlay" class="scroller mexico section7" data-controller="overlay" data-action="click->overlay#showOverlay" data-section-name="MÉXICO LINDO" data-image-src="<%= asset_url('pink.svg') %>">
+        <%= image_tag("beige-rect.png", alt:"beige image", id:"svg", class:"mexico--svg")%>  
+        <%= image_tag("mexico.png", alt:"image of mexico", id:"png", class:"mexico--image")%>
+        <div class="mexico-overlay" data-overlay-target="overlay" data-action="click->overlay#hideOverlay">
+            <div class="mexico-paragraph">
+                <p class="mexico-p-1">México lindo y querido, si muero lejos de ti.</p> 
+                <p class="mexico-p-2">Que digan que estoy dormido y que me traigan a ti.</p> 
+                <p class="artist3">Vicente Fernandez</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="section8" data-target="navbar.section" class="scroller agave section8" data-controller="popup" data-action="click->popup#toggle" data-section-name="LOOKING FORWARD" data-image-src="<%= asset_url('purple.svg') %>">
+        <%= image_tag("purple-rect.png", alt:"purple image", id:"svg", class:"agave--svg")%>    
+        <%= image_tag("agave.png", alt:"image of agave plant", id:"png", class:"agave--image") %>
+        <%= image_tag("arrow.svg", alt: "image of an arrow", class: "agave-arrow" ) %>
+        <div class="popup3" id="fullScreenPopup" data-popup-target="popup">
+            <div class="popup3--container">
+                <p>Chapter 3.</p>
+                <p>Looking Forward</p>
+                <p>2022-Present</p>
+            </div>
+            <div class="popup3--paragraph">
+                <p>When the pandemic hit, my job was affected, as with countless others around the world. However, I chose to see it as an opportunity — one to pursue a new career in web development. I started to study on my off-hours and eventually completed a bootcamp in Mexico City.</p>   
+            </div>
+            <div class="close3" data-action="click->popup#closePopup">Close</div>
+        </div> 
+    </section>
+
+    <section id="section9" data-target="navbar.section" class="scroller burger section9" data-section-name="BURGER HUNT" data-image-src="<%= asset_url('brown.svg') %>">
+        <a href="/burger" class="">
+            <%= image_tag("brown-rect.png", alt: "brown image", id: "svg", class: "burger--svg") %>   
+            <%= image_tag("huntimage.png", alt: "image of a restaurant", id: "png", class: "burger--image") %> 
+        </a>  
+    </section>
 </div>
+        
+
 

@@ -35,11 +35,9 @@
 
 body {
     margin: 0;
-}
-
-.home {
     background-color: #0D0E0F;
 }
+
 
 section #svg {
     position: absolute;
