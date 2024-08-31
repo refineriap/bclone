@@ -8,7 +8,7 @@ export default class extends Controller {
     this.prevScrollpos = window.scrollY;
     this.navbarTarget.style.transform = "translateY(-100%)";
     this.scrollHandler = this.handleScroll.bind(this);
-    this.infiniteScrollHandler = this.checkInfiniteScroll.bind(this);
+    // this.infiniteScrollHandler = this.checkInfiniteScroll.bind(this);
     window.addEventListener("scroll", this.scrollHandler);
     window.addEventListener("scroll", this.infiniteScrollHandler);
     this.observeSections();
@@ -106,7 +106,7 @@ export default class extends Controller {
       this.infiniteScrollPending = true;
       requestAnimationFrame(() => {
         this.infiniteScrollPending = false;
-        const buffer = 40; // Add a small buffer
+        const buffer = 50; // Add a small buffer
         if ((window.innerHeight + window.scrollY + buffer) >= document.body.offsetHeight) {
           this.moveFirstSectionToBottom();
         }
