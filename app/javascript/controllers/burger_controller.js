@@ -34,6 +34,7 @@ export default class extends Controller {
       const ratingElement = burgerElement.querySelector('.burger-rating');
       if (ratingElement && parseFloat(formattedRating) <= 5.0) {
         ratingElement.style.backgroundColor = '#F43B10';
+        ratingElement.style.color = '#EEECE3';
       }
 
       burgerContainer.appendChild(burgerElement);

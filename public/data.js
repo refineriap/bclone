@@ -62,6 +62,24 @@ const burgersData = [
         image: '7thstreet.png',
         price: 11,
     },     
+    {
+        name: 'chicken katsu',
+        rating: 5.0,
+        location: 'chef katsu',
+        country: 'BROOKLYN',
+        year: '2025',
+        image: 'chef_katsu.png',
+        price: 12,
+    },     
+    {
+        name: 'GA burger',
+        rating: 8.0,
+        location: 'threes brewing',
+        country: 'BROOKLYN',
+        year: '2025',
+        image: 'threes.png',
+        price: 14,
+    },     
 ]
 
 export default burgersData;
