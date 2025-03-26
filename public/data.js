@@ -24,7 +24,7 @@ const burgersData = [
         country: 'MEXICO CITY',
         year: '2023',
         image: 'chubbiestwo.png',
-        price: 12.99,
+        price: 12,
     },
     {
         name: 'Famous star',
@@ -33,7 +33,7 @@ const burgersData = [
         country: 'MEXICO CITY',
         year: '2024',
         image: 'carls.png',
-        price: 5.99,
+        price: 6,
     },     
     {
         name: 'classic hamburger',
@@ -42,7 +42,7 @@ const burgersData = [
         country: 'MEXICO CITY',
         year: '2024',
         image: 'ojorojo.png',
-        price: 14.99,
+        price: 15,
     },     
     {
         name: 'cheeseburger',
